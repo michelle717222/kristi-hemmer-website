@@ -172,7 +172,7 @@ import Footer from '../components/Footer.astro';
               id="video-thumbnail"
               src="https://img.youtube.com/vi/ADyZp4tdHso/maxresdefault.jpg"
               alt="Kristi Hemmer - Unapologetic"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover relative"
             />
             <!-- Play Button Overlay -->
             <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300">
@@ -561,7 +561,7 @@ import Footer from '../components/Footer.astro';
 
         <div class="mt-12">
           <p class="text-xl mb-4">Let's MOXIE ON together.</p>
-          <a href="/contact" class="inline-block bg-charcoal text-sunny-yellow font-bold px-10 py-4 rounded-lg hover:bg-gray-800 transition-colors text-lg">
+          <a href="/moxie-on" class="inline-block bg-charcoal text-sunny-yellow font-bold px-10 py-4 rounded-lg hover:bg-gray-800 transition-colors text-lg">
             Get in Touch
           </a>
         </div>

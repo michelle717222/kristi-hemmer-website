@@ -170,9 +170,10 @@ import Footer from '../components/Footer.astro';
             <!-- Video Thumbnail - Using YouTube's thumbnail as fallback -->
             <img
               id="video-thumbnail"
-              src="https://img.youtube.com/vi/ADyZp4tdHso/maxresdefault.jpg"
+              src="/images/unapologetic-video-thumb.jpg"
               alt="Kristi Hemmer - Unapologetic"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover relative"
+			  style="position:relative;z-index:1;"
             />
             <!-- Play Button Overlay -->
             <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300">
