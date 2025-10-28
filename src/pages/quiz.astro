@@ -1,0 +1,560 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="MOXIE Quiz | Discover Your Path | Kristi Hemmer"
+  description="Take the MOXIE Quiz to discover whether you need a Speaker Spark, Coaching Glow-Up, Trailblazer Soul experience, or time for Reflection."
+>
+  <Header />
+
+  <main class="min-h-screen bg-gradient-to-br from-moxie-pink via-moxie-pink-alt to-fierce-flamingo">
+    <!-- SECTION 1: Quiz Landing/Intro -->
+    <section id="quiz-intro" class="min-h-screen flex items-center justify-center py-20 px-4 relative overflow-hidden">
+      <!-- Background graphic elements -->
+      <img
+        src="/images/Graphic Elements_Yellow_01.png"
+        alt=""
+        class="absolute top-10 right-10 w-32 md:w-48 opacity-50 animate-pulse"
+        aria-hidden="true"
+      />
+      <img
+        src="/images/Graphic Elements_Yellow_05.png"
+        alt=""
+        class="absolute bottom-10 left-10 w-40 md:w-56 opacity-40"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto max-w-4xl text-center relative z-10">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          What Kind of <span class="text-sunny-yellow">MOXIE</span> Do You Need Right Now?
+        </h1>
+        <p class="text-2xl md:text-3xl text-white mb-8">
+          Find out which next step is calling your name
+        </p>
+        <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
+          Answer 4 quick questions to discover your MOXIE path — whether you need a Speaker Spark,
+          Coaching Glow-Up, Trailblazer Soul experience, or time for Reflection.
+        </p>
+
+        <!-- Preview cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
+          <div class="bg-white/20 backdrop-blur-sm p-4 rounded-lg text-white border-2 border-white/30">
+            <div class="text-3xl mb-2">✨</div>
+            <p class="font-semibold">Speaker Spark</p>
+          </div>
+          <div class="bg-white/20 backdrop-blur-sm p-4 rounded-lg text-white border-2 border-white/30">
+            <div class="text-3xl mb-2">💫</div>
+            <p class="font-semibold">Coaching Glow-Up</p>
+          </div>
+          <div class="bg-white/20 backdrop-blur-sm p-4 rounded-lg text-white border-2 border-white/30">
+            <div class="text-3xl mb-2">🏔️</div>
+            <p class="font-semibold">Trailblazer Soul</p>
+          </div>
+          <div class="bg-white/20 backdrop-blur-sm p-4 rounded-lg text-white border-2 border-white/30">
+            <div class="text-3xl mb-2">📖</div>
+            <p class="font-semibold">Reflection Mode</p>
+          </div>
+        </div>
+
+        <button
+          id="start-quiz-btn"
+          class="bg-sunny-yellow text-charcoal font-bold px-12 py-6 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-2xl shadow-2xl"
+        >
+          Start the Quiz →
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Quiz Interface -->
+    <section id="quiz-questions" class="hidden min-h-screen flex items-center justify-center py-20 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <!-- Progress Bar -->
+        <div class="mb-8">
+          <div class="flex justify-between items-center mb-2">
+            <p class="text-white font-semibold" id="progress-text">Question 1 of 4</p>
+            <p class="text-white/80 text-sm" id="progress-percentage">25%</p>
+          </div>
+          <div class="w-full bg-white/30 rounded-full h-3 overflow-hidden">
+            <div
+              id="progress-bar"
+              class="bg-sunny-yellow h-full rounded-full transition-all duration-500 ease-out"
+              style="width: 25%"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Question Container -->
+        <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+          <h2 id="question-text" class="text-3xl md:text-4xl font-bold text-charcoal mb-8 leading-tight">
+            <!-- Question will be inserted here -->
+          </h2>
+
+          <!-- Answer Options -->
+          <div id="answer-options" class="space-y-4">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
+            <button
+              id="back-btn"
+              class="text-moxie-pink font-semibold hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled
+            >
+              ← Back
+            </button>
+            <button
+              id="next-btn"
+              class="bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              disabled
+            >
+              Next Question →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Results Display -->
+    <section id="quiz-results" class="hidden min-h-screen py-20 px-4">
+      <div class="container mx-auto max-w-5xl">
+        <!-- Results content will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  // Quiz data
+  const quizQuestions = [
+    {
+      id: 1,
+      question: "What are you most curious about right now?",
+      answers: [
+        { letter: 'A', text: 'How to lead with more confidence and clarity' },
+        { letter: 'B', text: 'How to break old habits and step into something new' },
+        { letter: 'C', text: 'How to connect with people who lift me higher' },
+        { letter: 'D', text: 'How to live more boldly and authentically' }
+      ]
+    },
+    {
+      id: 2,
+      question: "What level of MOXIE are you ready for right now?",
+      answers: [
+        { letter: 'A', text: "A small spark. I'm dipping a toe in." },
+        { letter: 'B', text: "A fire. I'm ready to take a leap." },
+        { letter: 'C', text: "A blaze. Let's blow the roof off." },
+        { letter: 'D', text: 'Just need someone to walk with me as I rise.' }
+      ]
+    },
+    {
+      id: 3,
+      question: "What would you love to learn more about right now?",
+      answers: [
+        { letter: 'A', text: 'Turning my story into something powerful' },
+        { letter: 'B', text: 'Leading others while staying true to myself' },
+        { letter: 'C', text: 'Trusting my voice and using it more often' },
+        { letter: 'D', text: 'Taking a break to reconnect with my power' }
+      ]
+    },
+    {
+      id: 4,
+      question: "Which word describes you most right now?",
+      answers: [
+        { letter: 'A', text: 'Curious' },
+        { letter: 'B', text: 'Tired but hopeful' },
+        { letter: 'C', text: 'Lit up' },
+        { letter: 'D', text: 'Rebuilding' }
+      ]
+    }
+  ];
+
+  const resultData = {
+    'A': {
+      emoji: '✨',
+      title: "You've Got Speaker Spark",
+      description: `You're ready to take the mic — literally or metaphorically. You're craving clarity, inspiration, and the kind of message that stays with you long after the applause fades.
+
+Kristi's speaking and training sessions will fuel your leadership, light a fire in your team, and remind you that your story matters. Get ready to own your voice — and use it.`,
+      keyPoints: [
+        'Perfect for teams and organizations',
+        'High-impact keynotes and workshops',
+        'Actionable takeaways',
+        'Customized to your needs'
+      ],
+      primaryCta: { text: 'Explore Speaking & Training', link: '/speaking' },
+      secondaryCta: { text: 'Book Kristi to Speak', link: '/contact' },
+      accentColor: 'moxie-pink',
+      bgGradient: 'from-moxie-pink to-fierce-flamingo'
+    },
+    'B': {
+      emoji: '💫',
+      title: "You've Got Coaching Glow-Up Energy",
+      description: `You're on the edge of something powerful. Whether you're building, pivoting, or just plain stuck, one-on-one or group coaching with Kristi can help you grow your guts (aka MOXIE) and rediscover your power. You don't need to have it all figured out — you just need to show up.`,
+      keyPoints: [
+        'Individual or group coaching',
+        'PoWer Course signature program',
+        '90 days of transformation',
+        'Community that supports you'
+      ],
+      primaryCta: { text: 'Explore Coaching Options', link: '/coaching' },
+      secondaryCta: { text: 'Join PoWer Course Waitlist', link: '/contact' },
+      accentColor: 'sunny-yellow',
+      bgGradient: 'from-sunny-yellow to-yellow-400'
+    },
+    'C': {
+      emoji: '🏔️',
+      title: "You've Got Trailblazer Soul",
+      description: `The world has been loud, and you're ready to get quiet — and bold. You're craving space to breathe, reflect, and remember who you are — with a community that lifts you up. It's time for an adventure with a purpose.
+
+Kristi's PoWer Camp is calling. Answer it.`,
+      keyPoints: [
+        'Transformational retreats',
+        'Adventure + introspection',
+        'Intimate groups',
+        'Locations: Badlands, Bali, Aruba, and more'
+      ],
+      primaryCta: { text: 'Discover PoWer Camp', link: '/retreats' },
+      secondaryCta: { text: 'View Upcoming Retreats', link: '/contact' },
+      accentColor: 'moxie-pink',
+      bgGradient: 'from-fierce-flamingo to-moxie-pink-alt'
+    },
+    'D': {
+      emoji: '📖',
+      title: "You've Got Reflection Mode",
+      description: `You're gathering strength. Not quite ready to leap — but definitely done shrinking. Start by reading, reflecting, and reconnecting with your voice through Kristi's writing.
+
+Your MOXIE moment is coming — and when it does, you'll be ready.`,
+      keyPoints: [
+        'Subscribe to Kristi\'s Substack',
+        'Read "Quit Being So Good"',
+        'Join the book club',
+        'Connect with the community'
+      ],
+      primaryCta: { text: "Read Kristi's Substack", link: 'https://kristihemmer.substack.com' },
+      secondaryCta: { text: 'Get the Book', link: '/contact' },
+      accentColor: 'sunny-yellow',
+      bgGradient: 'from-charcoal to-gray-700'
+    }
+  };
+
+  // Quiz state
+  let currentQuestion = 0;
+  let answers: string[] = [];
+
+  // DOM elements
+  const introSection = document.getElementById('quiz-intro');
+  const questionsSection = document.getElementById('quiz-questions');
+  const resultsSection = document.getElementById('quiz-results');
+  const startBtn = document.getElementById('start-quiz-btn');
+  const backBtn = document.getElementById('back-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const progressBar = document.getElementById('progress-bar');
+  const progressText = document.getElementById('progress-text');
+  const progressPercentage = document.getElementById('progress-percentage');
+  const questionText = document.getElementById('question-text');
+  const answerOptions = document.getElementById('answer-options');
+
+  // Event listeners
+  startBtn?.addEventListener('click', startQuiz);
+  backBtn?.addEventListener('click', previousQuestion);
+  nextBtn?.addEventListener('click', nextQuestion);
+
+  function startQuiz() {
+    introSection?.classList.add('hidden');
+    questionsSection?.classList.remove('hidden');
+    currentQuestion = 0;
+    answers = [];
+    displayQuestion();
+  }
+
+  function displayQuestion() {
+    const question = quizQuestions[currentQuestion];
+
+    // Update question text
+    if (questionText) {
+      questionText.textContent = question.question;
+    }
+
+    // Update progress
+    const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
+    if (progressBar) {
+      progressBar.style.width = `${progress}%`;
+    }
+    if (progressText) {
+      progressText.textContent = `Question ${currentQuestion + 1} of ${quizQuestions.length}`;
+    }
+    if (progressPercentage) {
+      progressPercentage.textContent = `${progress}%`;
+    }
+
+    // Update back button
+    if (backBtn) {
+      backBtn.disabled = currentQuestion === 0;
+    }
+
+    // Display answer options
+    if (answerOptions) {
+      answerOptions.innerHTML = question.answers.map(answer => `
+        <button
+          class="answer-option w-full text-left p-6 rounded-lg border-2 border-gray-200 hover:border-moxie-pink hover:bg-pink-50 transition-all transform hover:scale-102 focus:outline-none focus:ring-2 focus:ring-moxie-pink"
+          data-letter="${answer.letter}"
+        >
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center option-indicator">
+              <div class="w-4 h-4 rounded-full bg-moxie-pink hidden selected-dot"></div>
+            </div>
+            <div class="flex-1">
+              <p class="text-lg font-semibold text-gray-700 mb-1">${answer.letter}</p>
+              <p class="text-gray-600">${answer.text}</p>
+            </div>
+          </div>
+        </button>
+      `).join('');
+
+      // Add click handlers to new options
+      const optionButtons = answerOptions.querySelectorAll('.answer-option');
+      optionButtons.forEach(button => {
+        button.addEventListener('click', selectAnswer);
+      });
+
+      // Restore previous answer if exists
+      if (answers[currentQuestion]) {
+        const selectedButton = answerOptions.querySelector(`[data-letter="${answers[currentQuestion]}"]`);
+        if (selectedButton) {
+          selectedButton.classList.add('border-moxie-pink', 'bg-pink-50');
+          const dot = selectedButton.querySelector('.selected-dot');
+          if (dot) {
+            dot.classList.remove('hidden');
+          }
+          if (nextBtn) {
+            nextBtn.disabled = false;
+          }
+        }
+      } else {
+        if (nextBtn) {
+          nextBtn.disabled = true;
+        }
+      }
+    }
+  }
+
+  function selectAnswer(event: Event) {
+    const button = (event.currentTarget as HTMLElement);
+    const letter = button.dataset.letter;
+
+    if (!letter || !answerOptions) return;
+
+    // Remove selection from all options
+    const allOptions = answerOptions.querySelectorAll('.answer-option');
+    allOptions.forEach(option => {
+      option.classList.remove('border-moxie-pink', 'bg-pink-50');
+      const dot = option.querySelector('.selected-dot');
+      if (dot) {
+        dot.classList.add('hidden');
+      }
+    });
+
+    // Add selection to clicked option
+    button.classList.add('border-moxie-pink', 'bg-pink-50');
+    const dot = button.querySelector('.selected-dot');
+    if (dot) {
+      dot.classList.remove('hidden');
+    }
+
+    // Save answer
+    answers[currentQuestion] = letter;
+
+    // Enable next button
+    if (nextBtn) {
+      nextBtn.disabled = false;
+    }
+  }
+
+  function previousQuestion() {
+    if (currentQuestion > 0) {
+      currentQuestion--;
+      displayQuestion();
+    }
+  }
+
+  function nextQuestion() {
+    if (currentQuestion < quizQuestions.length - 1) {
+      currentQuestion++;
+      displayQuestion();
+    } else {
+      // Quiz complete, show results
+      showResults();
+    }
+  }
+
+  function calculateResult(): string {
+    const counts = { A: 0, B: 0, C: 0, D: 0 };
+    answers.forEach(answer => {
+      if (answer in counts) {
+        counts[answer as keyof typeof counts]++;
+      }
+    });
+
+    let maxCount = 0;
+    let winners: string[] = [];
+
+    Object.entries(counts).forEach(([letter, count]) => {
+      if (count > maxCount) {
+        maxCount = count;
+        winners = [letter];
+      } else if (count === maxCount && count > 0) {
+        winners.push(letter);
+      }
+    });
+
+    // If tie, return first winner (or could randomize)
+    return winners[0] || 'A';
+  }
+
+  function showResults() {
+    questionsSection?.classList.add('hidden');
+    resultsSection?.classList.remove('hidden');
+
+    const resultLetter = calculateResult();
+    const result = resultData[resultLetter as keyof typeof resultData];
+
+    if (!resultsSection) return;
+
+    resultsSection.innerHTML = `
+      <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <!-- Header with gradient -->
+        <div class="bg-gradient-to-r ${result.bgGradient} p-12 text-center text-white">
+          <div class="text-7xl mb-4">${result.emoji}</div>
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">${result.title}</h2>
+        </div>
+
+        <!-- Content -->
+        <div class="p-8 md:p-12">
+          <!-- Description -->
+          <div class="prose prose-lg max-w-none mb-8">
+            ${result.description.split('\n\n').map(para => `<p class="text-gray-700 mb-4 text-lg leading-relaxed">${para}</p>`).join('')}
+          </div>
+
+          <!-- Key Points -->
+          <div class="bg-gray-50 rounded-lg p-6 mb-8">
+            <h3 class="text-xl font-bold text-charcoal mb-4">What This Means:</h3>
+            <ul class="space-y-2">
+              ${result.keyPoints.map(point => `
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-${result.accentColor} flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="text-gray-700">${point}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <a
+              href="${result.primaryCta.link}"
+              class="flex-1 bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-center text-lg"
+            >
+              ${result.primaryCta.text} →
+            </a>
+            <a
+              href="${result.secondaryCta.link}"
+              class="flex-1 bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-center text-lg"
+            >
+              ${result.secondaryCta.text}
+            </a>
+          </div>
+
+          <!-- Share & Retake -->
+          <div class="border-t border-gray-200 pt-8 text-center">
+            <p class="text-gray-600 mb-4">Want to explore another path?</p>
+            <button
+              id="retake-btn"
+              class="text-moxie-pink font-semibold hover:underline"
+            >
+              ← Retake the Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Services -->
+      <div class="mt-12 text-center">
+        <p class="text-white text-xl mb-4">Not sure if this is the right fit?</p>
+        <a
+          href="/services"
+          class="inline-block bg-white text-moxie-pink font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105"
+        >
+          Explore All Services
+        </a>
+      </div>
+    `;
+
+    // Add retake button listener
+    const retakeBtn = document.getElementById('retake-btn');
+    retakeBtn?.addEventListener('click', resetQuiz);
+
+    // Scroll to top of results
+    resultsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function resetQuiz() {
+    currentQuestion = 0;
+    answers = [];
+    resultsSection?.classList.add('hidden');
+    introSection?.classList.remove('hidden');
+    introSection?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Save progress to localStorage
+  function saveProgress() {
+    localStorage.setItem('moxieQuizAnswers', JSON.stringify(answers));
+    localStorage.setItem('moxieQuizCurrentQuestion', currentQuestion.toString());
+  }
+
+  // Load progress from localStorage
+  function loadProgress() {
+    const savedAnswers = localStorage.getItem('moxieQuizAnswers');
+    const savedQuestion = localStorage.getItem('moxieQuizCurrentQuestion');
+
+    if (savedAnswers) {
+      answers = JSON.parse(savedAnswers);
+    }
+    if (savedQuestion) {
+      currentQuestion = parseInt(savedQuestion);
+    }
+  }
+
+  // Auto-save progress
+  window.addEventListener('beforeunload', saveProgress);
+</script>
+
+<style>
+  .answer-option {
+    cursor: pointer;
+  }
+
+  .answer-option:hover {
+    transform: translateX(4px);
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  .animate-pulse {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+</style>

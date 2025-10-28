@@ -1,0 +1,1072 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="PoWer Camp & Transformational Travel | Kristi Hemmer"
+  description="Escape the noise. Remember who you are. Join Kristi for immersive retreats that combine adventure, transformation, and community in stunning destinations worldwide."
+>
+  <Header />
+
+  <main>
+    <!-- SECTION 1: Hero Section -->
+    <section class="relative py-20 md:py-32 bg-gradient-to-br from-fierce-flamingo via-moxie-pink to-moxie-pink-alt text-white overflow-hidden">
+      <img
+        src="/images/Graphic Elements_Yellow_01.png"
+        alt=""
+        class="absolute top-0 right-0 w-64 opacity-20"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Escape the Noise.<br />Remember Who You Are.</h1>
+            <p class="text-2xl md:text-3xl font-light mb-8 leading-relaxed">
+              PoWer Camp & Transformational Travel with Kristi
+            </p>
+            <p class="text-xl mb-8">
+              These immersive retreats aren't about rest—they're about <span class="font-bold">remembering who you are</span> and what you came here to do. Reconnect to your mission with a community that lifts you up.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#upcoming" class="bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-lg text-center">
+                Join the Next Retreat
+              </a>
+              <a href="#locations" class="bg-white text-moxie-pink font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 text-lg text-center">
+                View Destinations
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="/images/kristi-header-1.png"
+              alt="PoWer Camp retreat destination"
+              class="rounded-lg shadow-2xl w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: What is PoWer Camp? -->
+    <section class="py-20 bg-gradient-to-br from-sunny-yellow to-yellow-400">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-charcoal">PoWer Camp: Where MOXIE Meets Adventure</h2>
+
+          <div class="bg-white rounded-lg shadow-2xl p-10 md:p-12">
+            <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+              <p class="text-xl leading-relaxed">
+                <strong class="text-moxie-pink">This is not your typical retreat.</strong> PoWer Camp is about transformation through experience. It's about escaping the noise of daily life so you can get quiet with yourself—and then get bold.
+              </p>
+
+              <p class="text-xl leading-relaxed">
+                We combine personal development with adventure and exploration. Think deep facilitated sessions with Kristi, plus hiking mountains, exploring new cultures, moving your body, and laughing until your face hurts. Small, intimate groups create space for deep connection and lifelong friendships.
+              </p>
+
+              <p class="text-xl leading-relaxed">
+                PoWer Camp gives you space to <strong class="text-moxie-pink">breathe, reflect, and remember who you are</strong>. You'll do the inner work. You'll challenge limiting beliefs. You'll set audacious goals. And you'll do it surrounded by women who are also choosing themselves and their missions.
+              </p>
+
+              <p class="text-xl leading-relaxed">
+                Plus: a lot of laughter and joy. Because transformation doesn't have to be heavy—it can be <em>fun</em>.
+              </p>
+            </div>
+
+            <div class="mt-10 pt-10 border-t border-gray-200">
+              <h3 class="text-2xl font-bold mb-6 text-moxie-pink">What Makes PoWer Camp Different</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Adventure + Introspection + Community</h4>
+                    <p class="text-gray-700">Not just sitting in a room—we're experiencing the world together.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_02.png" alt="" class="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Customized to Each Location</h4>
+                    <p class="text-gray-700">Every destination brings unique energy and opportunities for growth.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_03.png" alt="" class="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Experience-Based Learning</h4>
+                    <p class="text-gray-700">Metaphors in action. Moving your body moves your mind.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_04.png" alt="" class="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Integration Built In</h4>
+                    <p class="text-gray-700">Processing time ensures the transformation sticks when you return home.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: The PoWer Camp Experience -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">What to Expect at PoWer Camp</h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Element 1 -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_White_01.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-4">Deep Work Sessions</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• Facilitated by Kristi</li>
+                <li>• Challenging conversations</li>
+                <li>• Breakthrough exercises</li>
+                <li>• PoWer tools & frameworks</li>
+                <li>• Goal setting & intention work</li>
+              </ul>
+            </div>
+
+            <!-- Element 2 -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Black_02.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-4">Adventure & Exploration</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• Hiking & exploring</li>
+                <li>• Experiencing the destination</li>
+                <li>• Moving your body</li>
+                <li>• Connection with nature</li>
+                <li>• Metaphors in action</li>
+              </ul>
+            </div>
+
+            <!-- Element 3 -->
+            <div class="bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_White_03.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-4">Community & Connection</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• Small intimate groups</li>
+                <li>• Shared meals & conversations</li>
+                <li>• Authentic relating</li>
+                <li>• Vulnerability & trust</li>
+                <li>• Lifelong friendships</li>
+              </ul>
+            </div>
+
+            <!-- Element 4 -->
+            <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Yellow_04.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-4">Reflection & Integration</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• Solo processing time</li>
+                <li>• Journaling & creative expression</li>
+                <li>• Making it sustainable</li>
+                <li>• Action planning</li>
+                <li>• Taking it home with you</li>
+              </ul>
+            </div>
+
+            <!-- Element 5 -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Black_03.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-4">Joy & Play</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• Laughter is essential</li>
+                <li>• Spontaneous adventures</li>
+                <li>• Celebrating your MOXIE</li>
+                <li>• Creating memories</li>
+                <li>• Having FUN</li>
+              </ul>
+            </div>
+
+            <!-- Element 6 - Balance the grid -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_White_06.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-4">Transformation</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• Return home changed</li>
+                <li>• New perspectives</li>
+                <li>• Clarity on your mission</li>
+                <li>• Confidence & courage</li>
+                <li>• Sustainable MOXIE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Retreat Locations -->
+    <section id="locations" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Where We Travel</h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Badlands -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-48 overflow-hidden">
+                <img src="/images/kristi-header-1.png" alt="Badlands South Dakota" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Badlands, South Dakota</h3>
+                <p class="text-gray-700 mb-4">
+                  Rugged landscape for rugged transformation. The dramatic terrain mirrors the inner work—
+                  stripping away what no longer serves and revealing your true foundation.
+                </p>
+                <p class="text-sm font-semibold text-gray-600 mb-4">Perfect for: Getting grounded and bold</p>
+                <p class="text-sm text-gray-600 mb-4">Typical duration: 3-4 days</p>
+                <a href="#upcoming" class="block text-center bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+
+            <!-- Upper Peninsula -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-48 overflow-hidden">
+                <img src="/images/kristi-header-1.png" alt="Upper Peninsula Michigan" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3 text-charcoal">Upper Peninsula, Michigan</h3>
+                <p class="text-gray-700 mb-4">
+                  Lakes, forests, and fresh perspective. The UP's natural beauty creates space for quiet
+                  reflection and deep connection with yourself and the women around you.
+                </p>
+                <p class="text-sm font-semibold text-gray-600 mb-4">Perfect for: Reconnecting with nature and yourself</p>
+                <p class="text-sm text-gray-600 mb-4">Typical duration: 4-5 days</p>
+                <a href="#upcoming" class="block text-center bg-sunny-yellow text-charcoal font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+
+            <!-- Bali -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-48 overflow-hidden">
+                <img src="/images/kristi-header-1.png" alt="Bali Indonesia" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Bali, Indonesia</h3>
+                <p class="text-gray-700 mb-4">
+                  Tropical transformation and spiritual exploration. Bali's energy invites deep soul work,
+                  balanced with adventure, culture, and the joy of discovery.
+                </p>
+                <p class="text-sm font-semibold text-gray-600 mb-4">Perfect for: Deep soul work and play</p>
+                <p class="text-sm text-gray-600 mb-4">Typical duration: 7-10 days</p>
+                <a href="#upcoming" class="block text-center bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+
+            <!-- Aruba -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-48 overflow-hidden">
+                <img src="/images/kristi-header-1.png" alt="Aruba" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3 text-charcoal">Aruba</h3>
+                <p class="text-gray-700 mb-4">
+                  Beach-side breakthroughs under Caribbean sunshine. The island's warmth and beauty
+                  create the perfect environment for stepping into your power with joy.
+                </p>
+                <p class="text-sm font-semibold text-gray-600 mb-4">Perfect for: Sunshine and stepping into power</p>
+                <p class="text-sm text-gray-600 mb-4">Typical duration: 5-7 days</p>
+                <a href="#upcoming" class="block text-center bg-sunny-yellow text-charcoal font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+
+            <!-- Luxembourg -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-48 overflow-hidden">
+                <img src="/images/kristi-header-1.png" alt="Luxembourg" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Luxembourg</h3>
+                <p class="text-gray-700 mb-4">
+                  European adventure with American MOXIE. This sophisticated destination brings global
+                  perspective, cultural richness, and unexpected transformation.
+                </p>
+                <p class="text-sm font-semibold text-gray-600 mb-4">Perfect for: Global perspective and sophistication</p>
+                <p class="text-sm text-gray-600 mb-4">Typical duration: 6-8 days</p>
+                <a href="#upcoming" class="block text-center bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+                  Learn More
+                </a>
+              </div>
+            </div>
+
+            <!-- Custom/Future -->
+            <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="p-8 flex flex-col justify-center h-full">
+                <img src="/images/Graphic Elements_Yellow_06.png" alt="" class="w-16 h-16 mb-4" />
+                <h3 class="text-2xl font-bold mb-3">Where Should We Go Next?</h3>
+                <p class="text-lg mb-6">
+                  Have a dream destination for PoWer Camp? Kristi is always exploring new locations.
+                  Share your ideas and join the waitlist for future retreats.
+                </p>
+                <a href="#inquiry" class="block text-center bg-sunny-yellow text-charcoal font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors">
+                  Share Your Idea
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Upcoming Retreats -->
+    <section id="upcoming" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Join an Upcoming PoWer Camp</h2>
+
+          <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 rounded-lg shadow-2xl p-10 md:p-12 text-center">
+            <img src="/images/Graphic Elements_Black_01.png" alt="" class="w-20 h-20 mx-auto mb-6" />
+            <h3 class="text-3xl font-bold mb-6 text-charcoal">Be First to Know About Upcoming Retreats</h3>
+            <p class="text-xl text-charcoal mb-8">
+              New PoWer Camp dates are announced throughout the year. Join the waitlist to get first access
+              to retreat dates, early bird pricing, and exclusive updates.
+            </p>
+
+            <form class="max-w-md mx-auto mb-8">
+              <div class="flex flex-col sm:flex-row gap-4">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                  class="flex-1 px-4 py-3 rounded-lg border-2 border-charcoal focus:outline-none focus:ring-2 focus:ring-moxie-pink"
+                />
+                <button
+                  type="submit"
+                  class="bg-moxie-pink text-white font-bold px-8 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors whitespace-nowrap"
+                >
+                  Join Waitlist
+                </button>
+              </div>
+            </form>
+
+            <p class="text-gray-700 text-sm">
+              Next retreat announcements expected: <strong>Spring 2026</strong>
+            </p>
+          </div>
+
+          <!-- If there were scheduled retreats, they would appear here as cards -->
+          <div class="mt-12 text-center">
+            <p class="text-gray-600 mb-4">Questions about upcoming retreats?</p>
+            <a href="#inquiry" class="inline-block bg-white text-moxie-pink border-2 border-moxie-pink font-bold px-8 py-3 rounded-lg hover:bg-moxie-pink hover:text-white transition-colors">
+              Schedule a Retreat Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Who Should Come -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Is PoWer Camp Right for You?</h2>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- YES - Come to PoWer Camp -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <div class="flex items-center mb-6">
+                <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-12 h-12 mr-4" />
+                <h3 class="text-2xl font-bold text-moxie-pink">You Should Come If...</h3>
+              </div>
+
+              <ul class="space-y-4 text-lg text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You're craving space to breathe and find clarity</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You're tired of playing small and performing</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You want community that truly gets it</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You're ready for adventure (physical and personal)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You need to reconnect with your purpose</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You want transformation, not just relaxation</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You're open to discomfort in service of growth</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-moxie-pink mr-3 text-2xl">✓</span>
+                  <span>You believe travel changes you</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- NO - Not the right fit -->
+            <div class="bg-gray-100 rounded-lg shadow-lg p-8 border-2 border-gray-300">
+              <div class="flex items-center mb-6">
+                <img src="/images/Graphic Elements_Black_01.png" alt="" class="w-12 h-12 mr-4" />
+                <h3 class="text-2xl font-bold text-charcoal">This Might Not Be For You If...</h3>
+              </div>
+
+              <ul class="space-y-4 text-lg text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-gray-500 mr-3 text-2xl">✗</span>
+                  <span>You want a spa retreat focused on pampering and rest</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-gray-500 mr-3 text-2xl">✗</span>
+                  <span>You're not ready to be challenged or do deep work</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-gray-500 mr-3 text-2xl">✗</span>
+                  <span>You prefer solo travel only and avoid group dynamics</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-gray-500 mr-3 text-2xl">✗</span>
+                  <span>You're looking for quick fixes without inner work</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-gray-500 mr-3 text-2xl">✗</span>
+                  <span>You're uncomfortable with vulnerability and authenticity</span>
+                </li>
+              </ul>
+
+              <div class="mt-8 p-4 bg-white rounded-lg">
+                <p class="text-gray-700 italic">
+                  <strong>Note:</strong> PoWer Camp involves active experiences like hiking and exploring.
+                  Participants should be comfortable with moderate physical activity, though all experiences
+                  can be modified for different abilities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: What's Included -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Your PoWer Camp Investment Includes</h2>
+
+          <div class="grid md:grid-cols-2 gap-12 mb-12">
+            <!-- What's Included -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white rounded-lg shadow-lg p-8">
+              <h3 class="text-3xl font-bold mb-8 flex items-center">
+                <img src="/images/Graphic Elements_Yellow_01.png" alt="" class="w-12 h-12 mr-4" />
+                What's Included
+              </h3>
+
+              <ul class="space-y-4 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>All facilitated sessions with Kristi</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>Accommodations (shared or private room options)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>Most meals (breakfast, lunch, and some dinners)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>Ground transportation during retreat</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>Excursions and planned activities</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>PoWer Camp workbook and materials</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>Access to retreat community group (ongoing)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>Pre-retreat preparation call and materials</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl">✓</span>
+                  <span>Post-retreat integration session (virtual)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- What's NOT Included -->
+            <div class="bg-gray-50 rounded-lg shadow-lg p-8 border-2 border-gray-300">
+              <h3 class="text-3xl font-bold mb-8 flex items-center text-charcoal">
+                <img src="/images/Graphic Elements_Black_02.png" alt="" class="w-12 h-12 mr-4" />
+                What's NOT Included
+              </h3>
+
+              <ul class="space-y-4 text-lg text-gray-700">
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl text-gray-500">○</span>
+                  <span>Airfare to destination</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl text-gray-500">○</span>
+                  <span>Some dinners (free evenings for exploration)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl text-gray-500">○</span>
+                  <span>Alcoholic beverages</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl text-gray-500">○</span>
+                  <span>Personal expenses and shopping</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl text-gray-500">○</span>
+                  <span>Travel insurance (highly recommended)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl text-gray-500">○</span>
+                  <span>Optional activities or add-ons</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-xl text-gray-500">○</span>
+                  <span>Gratuities for local guides</span>
+                </li>
+              </ul>
+
+              <div class="mt-8 p-4 bg-sunny-yellow rounded-lg">
+                <p class="text-charcoal font-semibold">
+                  💡 Travel insurance is strongly recommended to protect your investment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="bg-white border-2 border-moxie-pink rounded-lg p-8">
+            <h3 class="text-2xl font-bold mb-4 text-moxie-pink">Important Notes</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+              <div>
+                <h4 class="font-bold mb-2">Room Options:</h4>
+                <p>Choose shared accommodations (2 per room) or upgrade to a private single room for additional cost.</p>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Dietary Needs:</h4>
+                <p>We accommodate dietary restrictions and preferences. Specify when booking.</p>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Group Size:</h4>
+                <p>Intimate cohorts of 8-15 participants for deep connection and personalized attention.</p>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Physical Activity:</h4>
+                <p>Moderate fitness level recommended. All activities can be modified as needed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Investment & Booking -->
+    <section class="py-20 bg-gradient-to-br from-sunny-yellow to-yellow-400">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-charcoal">Investment in Your Transformation</h2>
+
+          <div class="bg-white rounded-lg shadow-2xl p-10 md:p-12">
+            <!-- Pricing -->
+            <div class="mb-10">
+              <h3 class="text-2xl font-bold mb-6 text-moxie-pink">Pricing</h3>
+              <p class="text-xl text-gray-700 mb-6">
+                PoWer Camp investment ranges from <strong class="text-moxie-pink">$2,500 - $6,500</strong> depending
+                on destination, duration, and accommodations.
+              </p>
+
+              <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                  <h4 class="font-bold text-lg mb-2 text-charcoal">Domestic Retreats</h4>
+                  <p class="text-3xl font-bold text-moxie-pink mb-2">$2,500-$3,500</p>
+                  <p class="text-sm text-gray-600">3-5 days (Badlands, Upper Peninsula)</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                  <h4 class="font-bold text-lg mb-2 text-charcoal">Caribbean Retreats</h4>
+                  <p class="text-3xl font-bold text-moxie-pink mb-2">$3,500-$4,500</p>
+                  <p class="text-sm text-gray-600">5-7 days (Aruba)</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                  <h4 class="font-bold text-lg mb-2 text-charcoal">International Retreats</h4>
+                  <p class="text-3xl font-bold text-moxie-pink mb-2">$4,500-$6,500</p>
+                  <p class="text-sm text-gray-600">7-10 days (Bali, Luxembourg)</p>
+                </div>
+              </div>
+
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span><strong>Early Bird Discount:</strong> Save 10% when you register 60+ days before retreat start</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_02.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span><strong>Payment Plans Available:</strong> Flexible payment options to fit your budget</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_03.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span><strong>Private Room Upgrade:</strong> Add $500-$1,200 depending on location</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_04.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span><strong>Scholarships Considered:</strong> Limited scholarships available on case-by-case basis</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Booking Process -->
+            <div class="border-t border-gray-200 pt-10">
+              <h3 class="text-2xl font-bold mb-8 text-moxie-pink">How to Book Your PoWer Camp</h3>
+
+              <div class="grid md:grid-cols-5 gap-6">
+                <div class="text-center">
+                  <div class="bg-moxie-pink text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                  <h4 class="font-bold mb-2">Submit Inquiry</h4>
+                  <p class="text-sm text-gray-600">Fill out retreat interest form</p>
+                </div>
+
+                <div class="text-center">
+                  <div class="bg-sunny-yellow text-charcoal rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                  <h4 class="font-bold mb-2">Discovery Call</h4>
+                  <p class="text-sm text-gray-600">15-minute call with Kristi</p>
+                </div>
+
+                <div class="text-center">
+                  <div class="bg-moxie-pink text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                  <h4 class="font-bold mb-2">Secure Spot</h4>
+                  <p class="text-sm text-gray-600">$500 deposit holds your spot</p>
+                </div>
+
+                <div class="text-center">
+                  <div class="bg-sunny-yellow text-charcoal rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                  <h4 class="font-bold mb-2">Receive Materials</h4>
+                  <p class="text-sm text-gray-600">Pre-retreat prep & packing list</p>
+                </div>
+
+                <div class="text-center">
+                  <div class="bg-moxie-pink text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">5</div>
+                  <h4 class="font-bold mb-2">Show Up</h4>
+                  <p class="text-sm text-gray-600">Ready for transformation!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cancellation Policy -->
+            <div class="mt-10 p-6 bg-gray-50 rounded-lg">
+              <h4 class="font-bold mb-3 text-charcoal">Cancellation Policy</h4>
+              <p class="text-gray-700 text-sm">
+                Full refund minus $100 processing fee if cancelled 60+ days before retreat. 50% refund if
+                cancelled 30-59 days before. No refund within 30 days. All cancellations subject to written
+                notice. We strongly recommend travel insurance to protect your investment.
+              </p>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+              <a href="#inquiry" class="bg-moxie-pink text-white font-bold px-10 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg text-center">
+                Inquire About a Retreat
+              </a>
+              <a href="/moxie-on" class="bg-charcoal text-sunny-yellow font-bold px-10 py-4 rounded-lg hover:bg-gray-800 transition-all transform hover:scale-105 text-lg text-center">
+                Schedule a Call
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: Past Retreat Photos/Gallery -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Moments from Past PoWer Camps</h2>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Gallery Images - using placeholder pattern -->
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="PoWer Camp group photo" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Badlands 2024</p>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="Hiking adventure" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Upper Peninsula Adventure</p>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="Deep work session" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Facilitated Sessions</p>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="Sunset celebration" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Celebration & Joy</p>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="Community connection" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Community Moments</p>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="Bali retreat" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Bali Magic</p>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="Nature exploration" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Into the Wild</p>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow aspect-square">
+              <img src="/images/kristi-header-1.png" alt="Aruba beach" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent p-4">
+                <p class="text-white text-sm font-semibold">Aruba Sunshine</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center text-gray-600 mt-8">
+            Photos capture moments, but PoWer Camp transforms lives. See what participants say below.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">What Past Participants Say</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg relative">
+              <div class="text-sunny-yellow text-6xl font-bold absolute top-4 left-4 opacity-30">"</div>
+              <p class="text-lg mb-6 relative z-10 italic leading-relaxed">
+                PoWer Camp was life-changing. I went to the Badlands feeling stuck in my career and unsure
+                of my next move. By the end of the week, I had clarity, courage, and a community that still
+                supports me two years later. The combination of adventure and deep work was exactly what I needed.
+              </p>
+              <div class="border-t border-white border-opacity-30 pt-4">
+                <p class="font-bold">Sarah M.</p>
+                <p class="text-sm opacity-90">Badlands 2023 | Executive Director, Nonprofit</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-lg mb-6 relative z-10 italic leading-relaxed">
+                I've been to other retreats, but PoWer Camp is different. Kristi creates space for real
+                transformation—not just inspiration that fades when you get home. The women I met became
+                lifelong friends. We still meet virtually and cheer each other on. Worth every penny.
+              </p>
+              <div class="border-t border-charcoal border-opacity-30 pt-4">
+                <p class="font-bold">Jennifer K.</p>
+                <p class="text-sm">Bali 2024 | Entrepreneur & Mother of Three</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt text-white p-8 rounded-lg shadow-lg relative">
+              <div class="text-sunny-yellow text-6xl font-bold absolute top-4 left-4 opacity-30">"</div>
+              <p class="text-lg mb-6 relative z-10 italic leading-relaxed">
+                I almost didn't go because I was scared to travel alone. Best decision I ever made. From day
+                one, I felt like I belonged. Kristi's facilitation is magic—she knows exactly when to push and
+                when to hold space. I returned home with new confidence and a clear mission for my work.
+              </p>
+              <div class="border-t border-white border-opacity-30 pt-4">
+                <p class="font-bold">Maria T.</p>
+                <p class="text-sm opacity-90">Aruba 2024 | Teacher & Aspiring Author</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-8 rounded-lg shadow-lg relative">
+              <div class="text-sunny-yellow text-6xl font-bold absolute top-4 left-4 opacity-30">"</div>
+              <p class="text-lg mb-6 relative z-10 italic leading-relaxed">
+                The Upper Peninsula retreat came at exactly the right time. I was burned out and questioning
+                everything. PoWer Camp gave me permission to be honest with myself and make big changes. Six
+                months later, I've left a toxic job and started my own consulting practice. Thank you, Kristi.
+              </p>
+              <div class="border-t border-white border-opacity-30 pt-4">
+                <p class="font-bold">Rachel D.</p>
+                <p class="text-sm opacity-90">Upper Peninsula 2023 | Leadership Consultant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: FAQ -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+
+          <div class="space-y-6">
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">What fitness level do I need?</summary>
+              <p class="mt-4 text-gray-700">Moderate fitness recommended as retreats include hiking and active experiences. All activities can be modified for different abilities. If you can walk for 30-60 minutes at a time, you'll be fine.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">What should I pack?</summary>
+              <p class="mt-4 text-gray-700">You'll receive a detailed packing list when you register. Generally: comfortable clothes for movement, layers for weather changes, hiking shoes, journal, water bottle, and an open heart.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">Can I come solo or should I bring a friend?</summary>
+              <p class="mt-4 text-gray-700">Most participants come solo! The retreat format is designed to help you connect authentically with new people. That said, bringing a friend is welcome too—just know you'll be encouraged to branch out and connect with the full group.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">What if I need to cancel?</summary>
+              <p class="mt-4 text-gray-700">See our cancellation policy above. We strongly recommend purchasing travel insurance to protect your investment in case of unexpected circumstances.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">Are there single occupancy options?</summary>
+              <p class="mt-4 text-gray-700">Yes! Private single rooms are available for an additional $500-$1,200 depending on location. Standard pricing includes shared double occupancy with one other participant.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">How big are the groups?</summary>
+              <p class="mt-4 text-gray-700">PoWer Camps are intentionally small—typically 8-15 participants. This allows for deep connection, personalized attention from Kristi, and intimate group dynamics.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">What's a typical day like?</summary>
+              <p class="mt-4 text-gray-700">Mornings often include facilitated sessions and deep work. Afternoons bring adventure—hiking, exploring, experiencing the destination. Evenings feature group meals, reflection time, or free time. Each day balances structure with spontaneity.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">Is this only for women?</summary>
+              <p class="mt-4 text-gray-700">Most PoWer Camps are women-only spaces to create safety for vulnerability and authentic sharing. Occasionally, co-ed retreats or retreats specifically for men are offered. Check individual retreat details.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">Do I need travel insurance?</summary>
+              <p class="mt-4 text-gray-700">Highly recommended! Travel insurance protects your investment in case of illness, family emergency, or unexpected travel disruptions. We can provide recommendations for reputable travel insurance providers.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">When do I need to book by?</summary>
+              <p class="mt-4 text-gray-700">Retreats often fill 2-3 months in advance. Register early to secure your spot and take advantage of early bird pricing (10% off when you register 60+ days before the retreat).</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12: Private & Custom Retreats -->
+    <section class="py-20 bg-gradient-to-r from-moxie-pink via-moxie-pink-alt to-fierce-flamingo text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto text-center">
+          <img src="/images/Graphic Elements_Yellow_03.png" alt="" class="w-20 h-20 mx-auto mb-6" />
+          <h2 class="text-4xl md:text-5xl font-bold mb-8">Private & Custom Retreats</h2>
+          <p class="text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            Want to bring the PoWer Camp experience to your organization, team, or private group?
+          </p>
+
+          <div class="bg-white text-charcoal rounded-lg shadow-2xl p-10 md:p-12 mb-8">
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+              <div>
+                <h3 class="font-bold text-xl mb-3 text-moxie-pink">For Organizations</h3>
+                <p class="text-gray-700">
+                  Custom leadership retreats for your team. Designed around your goals and culture.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-xl mb-3 text-moxie-pink">For Private Groups</h3>
+                <p class="text-gray-700">
+                  Gather your friends, colleagues, or community for a private transformational experience.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-xl mb-3 text-moxie-pink">Your Dream Location</h3>
+                <p class="text-gray-700">
+                  Choose your destination or let Kristi recommend the perfect location for your group.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-200">
+              <p class="text-lg text-gray-700 mb-6">
+                Private retreats include all the PoWer Camp elements—deep facilitation, adventure, community—
+                customized for your specific group size, goals, and budget.
+              </p>
+              <p class="text-gray-600 mb-2">Minimum group size: 6 participants</p>
+              <p class="text-gray-600 mb-6">Ideal group size: 8-20 participants</p>
+            </div>
+          </div>
+
+          <a href="/moxie-on" class="inline-block bg-sunny-yellow text-charcoal font-bold px-10 py-4 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-xl">
+            Inquire About Private Retreats
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 13: Ready to Join - Inquiry Form -->
+    <section id="inquiry" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">Ready to Join PoWer Camp?</h2>
+          <p class="text-xl text-center text-gray-600 mb-12">
+            Fill out the form below and we'll be in touch within 24 hours to discuss retreat options.
+          </p>
+
+          <div class="bg-gray-50 p-10 rounded-lg shadow-xl">
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name *</label>
+                  <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                  <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+                </div>
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+              </div>
+
+              <div>
+                <label for="retreat-interest" class="block text-sm font-semibold text-gray-700 mb-2">Which retreat/location interests you? *</label>
+                <select id="retreat-interest" name="retreat-interest" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink">
+                  <option value="">Select a destination</option>
+                  <option value="badlands">Badlands, South Dakota</option>
+                  <option value="upper-peninsula">Upper Peninsula, Michigan</option>
+                  <option value="bali">Bali, Indonesia</option>
+                  <option value="aruba">Aruba</option>
+                  <option value="luxembourg">Luxembourg</option>
+                  <option value="not-sure">Not Sure Yet / Open to Any</option>
+                  <option value="private">Private/Custom Retreat</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="goals" class="block text-sm font-semibold text-gray-700 mb-2">What are you hoping to gain from this experience? *</label>
+                <textarea id="goals" name="goals" rows="5" required placeholder="Share what brings you to PoWer Camp, what you're seeking, and any challenges you're facing..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink"></textarea>
+              </div>
+
+              <div>
+                <label for="questions" class="block text-sm font-semibold text-gray-700 mb-2">Any questions or special considerations?</label>
+                <textarea id="questions" name="questions" rows="3" placeholder="Dietary needs, physical limitations, travel concerns, etc." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink"></textarea>
+              </div>
+
+              <div>
+                <label for="referral" class="block text-sm font-semibold text-gray-700 mb-2">How did you hear about PoWer Camp?</label>
+                <input type="text" id="referral" name="referral" placeholder="Website, friend referral, event, etc." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="bg-moxie-pink text-white font-bold px-10 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg">
+                  Start Your Journey
+                </button>
+              </div>
+            </form>
+
+            <div class="mt-8 text-center border-t border-gray-200 pt-8">
+              <p class="text-gray-600 mb-4">Prefer to schedule a call first?</p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="moxie-on" class="inline-block bg-sunny-yellow text-charcoal font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors">
+                  Schedule a Retreat Consultation
+                </a>
+                <a href="#upcoming" class="inline-block bg-white text-moxie-pink border-2 border-moxie-pink font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink hover:text-white transition-colors">
+                  Join the Waitlist
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 14: Final CTA -->
+    <section class="relative py-20 bg-gradient-to-br from-sunny-yellow via-yellow-400 to-moxie-pink text-charcoal overflow-hidden">
+      <img src="/images/Graphic Elements_Pink_05.png" alt="" class="absolute top-0 right-0 w-64 opacity-20" aria-hidden="true" />
+
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6">Ready to Remember Who You Are?</h2>
+        <p class="text-2xl mb-12 max-w-3xl mx-auto font-light">
+          Your adventure awaits. Your community is waiting. Your transformation is calling.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+          <a href="#inquiry" class="bg-moxie-pink text-white font-bold px-10 py-5 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-xl">
+            Reserve Your Spot
+          </a>
+          <a href="#upcoming" class="bg-white text-charcoal font-bold px-10 py-5 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 text-xl">
+            View Upcoming Dates
+          </a>
+        </div>
+
+        <div>
+          <a href="/contact" class="inline-block bg-charcoal text-sunny-yellow font-bold px-10 py-4 rounded-lg hover:bg-gray-800 transition-colors text-lg">
+            Ask Questions First
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

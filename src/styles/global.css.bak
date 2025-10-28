@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Custom font faces for Roc Grotesk and Arsilon would go here */
+/* For now using system fallbacks until custom fonts are provided */
+/* Google Fonts loaded in BaseLayout.astro head */
+
+@theme {
+  --color-moxie-pink: #E91C7E;
+  --color-moxie-pink-alt: #D94780;
+  --color-fierce-flamingo: #F096C1;
+  --color-sunny-yellow: #FCEC60;
+  --color-charcoal: #000000;
+
+  --font-family-roc: 'Roc Grotesk', sans-serif;
+  --font-family-sans: 'Open Sans', sans-serif;
+  --font-family-script: 'Arsilon', cursive;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-family-sans);
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
+
+@layer components {
+  .bg-sunny-yellow {
+    background-color: var(--color-sunny-yellow);
+    padding: 20px;
+    margin-top: 30px;
+  }
+}

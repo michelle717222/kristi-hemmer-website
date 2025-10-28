@@ -1,0 +1,573 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="About Kristi Hemmer | Women's Leadership Speaker & Coach"
+  description="Meet Kristi Hemmer: educator, entrepreneur, sojourner, storyteller. From 8-year-old dreams to global changemaker, discover her mission to put more women in power."
+>
+  <Header />
+
+  <main>
+    <!-- SECTION 1: Hero/Introduction -->
+    <section class="relative py-20 md:py-32 bg-gradient-to-br from-moxie-pink via-moxie-pink-alt to-fierce-flamingo text-white overflow-hidden">
+      <img
+        src="/images/Graphic Elements_Yellow_01.png"
+        alt=""
+        class="absolute top-10 right-10 w-48 opacity-30"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div class="order-2 md:order-1">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Meet Kristi</h1>
+            <p class="text-2xl md:text-3xl font-light mb-6 text-sunny-yellow">
+              Because when women lead, everyone rises.
+            </p>
+            <p class="text-xl leading-relaxed">
+              Educator. Entrepreneur. Sojourner. Storyteller. Kristi Hemmer is on a mission to put
+              more women in power—because when women lead, the world is a better place for all of us.
+            </p>
+          </div>
+
+          <div class="order-1 md:order-2">
+            <div class="relative">
+              <img
+                src="/images/KristiAge8-2000.jpg"
+                alt="8-year-old Kristi Hemmer"
+                class="rounded-lg shadow-2xl w-full"
+              />
+              <div class="absolute -bottom-4 -left-4 bg-sunny-yellow text-charcoal px-6 py-3 rounded-lg shadow-lg">
+                <p class="font-bold">Age 8: "I want to be President"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Kristi's Story -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <!-- Introduction -->
+          <div class="mb-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">
+              The Journey from <span class="text-moxie-pink">Classroom</span> to <span class="text-sunny-yellow">Global Changemaker</span>
+            </h2>
+            <p class="text-2xl text-gray-700 italic max-w-3xl mx-auto">
+              "I want more women in power because when women lead, the world is a safer and more equitable place for everyone."
+            </p>
+          </div>
+
+          <!-- Story Content -->
+          <div class="space-y-12 text-lg text-gray-700 leading-relaxed">
+
+            <!-- Dream Block -->
+            <div class="bg-sunny-yellow bg-opacity-20 p-10 rounded-lg border-l-4 border-sunny-yellow mb-12">
+              <h3 class="text-2xl font-bold mb-6 text-charcoal">It Started with a Dream</h3>
+              <p class="text-lg leading-loose">
+                At 8 years old, Kristi declared she wanted to be President of the United States.
+                Bold. Unapologetic. Full of MOXIE. But somewhere along the way, like so many girls,
+                she learned to shrink. To be polite. To be "good."
+              </p>
+            </div>
+
+            <!-- Education Career -->
+            <div class="mb-12">
+              <p class="text-lg leading-loose">
+                Fast forward to her career as an educator—spanning 20+ years from PreK through college,
+                as a teacher, counselor, and principal. Kristi watched the same pattern repeat itself.
+                Brilliant girls making themselves smaller. Talented women doubting their voices.
+                Leaders hesitating to step into their power.
+              </p>
+            </div>
+
+            <!-- Turning Point Block -->
+            <div class="grid md:grid-cols-2 gap-10 items-center my-16">
+              <img
+                src="/images/kristi-header-1.png"
+                alt="Kristi Hemmer speaking"
+                class="rounded-lg shadow-xl w-full"
+              />
+              <div>
+                <div class="bg-moxie-pink text-white p-8 rounded-lg shadow-lg">
+                  <p class="text-2xl font-bold mb-4">The Turning Point</p>
+                  <p class="text-lg leading-relaxed">
+                    Kristi realized she couldn't keep watching this pattern. She quit her six-figure
+                    job to dedicate herself to one mission: helping women reclaim their MOXIE and
+                    step into power.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Global Journey -->
+            <div class="mb-12">
+              <p class="text-lg leading-loose mb-6">
+                She didn't just read about women's empowerment—she went searching for it. Kristi has
+                traveled to <strong class="text-moxie-pink">65 countries across all 7 continents</strong>,
+                learning from women leaders, changemakers, and trailblazers around the globe.
+              </p>
+
+              <p class="text-lg leading-loose">
+                From those experiences, she founded the <strong class="text-moxie-pink">Academy for Women's
+                Empowerment (AWE)</strong>, a social enterprise connecting women across borders through
+                education, leadership development, and global experiences.
+              </p>
+            </div>
+
+            <!-- Book Block -->
+            <div class="bg-gradient-to-r from-moxie-pink to-fierce-flamingo text-white p-10 rounded-lg shadow-xl my-16">
+              <h3 class="text-3xl font-bold mb-6">The Book That Started a Movement</h3>
+              <p class="text-xl mb-6 leading-relaxed">
+                In her book <em>"Quit Being So Good: Uncovering the Power of Breaking the Rules and
+                Disappointing Everyone (Including Yourself)"</em>, Kristi challenges women to stop
+                performing "goodness" and start claiming their power.
+              </p>
+              <p class="text-lg leading-relaxed">
+                The message is clear: Being unapologetic isn't selfish. It's necessary.
+              </p>
+            </div>
+
+            <!-- Today -->
+            <div class="mb-12">
+              <p class="text-lg leading-loose">
+                Today, Kristi works as a speaker, coach, and facilitator—helping women leaders transform
+                their courage, grit, and authenticity into lasting impact. She's a TEDx speaker, ICF
+                certified coach, and advocate for the UN Sustainable Development Goals.
+              </p>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="text-center py-12 mt-16 border-t-2 border-moxie-pink border-opacity-30">
+              <p class="text-3xl md:text-4xl font-bold text-moxie-pink mb-6 leading-tight">
+                "When women lead, the world is a safer and more equitable place for everyone."
+              </p>
+              <p class="text-xl text-gray-600">This isn't just a tagline. It's a mission.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Video Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">Kristi in Action</h2>
+          <p class="text-xl text-gray-600">
+            Watch Kristi share her vision for women's leadership and the power of MOXIE.
+          </p>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+          <div id="video-container" class="relative aspect-video rounded-lg overflow-hidden shadow-2xl cursor-pointer group">
+            <!-- Video Thumbnail - Using YouTube's thumbnail as fallback -->
+            <img
+              id="video-thumbnail"
+              src="https://img.youtube.com/vi/ADyZp4tdHso/maxresdefault.jpg"
+              alt="Kristi Hemmer - Unapologetic"
+              class="w-full h-full object-cover"
+            />
+            <!-- Play Button Overlay -->
+            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300">
+              <div class="text-center">
+                <div class="bg-moxie-pink rounded-full p-6 group-hover:bg-sunny-yellow transition-colors duration-300 shadow-2xl">
+                  <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                  </svg>
+                </div>
+                <p class="text-white text-xl font-bold mt-6 drop-shadow-lg">Watch Kristi's Story</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById('video-container')?.addEventListener('click', function() {
+            const container = this;
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/ADyZp4tdHso?autoplay=1');
+            iframe.setAttribute('title', 'Kristi Hemmer - Unapologetic');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.className = 'w-full h-full';
+
+            container.innerHTML = '';
+            container.appendChild(iframe);
+            container.classList.remove('cursor-pointer', 'group');
+          });
+        </script>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Credentials & Expertise -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Credentials & Expertise</h2>
+
+          <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Credential 1 -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_White_01.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">M.Ed. Counseling</h3>
+              <p class="text-sm">Master's in Education & Counseling</p>
+            </div>
+
+            <!-- Credential 2 -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_Black_02.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">20+ Years</h3>
+              <p class="text-sm">Education: PreK-College</p>
+            </div>
+
+            <!-- Credential 3 -->
+            <div class="bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt text-white p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_White_03.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">Leadership Roles</h3>
+              <p class="text-sm">Teacher, Counselor, Principal</p>
+            </div>
+
+            <!-- Credential 4 -->
+            <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_Yellow_04.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">ICF Certified</h3>
+              <p class="text-sm">Professional Coach Certification</p>
+            </div>
+
+            <!-- Credential 5 -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_White_0.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">TEDx Speaker</h3>
+              <p class="text-sm">International Keynote Speaker</p>
+            </div>
+
+            <!-- Credential 6 -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_Black_06.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">Published Author</h3>
+              <p class="text-sm">"Quit Being So Good"</p>
+            </div>
+
+            <!-- Credential 7 -->
+            <div class="bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt text-white p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_White_02.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">65 Countries</h3>
+              <p class="text-sm">All 7 Continents Traveled</p>
+            </div>
+
+            <!-- Credential 8 -->
+            <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-6 rounded-lg shadow-lg text-center">
+              <img src="/images/Graphic Elements_Yellow_06.png" alt="" class="w-16 h-16 mx-auto mb-3" />
+              <h3 class="text-xl font-bold mb-2">Social Entrepreneur</h3>
+              <p class="text-sm">Founder of AWE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Roles/Expertise Areas -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">What Kristi Does</h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Role 1: Author -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-64 bg-gradient-to-br from-moxie-pink to-fierce-flamingo flex items-center justify-center">
+                <div class="text-white text-center p-6">
+                  <img src="/images/Graphic Elements_White_04.png" alt="" class="w-20 h-20 mx-auto mb-4" />
+                  <h3 class="text-2xl font-bold">Author</h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">
+                  Published author of "Quit Being So Good," challenging women to break free from
+                  people-pleasing and claim their power.
+                </p>
+                <p class="text-sm text-moxie-pink font-semibold">Impact: Thousands of readers transformed</p>
+              </div>
+            </div>
+
+            <!-- Role 2: Speaker -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-64 bg-gradient-to-br from-sunny-yellow to-yellow-400 flex items-center justify-center">
+                <div class="text-charcoal text-center p-6">
+                  <img src="/images/Graphic Elements_Black_01.png" alt="" class="w-20 h-20 mx-auto mb-4" />
+                  <h3 class="text-2xl font-bold">Speaker</h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">
+                  TEDx and international keynote speaker inspiring audiences on women's leadership,
+                  gender equity, and the power of MOXIE.
+                </p>
+                <p class="text-sm text-moxie-pink font-semibold">Impact: Organizations globally transformed</p>
+              </div>
+            </div>
+
+            <!-- Role 3: Social Entrepreneur -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-64 bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt flex items-center justify-center">
+                <div class="text-white text-center p-6">
+                  <img src="/images/Graphic Elements_White_06.png" alt="" class="w-20 h-20 mx-auto mb-4" />
+                  <h3 class="text-2xl font-bold">Social Entrepreneur</h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">
+                  Founder of AWE (Academy for Women's Empowerment), connecting women across borders
+                  through education and leadership development.
+                </p>
+                <p class="text-sm text-moxie-pink font-semibold">Impact: Global network of changemakers</p>
+              </div>
+            </div>
+
+            <!-- Role 4: Coach -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-64 bg-gradient-to-br from-charcoal to-gray-700 flex items-center justify-center">
+                <div class="text-white text-center p-6">
+                  <img src="/images/Graphic Elements_Yellow_03.png" alt="" class="w-20 h-20 mx-auto mb-4" />
+                  <h3 class="text-2xl font-bold">Executive Coach</h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">
+                  ICF certified coach helping women leaders amplify their impact through the PoWer
+                  Course and individual coaching sessions.
+                </p>
+                <p class="text-sm text-moxie-pink font-semibold">Impact: Leaders transformed, voices amplified</p>
+              </div>
+            </div>
+
+            <!-- Role 5: Sojourner -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-64 bg-gradient-to-br from-moxie-pink to-fierce-flamingo flex items-center justify-center">
+                <div class="text-white text-center p-6">
+                  <img src="/images/Graphic Elements_White_02.png" alt="" class="w-20 h-20 mx-auto mb-4" />
+                  <h3 class="text-2xl font-bold">Sojourner</h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">
+                  Global traveler to 65 countries and all 7 continents, facilitating PoWer Camp
+                  retreats and immersive leadership experiences.
+                </p>
+                <p class="text-sm text-moxie-pink font-semibold">Impact: Cross-cultural connections forged</p>
+              </div>
+            </div>
+
+            <!-- Role 6: Mentor -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="h-64 bg-gradient-to-br from-sunny-yellow to-yellow-400 flex items-center justify-center">
+                <div class="text-charcoal text-center p-6">
+                  <img src="/images/Graphic Elements_Black_04.png" alt="" class="w-20 h-20 mx-auto mb-4" />
+                  <h3 class="text-2xl font-bold">Mentor</h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">
+                  Auntie to many, mentor to changemakers, and guide for women stepping into
+                  leadership with courage and authenticity.
+                </p>
+                <p class="text-sm text-moxie-pink font-semibold">Impact: Next generation inspired</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: UN Global Goals & Mission -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <!-- Mission Statement -->
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">The MOXIE Mission</h2>
+            <div class="bg-gradient-to-r from-moxie-pink to-fierce-flamingo text-white p-10 rounded-lg shadow-xl max-w-4xl mx-auto">
+              <p class="text-3xl font-bold mb-4">
+                "To put more women in power—because when women lead, the world is a better place for all of us."
+              </p>
+              <p class="text-xl">
+                This isn't just rhetoric. Research proves it. When women lead, communities thrive,
+                economies grow, and equity expands.
+              </p>
+            </div>
+          </div>
+
+          <!-- UN SDGs -->
+          <div class="mb-12">
+            <h3 class="text-3xl font-bold text-center mb-8">Aligned with UN Sustainable Development Goals</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <!-- SDG 5 -->
+              <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg">
+              
+                <h4 class="text-2xl font-bold mb-3">Gender Equality</h4>
+                <p class="text-lg">
+                  Achieve gender equality and empower all women and girls through leadership,
+                  education, and decision-making power.
+                </p>
+              </div>
+
+              <!-- SDG 4 -->
+              <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-8 rounded-lg shadow-lg">
+               
+                <h4 class="text-2xl font-bold mb-3">Quality Education</h4>
+                <p class="text-lg">
+                  Ensure inclusive and equitable quality education and promote lifelong learning
+                  opportunities for all.
+                </p>
+              </div>
+
+              <!-- SDG 10 -->
+              <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-8 rounded-lg shadow-lg">
+               
+                <h4 class="text-2xl font-bold mb-3">Reduced Inequalities</h4>
+                <p class="text-lg">
+                  Reduce inequality within and among countries through empowered voices and
+                  equitable policies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research/Statistics -->
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-center mb-8">Why Women's Leadership Matters</h3>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+              <div>
+                <p class="text-4xl font-bold text-moxie-pink mb-2">↑21%</p>
+                <p class="text-gray-700">Higher profitability in companies with gender-diverse leadership</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold text-moxie-pink mb-2">2x</p>
+                <p class="text-gray-700">More likely to invest in education and community well-being</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold text-moxie-pink mb-2">↓40%</p>
+                <p class="text-gray-700">Reduction in conflict when women are at negotiating tables</p>
+              </div>
+            </div>
+            <div class="text-center mt-6">
+              <a href="#" class="text-moxie-pink font-semibold hover:underline">
+                Download One-Pager PDF →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Values -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Core Values</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Value 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-3xl font-bold mb-4 text-moxie-pink">Interdependence</h3>
+              <p class="text-gray-700 text-lg">
+                We rise together. Leadership isn't about individual achievement—it's about creating
+                connections, building community, and lifting each other up.
+              </p>
+            </div>
+
+            <!-- Value 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-3xl font-bold mb-4 text-moxie-pink">MOXIE</h3>
+              <p class="text-gray-700 text-lg">
+                Courage. Grit. Guts. Pluck. The audacity to challenge systems, speak truth, and
+                demand change—even when it's uncomfortable.
+              </p>
+            </div>
+
+            <!-- Value 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-3xl font-bold mb-4 text-moxie-pink">Authenticity</h3>
+              <p class="text-gray-700 text-lg">
+                Show up as you are. No performance. No perfection. Just real, honest, unapologetic
+                leadership rooted in who you truly are.
+              </p>
+            </div>
+
+            <!-- Value 4 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-3xl font-bold mb-4 text-moxie-pink">Being Real</h3>
+              <p class="text-gray-700 text-lg">
+                Truth-telling over people-pleasing. Fact-checked insights over empty promises.
+                Savvy strategy over reckless disruption. Real change requires real commitment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-moxie-pink via-moxie-pink-alt to-fierce-flamingo text-white relative overflow-hidden">
+      <img
+        src="/images/Graphic Elements_Yellow_06.png"
+        alt=""
+        class="absolute top-0 right-0 w-64 opacity-30"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6">Ready to Changemake Together?</h2>
+        <p class="text-2xl mb-12 max-w-3xl mx-auto">
+          Let's transform your MOXIE into POWER. Choose how we'll work together.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <!-- CTA 1 -->
+          <div class="bg-white text-charcoal p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+            <h3 class="text-2xl font-bold mb-4 text-moxie-pink">Book Kristi to Speak</h3>
+            <p class="mb-6">Keynotes and workshops that inspire action and transformation.</p>
+            <a href="/speaking" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+              Explore Speaking
+            </a>
+          </div>
+
+          <!-- CTA 2 -->
+          <div class="bg-sunny-yellow text-charcoal p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+            <h3 class="text-2xl font-bold mb-4">Explore Coaching</h3>
+            <p class="mb-6">Individual coaching and the transformative PoWer Course.</p>
+            <a href="/coaching" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+              Start Coaching
+            </a>
+          </div>
+
+          <!-- CTA 3 -->
+          <div class="bg-white text-charcoal p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+            <h3 class="text-2xl font-bold mb-4 text-moxie-pink">Join a Retreat</h3>
+            <p class="mb-6">PoWer Camp: Immersive experiences for trailblazer souls.</p>
+            <a href="/retreats" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+              View Retreats
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <p class="text-xl mb-4">Let's MOXIE ON together.</p>
+          <a href="/contact" class="inline-block bg-charcoal text-sunny-yellow font-bold px-10 py-4 rounded-lg hover:bg-gray-800 transition-colors text-lg">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

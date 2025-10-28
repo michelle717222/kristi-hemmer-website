@@ -1,0 +1,378 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Kristi Hemmer | Women's Leadership Speaker & Coach">
+  <Header />
+
+  <main>
+    <!-- SECTION 1: Hero Section -->
+    <section class="relative min-h-screen flex items-center bg-gradient-to-br from-moxie-pink via-moxie-pink-alt to-fierce-flamingo text-white overflow-hidden">
+      <!-- Background Starburst Graphic -->
+      <img
+        src="/images/Graphic Elements_Yellow_01.png"
+        alt=""
+        class="absolute top-10 right-10 w-32 md:w-48 opacity-50 animate-pulse"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 py-20 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Hero Text -->
+          <div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Where <span class="text-sunny-yellow">MOXIE</span> becomes <span class="text-sunny-yellow">POWER</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+              When women lead, the world is a safer and more equitable place for everyone.
+              I help leaders transform courage, grit, and authenticity into lasting impact.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/services" class="bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-lg text-center">
+                Changemake with Kristi
+              </a>
+              <a href="/quiz" class="bg-white text-moxie-pink font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 text-lg text-center">
+                Take the MOXIE Quiz
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="relative">
+            <img
+              src="/images/kristi-header-1.png"
+              alt="Kristi Hemmer"
+              class="rounded-lg shadow-2xl w-full"
+            />
+            <img
+              src="/images/Graphic Elements_Pink_03.png"
+              alt=""
+              class="absolute -bottom-6 -left-6 w-24 md:w-32 opacity-80"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MOXIE is... (7 definitions) -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">MOXIE is...</h2>
+        <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          The courage to challenge how things have always been done. The grit to keep going when it gets hard.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Card 1 -->
+          <div class="bg-moxie-pink text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-3xl font-bold mb-3">GUTS</h3>
+            <p class="text-lg">The courage to speak up, even when your voice shakes.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-sunny-yellow text-charcoal p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-3xl font-bold mb-3">PLUCK</h3>
+            <p class="text-lg">Bold determination to take action and make change happen.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-fierce-flamingo text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-3xl font-bold mb-3">GRIT</h3>
+            <p class="text-lg">Resilience to persist through challenges and setbacks.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-charcoal text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-3xl font-bold mb-3">COURAGE</h3>
+            <p class="text-lg">Strength to challenge systems of power for equity.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-moxie-pink-alt text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-3xl font-bold mb-3">NERVE</h3>
+            <p class="text-lg">The audacity to disrupt outdated norms and traditions.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-sunny-yellow text-charcoal p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 class="text-3xl font-bold mb-3">SPIRIT</h3>
+            <p class="text-lg">Energy and passion that inspires others to join the movement.</p>
+          </div>
+
+          <!-- Card 7 - Full width centered -->
+          <div class="md:col-span-2 lg:col-span-3 bg-gradient-to-r from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow max-w-2xl mx-auto">
+            <h3 class="text-3xl font-bold mb-3 text-center">POWER</h3>
+            <p class="text-lg text-center">When MOXIE meets strategy, it becomes unstoppable POWER for change.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Quiz Teaser -->
+    <section class="py-20 bg-sunny-yellow relative overflow-hidden">
+      <!-- Background graphic element -->
+      <img
+        src="/images/Graphic Elements_Black_02.png"
+        alt=""
+        class="absolute top-0 left-0 w-48 opacity-20"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          What Kind of MOXIE Do You Need Right Now?
+        </h2>
+        <p class="text-xl text-charcoal mb-8 max-w-3xl mx-auto">
+          Take our 4-question quiz to discover whether you need a Speaker Spark, Coaching Glow-Up,
+          Trailblazer Soul experience, or time for Reflection.
+        </p>
+        <a href="/quiz" class="inline-block bg-moxie-pink text-white font-bold px-10 py-5 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-xl shadow-lg">
+          Take the MOXIE Quiz →
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 4: How Kristi Can Help (Services Overview) -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Changemake with Kristi</h2>
+        <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          Ready to transform MOXIE into POWER? Here's how we can work together.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <!-- Service 1: Speaking -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+            <div class="h-48 bg-gradient-to-br from-moxie-pink to-fierce-flamingo flex items-center justify-center">
+              <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Speaking & Training</h3>
+              <p class="text-gray-600 mb-4">
+                Keynotes and workshops that inspire action and spark transformation for women's leadership.
+              </p>
+              <a href="/services/speaking" class="text-moxie-pink font-semibold hover:underline">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Service 2: Coaching -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+            <div class="h-48 bg-gradient-to-br from-sunny-yellow to-yellow-400 flex items-center justify-center">
+              <svg class="w-24 h-24 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Coaching for Changemakers</h3>
+              <p class="text-gray-600 mb-4">
+                Individual coaching including the PoWer Course for women leaders ready to amplify their impact.
+              </p>
+              <a href="/services/coaching" class="text-moxie-pink font-semibold hover:underline">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Service 3: PoWer Camp & Travel -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+            <div class="h-48 bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt flex items-center justify-center">
+              <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-moxie-pink">PoWer Camp & Travel</h3>
+              <p class="text-gray-600 mb-4">
+                Immersive retreats combining leadership development with global experiences and connection.
+              </p>
+              <a href="/services/retreats" class="text-moxie-pink font-semibold hover:underline">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Service 4: Writing & Storytelling -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+            <div class="h-48 bg-gradient-to-br from-charcoal to-gray-700 flex items-center justify-center">
+              <svg class="w-24 h-24 text-sunny-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Writing & Storytelling</h3>
+              <p class="text-gray-600 mb-4">
+                Substack newsletter, book clubs, and storytelling that explores power, equity, and change.
+              </p>
+              <a href="https://kristihemmer.substack.com" target="_blank" class="text-moxie-pink font-semibold hover:underline">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">What People Are Saying</h2>
+        <p class="text-xl text-center text-gray-600 mb-12">Voices from leaders who've experienced the transformation.</p>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow relative">
+            <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+            <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+              Kristi's keynote was transformative for our leadership team. She challenged us to think differently
+              about power and equity in ways that were both practical and inspiring.
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-charcoal">Sarah Mitchell</p>
+              <p class="text-gray-600 text-sm">VP of People & Culture, Tech Corp</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow relative">
+            <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+            <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+              The PoWer Course gave me the tools and confidence to step into leadership unapologetically.
+              Kristi's coaching is direct, compassionate, and incredibly effective.
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-charcoal">Dr. Jennifer Park</p>
+              <p class="text-gray-600 text-sm">Executive Director, Nonprofit Alliance</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow relative">
+            <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+            <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+              Kristi doesn't just talk about change—she equips you with the MOXIE to create it.
+              Her workshop was the catalyst our organization needed to move forward with real action.
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-charcoal">Maria Rodriguez</p>
+              <p class="text-gray-600 text-sm">Chief Equity Officer, Global Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Client Logos -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Organizations Kristi Has Worked With</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 max-w-6xl mx-auto items-center">
+          <!-- Client Logos -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/general-mills.png" alt="General Mills" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/medtronic.png" alt="Medtronic" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/usbank.png" alt="US Bank" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/accenture.png" alt="Accenture" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/landolakes.jpg" alt="Land O'Lakes" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/seagate.png" alt="Seagate" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/baird.png" alt="Baird" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/McGraw-Hill.png" alt="McGraw Hill" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/asurion.png" alt="Asurion" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/rbc.png" alt="RBC" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/girlscouts.png" alt="Girl Scouts" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center h-32 client-logo">
+            <img src="/client-logos/nutrien.png" alt="Nutrien" class="max-w-full max-h-full object-contain" style="filter: grayscale(100%); transition: filter 0.3s ease;" />
+          </div>
+        </div>
+
+        <style>
+          .client-logo:hover img {
+            filter: grayscale(0%);
+          }
+        </style>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Final CTA -->
+    <section class="py-20 bg-gradient-to-r from-moxie-pink via-moxie-pink-alt to-fierce-flamingo text-white relative overflow-hidden">
+      <!-- Background graphic elements -->
+      <img
+        src="/images/Graphic Elements_Yellow_05.png"
+        alt=""
+        class="absolute top-0 right-0 w-64 opacity-30"
+        aria-hidden="true"
+      />
+      <img
+        src="/images/Graphic Elements_Yellow_02.png"
+        alt=""
+        class="absolute bottom-0 left-0 w-48 opacity-30"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6">Ready to MOXIE ON?</h2>
+        <p class="text-2xl mb-12 max-w-3xl mx-auto">
+          Let's transform your courage into lasting impact. Choose how you want to changemake.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <!-- CTA 1 -->
+          <div class="bg-white text-charcoal p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+            <h3 class="text-2xl font-bold mb-4 text-moxie-pink">Book Kristi for Speaking</h3>
+            <p class="mb-6">Inspire your team with a powerful keynote or workshop.</p>
+            <a href="/services/speaking" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+              Explore Speaking
+            </a>
+          </div>
+
+          <!-- CTA 2 -->
+          <div class="bg-sunny-yellow text-charcoal p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+            <h3 class="text-2xl font-bold mb-4">Explore Coaching Options</h3>
+            <p class="mb-6">One-on-one coaching or the transformative PoWer Course.</p>
+            <a href="/services/coaching" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+              Start Coaching
+            </a>
+          </div>
+
+          <!-- CTA 3 -->
+          <div class="bg-white text-charcoal p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+            <h3 class="text-2xl font-bold mb-4 text-moxie-pink">Join a PoWer Camp</h3>
+            <p class="mb-6">Immersive retreat experiences for trailblazer souls.</p>
+            <a href="/services/retreats" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+              View Retreats
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <p class="text-xl mb-4">Not sure where to start?</p>
+          <a href="/quiz" class="inline-block bg-charcoal text-sunny-yellow font-bold px-10 py-4 rounded-lg hover:bg-gray-800 transition-colors text-lg">
+            Take the MOXIE Quiz
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,524 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Services | Changemake with Kristi Hemmer"
+  description="Work with Kristi Hemmer through speaking engagements, coaching, transformational retreats, or emcee services. Transform MOXIE into POWER."
+>
+  <Header />
+
+  <main>
+    <!-- SECTION 1: Hero Section -->
+    <section class="relative py-20 md:py-32 bg-gradient-to-br from-moxie-pink via-moxie-pink-alt to-fierce-flamingo text-white overflow-hidden">
+      <img
+        src="/images/Graphic Elements_Yellow_02.png"
+        alt=""
+        class="absolute top-0 right-0 w-64 opacity-30"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Changemake with Kristi</h1>
+            <p class="text-2xl md:text-3xl font-light mb-8 leading-relaxed">
+              Transform your courage into lasting impact. Turn MOXIE into POWER.
+            </p>
+            <a href="#contact" class="inline-block bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-lg">
+              Schedule a Consultation
+            </a>
+          </div>
+
+          <div>
+            <img
+              src="/images/kristi-header-1.png"
+              alt="Kristi Hemmer speaking"
+              class="rounded-lg shadow-2xl w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Overview Statement -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl md:text-5xl font-bold mb-8">
+            <span class="text-moxie-pink">Kristi doesn't show up with a slideshow</span> —<br />
+            she shows up to <span class="text-sunny-yellow">shift the energy</span>
+          </h2>
+
+          <div class="space-y-6 text-lg text-gray-700 leading-relaxed text-left">
+            <p>
+              Whether you're stuck in imposter syndrome, navigating the double bind of being both strong
+              and likable, or trying to sponsor the next generation of leaders—Kristi meets you where you
+              are and moves you from stuck to <strong class="text-moxie-pink">bold</strong>.
+            </p>
+
+            <p>
+              With 20+ years of experience in education, global perspective from 65 countries, and a
+              no-nonsense approach rooted in research and real-world results, Kristi helps individuals
+              and organizations transform <strong class="text-moxie-pink">courage into action</strong> and
+              <strong class="text-sunny-yellow">MOXIE into POWER</strong>.
+            </p>
+
+            <p>
+              From keynote stages to coaching sessions, from corporate boardrooms to mountain retreats—Kristi
+              brings authenticity, energy, and a <strong class="text-moxie-pink">win-win-win mindset</strong> to
+              every engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Services Grid (4 main services) -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">How We Can Work Together</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Service 1: Speaking & Training -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all">
+              <div class="h-48 bg-gradient-to-br from-moxie-pink to-fierce-flamingo flex items-center justify-center">
+                <img src="/images/Graphic Elements_White_01.png" alt="" class="w-24 h-24" />
+              </div>
+              <div class="p-8">
+                <h3 class="text-3xl font-bold mb-4 text-moxie-pink">Speaking & Training</h3>
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                  High-impact keynotes and workshops that inspire action and spark transformation. Signature
+                  talk: <strong>#ThePowerOfSponsorship</strong>
+                </p>
+
+                <p class="font-semibold text-gray-800 mb-3">Popular Topics:</p>
+                <ul class="space-y-2 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Mind the Gap (Power of Sponsors)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Power of Presence</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Choose not Chosen</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Brave+Ann (MOXIEmindset)</span>
+                  </li>
+                </ul>
+
+                <a href="/services/speaking" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors w-full text-center">
+                  Book Kristi to Speak
+                </a>
+              </div>
+            </div>
+
+            <!-- Service 2: Coaching for Changemakers -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all">
+              <div class="h-48 bg-gradient-to-br from-sunny-yellow to-yellow-400 flex items-center justify-center">
+                <img src="/images/Graphic Elements_Black_03.png" alt="" class="w-24 h-24" />
+              </div>
+              <div class="p-8">
+                <h3 class="text-3xl font-bold mb-4 text-charcoal">Coaching for Changemakers</h3>
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                  One-on-one or group coaching for leaders ready to be unapologetic. Including the
+                  signature <strong>PoWer Course</strong> online program.
+                </p>
+
+                <p class="font-semibold text-gray-800 mb-3">Who This Is For:</p>
+                <ul class="space-y-2 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Executive women navigating leadership</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>High-potential women stepping into power</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>NextGen leaders finding their voice</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Men as change agents for equity</span>
+                  </li>
+                </ul>
+
+                <a href="/services/coaching" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors w-full text-center">
+                  Explore Coaching
+                </a>
+              </div>
+            </div>
+
+            <!-- Service 3: PoWer Camp & Transformational Travel -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all">
+              <div class="h-48 bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt flex items-center justify-center">
+                <img src="/images/Graphic Elements_White_03.png" alt="" class="w-24 h-24" />
+              </div>
+              <div class="p-8">
+                <h3 class="text-3xl font-bold mb-4 text-moxie-pink">PoWer Camp & Transformational Travel</h3>
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                  Immersive retreats to reconnect to your mission and remember who you are.
+                  <strong>Not about rest — about remembering.</strong>
+                </p>
+
+                <p class="font-semibold text-gray-800 mb-3">Locations Include:</p>
+                <ul class="space-y-2 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Badlands, South Dakota</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Upper Peninsula, Michigan</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Bali, Indonesia</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Aruba & Luxembourg</span>
+                  </li>
+                </ul>
+
+                <a href="/services/retreats" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors w-full text-center">
+                  Join a Retreat
+                </a>
+              </div>
+            </div>
+
+            <!-- Service 4: Emcee Services -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all">
+              <div class="h-48 bg-gradient-to-br from-charcoal to-gray-700 flex items-center justify-center">
+                <img src="/images/Graphic Elements_Yellow_01.png" alt="" class="w-24 h-24" />
+              </div>
+              <div class="p-8">
+                <h3 class="text-3xl font-bold mb-4 text-charcoal">Emcee & Event Hosting</h3>
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                  Professional MC services for conferences, awards ceremonies, and corporate events.
+                  Kristi brings energy, humor, and seamless transitions.
+                </p>
+
+                <p class="font-semibold text-gray-800 mb-3">What You Get:</p>
+                <ul class="space-y-2 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Engaging, dynamic stage presence</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Smooth event flow and transitions</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Audience connection and energy</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Years of MC experience (since age 15!)</span>
+                  </li>
+                </ul>
+
+                <a href="/services/emcee" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors w-full text-center">
+                  Book Kristi as MC
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Who Kristi Works With -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Who Works with Kristi</h2>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Audience 1: Corporate America -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Yellow_02.png" alt="" class="w-16 h-16 mb-6" />
+              <h3 class="text-2xl font-bold mb-4">Corporate America</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• Finance & Banking</li>
+                <li>• Technology</li>
+                <li>• Healthcare</li>
+                <li>• Agriculture</li>
+                <li>• ERGs & Diversity Initiatives</li>
+              </ul>
+            </div>
+
+            <!-- Audience 2: Female Education -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Black_04.png" alt="" class="w-16 h-16 mb-6" />
+              <h3 class="text-2xl font-bold mb-4">Female Education</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• College Athletes</li>
+                <li>• Sororities</li>
+                <li>• All-Girls Schools</li>
+                <li>• Women's Leadership Programs</li>
+                <li>• Student Organizations</li>
+              </ul>
+            </div>
+
+            <!-- Audience 3: C-Suite & Executive Leadership -->
+            <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Yellow_06.png" alt="" class="w-16 h-16 mb-6" />
+              <h3 class="text-2xl font-bold mb-4">C-Suite & Executive Leadership</h3>
+              <ul class="space-y-2 text-lg">
+                <li>• CEOs & Founders</li>
+                <li>• VP & Director Level</li>
+                <li>• Board Members</li>
+                <li>• High-Potential Leaders</li>
+                <li>• Nonprofit Executives</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Speaking Topics Preview -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">Signature Keynotes & Workshops</h2>
+          <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            Each talk is customized to your organization's goals and challenges. Here are Kristi's most requested topics.
+          </p>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Topic 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-moxie-pink">
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Mind the Gap</h3>
+              <p class="text-gray-700">
+                The power of sponsorship and how to bridge the gap between potential and opportunity.
+                Learn to sponsor and be sponsored.
+              </p>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-sunny-yellow">
+              <h3 class="text-xl font-bold mb-3 text-charcoal">Power of Presence</h3>
+              <p class="text-gray-700">
+                What are you known for? Discover how to show up authentically and powerfully in every
+                room you enter.
+              </p>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-moxie-pink">
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Choose not Chosen</h3>
+              <p class="text-gray-700">
+                Stop waiting to be chosen. Own your power, make bold decisions, and step into
+                leadership on your terms.
+              </p>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-sunny-yellow">
+              <h3 class="text-xl font-bold mb-3 text-charcoal">Brave+Ann (MOXIEmindset)</h3>
+              <p class="text-gray-700">
+                Navigate the double bind: how to be both strong and likable, brave and feminine,
+                powerful and approachable.
+              </p>
+            </div>
+
+            <!-- Topic 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-moxie-pink">
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Win-Win-Win Mindset</h3>
+              <p class="text-gray-700">
+                Moving beyond zero-sum thinking to create solutions where everyone—individuals,
+                organizations, and society—wins.
+              </p>
+            </div>
+
+            <!-- Topic 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-sunny-yellow">
+              <h3 class="text-xl font-bold mb-3 text-charcoal">Got Potential?</h3>
+              <p class="text-gray-700">
+                Identifying and developing high-potential talent. How to recognize, nurture, and
+                retain your future leaders.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a href="/services/speaking" class="inline-block bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-colors text-lg">
+              View All Speaking Topics →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">What Clients Say</h2>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Testimonial 1: Corporate Event -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+                Kristi's keynote was the highlight of our Women's Leadership Summit. She didn't just
+                inspire—she gave us practical tools to use the next day. Our team is still talking about it.
+              </p>
+              <div class="border-t border-gray-300 pt-4">
+                <p class="font-bold text-charcoal">Jennifer Martinez</p>
+                <p class="text-gray-600 text-sm">VP of Talent Development, Fortune 500 Company</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2: Coaching -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+                The PoWer Course changed my life. I went from doubting every decision to owning my voice
+                in the boardroom. Kristi helped me see that being unapologetic isn't selfish—it's necessary.
+              </p>
+              <div class="border-t border-gray-300 pt-4">
+                <p class="font-bold text-charcoal">Sarah Chen</p>
+                <p class="text-gray-600 text-sm">Director of Operations, Tech Startup</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3: Leadership Development -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+                Kristi doesn't show up with theory—she shows up with truth. Her workshop on sponsorship
+                transformed how our organization develops and promotes women. Real impact, real results.
+              </p>
+              <div class="border-t border-gray-300 pt-4">
+                <p class="font-bold text-charcoal">Michael Thompson</p>
+                <p class="text-gray-600 text-sm">Chief Diversity Officer, Healthcare System</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: The Kristi Difference -->
+    <section class="py-20 bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">The Kristi Difference</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_02.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0" />
+              <div>
+                <h3 class="text-xl font-bold mb-2">20+ Years Experience</h3>
+                <p class="text-lg">
+                  From PreK classrooms to C-suite boardrooms, Kristi understands leadership development
+                  at every level.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_03.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0" />
+              <div>
+                <h3 class="text-xl font-bold mb-2">Global Perspective</h3>
+                <p class="text-lg">
+                  65 countries, 7 continents. Kristi brings cross-cultural insights and proven strategies
+                  from around the world.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_04.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0" />
+              <div>
+                <h3 class="text-xl font-bold mb-2">Research-Backed Results</h3>
+                <p class="text-lg">
+                  Every keynote and workshop is grounded in data, research, and real-world application.
+                  No fluff, just facts.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_05.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0" />
+              <div>
+                <h3 class="text-xl font-bold mb-2">Customized Content</h3>
+                <p class="text-lg">
+                  Kristi doesn't do cookie-cutter. Every engagement is tailored to your organization's
+                  unique goals and challenges.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_06.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0" />
+              <div>
+                <h3 class="text-xl font-bold mb-2">Interactive & Engaging</h3>
+                <p class="text-lg">
+                  From the first minute, audiences are engaged. Kristi creates experiences, not lectures.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_01.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0" />
+              <div>
+                <h3 class="text-xl font-bold mb-2">Win-Win-Win Mindset</h3>
+                <p class="text-lg">
+                  Solutions that work for individuals, organizations, and society. Because real change
+                  benefits everyone.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Call to Action Section -->
+    <section id="contact" class="py-20 bg-charcoal text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6">Ready to Get Started?</h2>
+        <p class="text-2xl mb-12 max-w-3xl mx-auto">
+          Whether you're here for a keynote, coaching, or a transformational experience—let's talk about
+          how we can work together.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+          <a href="/services/speaking" class="bg-moxie-pink text-white font-bold px-6 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg">
+            Book Kristi for Speaking
+          </a>
+          <a href="/services/coaching" class="bg-sunny-yellow text-charcoal font-bold px-6 py-4 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-lg">
+            Explore Coaching Options
+          </a>
+          <a href="/moxie-on" class="bg-white text-charcoal font-bold px-6 py-4 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 text-lg">
+            Schedule a Consultation
+          </a>
+        </div>
+
+        <div class="max-w-2xl mx-auto bg-white bg-opacity-10 p-8 rounded-lg">
+          <p class="text-lg mb-4 text-moxie-pink">Have questions? Want to discuss a custom engagement?</p>
+          <a href="/contact" class="inline-block bg-sunny-yellow text-charcoal font-bold px-10 py-4 rounded-lg hover:bg-yellow-400 transition-colors text-lg">
+            Contact Kristi
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

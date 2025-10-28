@@ -1,0 +1,31 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+This is a website project for Kristi Hemmer. Currently, the repository contains only static assets in the `public/` directory.
+
+## Assets Structure
+
+- `public/images/`: Brand graphic elements in multiple color variants (Black, White, Pink, LightPink, Red, Yellow), gradients, header images, and thumbnails
+- `public/logos/`: Branding logos including favicon, pink logo variants, and logo animation video
+- `public/video/`: Video thumbnails
+
+## Brand Colors
+
+Based on asset filenames, the brand uses:
+- Fearless Fuchsia (primary pink)
+- Sunny Yellow
+- Black
+- White
+- Red accents
+
+## Development Notes
+
+This repository currently lacks:
+- Build configuration (package.json, etc.)
+- Source code files
+- Framework setup
+
+When initializing the codebase, consider the existing brand assets and color scheme in the design implementation.

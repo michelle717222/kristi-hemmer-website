@@ -1,0 +1,141 @@
+---
+// Header component with sticky navigation
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0">
+      <img src="/logos/LogoPink.png" alt="Kristi Hemmer Logo" class="h-12 md:h-16" />
+    </a>
+
+    <!-- Desktop Navigation and CTA - Right Side -->
+    <div class="hidden md:flex items-center space-x-8">
+      <ul class="flex items-center space-x-8 text-base font-semibold">
+        <li><a href="/about" class="hover:text-moxie-pink transition-colors">About</a></li>
+        <li class="relative" id="desktop-changemake-wrapper">
+          <button id="desktop-changemake-button" class="hover:text-moxie-pink transition-colors flex items-center cursor-pointer">
+            Changemake
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- Dropdown Menu -->
+          <div id="desktop-changemake-dropdown" class="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-lg hidden transition-all duration-200 z-50">
+            <ul class="py-2">
+              <li><a href="/services" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors font-semibold border-b border-gray-200">All Services</a></li>
+              <li><a href="/services/speaking" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Keynotes & Workshops</a></li>
+              <li><a href="/services/coaching" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Coaching</a></li>
+              <li><a href="/services/retreats" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Retreats & Travel</a></li>
+              <li><a href="/services/emcee" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Emcee Services</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="hover:text-moxie-pink transition-colors">Substack</a></li>
+      </ul>
+
+      <!-- CTA Button (Desktop) -->
+      <a href="/moxie-on" class="bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+        MOXIE ON
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="mobile-menu-button"
+      class="md:hidden flex flex-col space-y-1.5 p-2 focus:outline-none"
+      aria-label="Toggle menu"
+    >
+      <span class="block w-6 h-0.5 bg-charcoal"></span>
+      <span class="block w-6 h-0.5 bg-charcoal"></span>
+      <span class="block w-6 h-0.5 bg-charcoal"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <ul class="flex flex-col space-y-4 px-4 py-6 text-base font-semibold">
+      <li><a href="/about" class="block hover:text-moxie-pink transition-colors">About</a></li>
+      <li>
+        <button id="mobile-changemake-toggle" class="w-full text-left hover:text-moxie-pink transition-colors flex items-center justify-between">
+          Changemake
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <ul id="mobile-changemake-submenu" class="hidden mt-2 ml-4 space-y-2">
+          <li><a href="/services" class="block text-sm hover:text-moxie-pink transition-colors font-semibold">All Services</a></li>
+          <li><a href="/services/speaking" class="block text-sm hover:text-moxie-pink transition-colors">Keynotes & Workshops</a></li>
+          <li><a href="/services/coaching" class="block text-sm hover:text-moxie-pink transition-colors">Coaching</a></li>
+          <li><a href="/services/retreats" class="block text-sm hover:text-moxie-pink transition-colors">Retreats & Travel</a></li>
+          <li><a href="/services/emcee" class="block text-sm hover:text-moxie-pink transition-colors">Emcee Services</a></li>
+        </ul>
+      </li>
+      <li><a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="block hover:text-moxie-pink transition-colors">Substack</a></li>
+      <li class="pt-2">
+        <a href="/moxie-on" class="block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg text-center hover:bg-moxie-pink-alt transition-colors">
+          MOXIE ON
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const changemakeToggle = document.getElementById('mobile-changemake-toggle');
+  const changemakeSubmenu = document.getElementById('mobile-changemake-submenu');
+
+  menuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Toggle Changemake submenu (mobile)
+  changemakeToggle?.addEventListener('click', () => {
+    changemakeSubmenu?.classList.toggle('hidden');
+  });
+
+  // Desktop dropdown hover
+  const desktopWrapper = document.getElementById('desktop-changemake-wrapper');
+  const desktopDropdown = document.getElementById('desktop-changemake-dropdown');
+  const desktopButton = document.getElementById('desktop-changemake-button');
+
+  let dropdownTimeout: number | null = null;
+
+  const showDropdown = () => {
+    if (dropdownTimeout) {
+      clearTimeout(dropdownTimeout);
+      dropdownTimeout = null;
+    }
+    desktopDropdown?.classList.remove('hidden');
+  };
+
+  const hideDropdown = () => {
+    dropdownTimeout = window.setTimeout(() => {
+      desktopDropdown?.classList.add('hidden');
+    }, 200);
+  };
+
+  desktopButton?.addEventListener('mouseenter', showDropdown);
+  desktopButton?.addEventListener('mouseleave', hideDropdown);
+  desktopDropdown?.addEventListener('mouseenter', showDropdown);
+  desktopDropdown?.addEventListener('mouseleave', hideDropdown);
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement;
+    if (!menuButton?.contains(target) && !mobileMenu?.contains(target)) {
+      mobileMenu?.classList.add('hidden');
+    }
+  });
+
+  // Close mobile menu on navigation
+  const mobileLinks = mobileMenu?.querySelectorAll('a');
+  mobileLinks?.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+</script>

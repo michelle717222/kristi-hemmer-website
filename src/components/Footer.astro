@@ -1,0 +1,81 @@
+---
+// Footer component with quick links, newsletter signup, and social media
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-charcoal text-white">
+  <div class="container mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-bold text-xl mb-4 text-sunny-yellow">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="/services" class="hover:text-moxie-pink transition-colors">Changemake with Kristi</a></li>
+          <li><a href="/services/speaking" class="hover:text-moxie-pink transition-colors ml-4">Keynotes & Workshops</a></li>
+          <li><a href="/services/coaching" class="hover:text-moxie-pink transition-colors ml-4">Coaching</a></li>
+          <li><a href="/services/retreats" class="hover:text-moxie-pink transition-colors ml-4">Retreats & Travel</a></li>
+          <li><a href="/services/emcee" class="hover:text-moxie-pink transition-colors ml-4">Emcee Services</a></li>
+          <li><a href="/about" class="hover:text-moxie-pink transition-colors">About Kristi</a></li>
+          <li><a href="/moxie-on" class="hover:text-moxie-pink transition-colors">MOXIE ON</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Signup -->
+      <div>
+        <h3 class="font-bold text-xl mb-4 text-sunny-yellow">Stay Connected</h3>
+        <p class="mb-4 text-gray-300">Get inspiration and insights delivered to your inbox.</p>
+        <form action="https://kristihemmer.substack.com/subscribe" method="post" target="_blank" class="flex flex-col space-y-3">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+            class="px-4 py-2 rounded bg-white text-charcoal focus:outline-none focus:ring-2 focus:ring-moxie-pink"
+          />
+          <button
+            type="submit"
+            class="bg-sunny-yellow text-charcoal font-bold px-6 py-2 rounded hover:bg-yellow-400 transition-colors"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- Social Media & Logo -->
+      <div>
+        <h3 class="font-bold text-xl mb-4 text-sunny-yellow">Connect</h3>
+        <div class="flex space-x-4 mb-6">
+          <a
+            href="https://www.linkedin.com/in/kristihemmer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-moxie-pink transition-colors"
+            aria-label="LinkedIn"
+          >
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a
+            href="https://kristihemmer.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-moxie-pink transition-colors"
+            aria-label="Substack"
+          >
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+            </svg>
+          </a>
+        </div>
+        <img src="/logos/LogoPink.png" alt="Kristi Hemmer Logo" class="h-16 mt-4" />
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+      <p>&copy; {currentYear} Kristi Hemmer. All rights reserved. | Where MOXIE becomes POWER</p>
+    </div>
+  </div>
+</footer>

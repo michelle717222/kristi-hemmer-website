@@ -1,0 +1,868 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Coaching for Changemakers | Kristi Hemmer"
+  description="Individual coaching and the signature PoWer Course. For leaders ready to be unapologetic, disrupt systems, and transform MOXIE into POWER."
+>
+  <Header />
+
+  <main>
+    <!-- SECTION 1: Hero Section -->
+    <section class="relative py-20 md:py-32 bg-gradient-to-br from-sunny-yellow via-yellow-400 to-moxie-pink text-charcoal overflow-hidden">
+      <img
+        src="/images/Graphic Elements_Black_01.png"
+        alt=""
+        class="absolute bottom-0 right-0 w-64 opacity-20"
+        aria-hidden="true"
+      />
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Grow Your Guts.<br />Own Your Power.</h1>
+            <p class="text-2xl md:text-3xl font-light mb-8 leading-relaxed">
+              Coaching for leaders ready to be <span class="font-bold">unapologetic</span> and create change.
+            </p>
+            <p class="text-xl mb-8">
+              You don't need to have it all figured out—you just need to show up. Let's transform your
+              MOXIE into POWER together.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#packages" class="bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg text-center">
+                Explore Coaching Options
+              </a>
+              <a href="#booking" class="bg-charcoal text-sunny-yellow font-bold px-8 py-4 rounded-lg hover:bg-gray-800 transition-all transform hover:scale-105 text-lg text-center">
+                Book a MOXIEmission Session
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="/images/kristi-header-1.png"
+              alt="Kristi Hemmer coaching"
+              class="rounded-lg shadow-2xl w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Who This Is For -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">MOXIE Coaching For...</h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Audience 1 -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_White_01.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-3">Executive Women</h3>
+              <p class="text-lg">
+                Leaders ready to be changemakers. You've climbed the ladder—now you're ready to transform
+                the game from the inside.
+              </p>
+            </div>
+
+            <!-- Audience 2 -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Black_02.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-3">High-Potential Women</h3>
+              <p class="text-lg">
+                Ready to actualize power, potential, and presence. You know you're capable of more—let's
+                get you there.
+              </p>
+            </div>
+
+            <!-- Audience 3 -->
+            <div class="bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_White_03.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-3">Women Entrepreneurs</h3>
+              <p class="text-lg">
+                Using business to changemaker lives. Build something that matters while staying true to
+                your values and vision.
+              </p>
+            </div>
+
+            <!-- Audience 4 -->
+            <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Black_04.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-3">NextGen Women</h3>
+              <p class="text-lg">
+                Ready to bust limiting beliefs and disrupt systems. You're the future—and the future
+                starts now.
+              </p>
+            </div>
+
+            <!-- Audience 5 -->
+            <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_White_05.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-3">Girl Influencers</h3>
+              <p class="text-lg">
+                Teachers, coaches, parents creating safe spaces for girls. You shape the next generation—
+                let's equip you to lead boldly.
+              </p>
+            </div>
+
+            <!-- Audience 6 -->
+            <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-8 rounded-lg shadow-lg">
+              <img src="/images/Graphic Elements_Yellow_06.png" alt="" class="w-16 h-16 mb-4" />
+              <h3 class="text-2xl font-bold mb-3">Men as Change Agents</h3>
+              <p class="text-lg">
+                Creating safe workspaces for women to show up unapologetically. Allyship is action—let's
+                do this work together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: The PoWer Course (Signature Offering) -->
+    <section class="py-20 bg-gradient-to-br from-sunny-yellow to-yellow-400">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-5xl md:text-6xl font-bold mb-6 text-charcoal">The PoWer Course</h2>
+            <p class="text-2xl md:text-3xl font-light text-charcoal">
+              Signature online course. Accessible, inclusive, and pure MOXIE.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-2xl p-10 md:p-12">
+            <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+              The disruptive PoWer Course transformed into an online experience. <strong class="text-moxie-pink">
+              Three months of MOXIE, a life forever changed</strong>, and a group of women who support you
+              beyond graduation.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+              <!-- What You Get -->
+              <div>
+                <h3 class="text-2xl font-bold mb-6 text-moxie-pink">What You Get</h3>
+                <ul class="space-y-3 text-lg text-gray-700">
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>90 days of MOXIE</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Courageous curriculum and conversations (vetted over six years)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Group coaching sessions twice a month</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Accountability and belonging</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>A cohort that lasts beyond graduation</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Field trips to play and explore</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Homework to stretch you between sessions</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>A safe space to connect</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-moxie-pink mr-2">•</span>
+                    <span>Kristi on your team forevermore</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Who It's For -->
+              <div>
+                <h3 class="text-2xl font-bold mb-6 text-moxie-pink">Who It's For</h3>
+                <p class="text-lg text-gray-700 mb-4">Changemakers ready to:</p>
+                <ul class="space-y-3 text-lg text-gray-700">
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Be unapologetic</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Disrupt how things have always been done</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Create a safer and more equitable world</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Start with Boom Chackalacka energy</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Feel more confident and bust limiting beliefs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Lead and live from a place of possible</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-sunny-yellow mr-2">•</span>
+                    <span>Build community where you belong</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Program Details -->
+            <div class="bg-gray-50 p-6 rounded-lg mb-8">
+              <h3 class="text-xl font-bold mb-4 text-charcoal">Program Details</h3>
+              <div class="grid md:grid-cols-3 gap-4 text-gray-700">
+                <div>
+                  <p class="font-semibold">Duration:</p>
+                  <p>3 months (January-March cohorts)</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Format:</p>
+                  <p>Online with live group sessions</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Learning Style:</p>
+                  <p>Cohort-based community</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="#booking" class="bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg text-center">
+                Join the Waitlist
+              </a>
+              <a href="/moxie-on" class="bg-charcoal text-sunny-yellow font-bold px-8 py-4 rounded-lg hover:bg-gray-800 transition-all transform hover:scale-105 text-lg text-center">
+                Schedule a Discovery Call
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Individual Coaching -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">One-on-One Coaching</h2>
+          <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            Personalized coaching tailored to your specific goals, challenges, and MOXIE journey.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- What's Included -->
+            <div class="bg-gray-50 p-8 rounded-lg">
+              <h3 class="text-2xl font-bold mb-6 text-moxie-pink">What's Included</h3>
+              <ul class="space-y-3 text-lg text-gray-700">
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span>Custom coaching plan designed for you</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_02.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span>Regular 1:1 sessions with Kristi</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_03.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span>PoWer tools and frameworks</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_04.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span>Email support between sessions</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_05.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span>Resources and exercises for deep work</span>
+                </li>
+                <li class="flex items-start">
+                  <img src="/images/Graphic Elements_Pink_06.png" alt="" class="w-6 h-6 mr-3 mt-1" />
+                  <span>Accountability and momentum</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Coaching Formats -->
+            <div>
+              <h3 class="text-2xl font-bold mb-6 text-moxie-pink">Coaching Formats</h3>
+
+              <div class="space-y-4">
+                <div class="border-l-4 border-moxie-pink pl-4">
+                  <h4 class="text-xl font-bold mb-2">MOXIEmission Session</h4>
+                  <p class="text-gray-700 mb-2">Single breakthrough session. 90 minutes of focused clarity and action.</p>
+                  <p class="text-sm text-gray-600">Perfect for: Specific challenge or decision point</p>
+                </div>
+
+                <div class="border-l-4 border-sunny-yellow pl-4">
+                  <h4 class="text-xl font-bold mb-2">3-Month Coaching Package</h4>
+                  <p class="text-gray-700 mb-2">Weekly or bi-weekly sessions for sustained transformation.</p>
+                  <p class="text-sm text-gray-600">Perfect for: Building new habits and mindsets</p>
+                </div>
+
+                <div class="border-l-4 border-moxie-pink pl-4">
+                  <h4 class="text-xl font-bold mb-2">6-Month Transformation</h4>
+                  <p class="text-gray-700 mb-2">Deep work with bi-weekly sessions and comprehensive support.</p>
+                  <p class="text-sm text-gray-600">Perfect for: Major life or career transitions</p>
+                </div>
+
+                <div class="border-l-4 border-sunny-yellow pl-4">
+                  <h4 class="text-xl font-bold mb-2">Executive Coaching</h4>
+                  <p class="text-gray-700 mb-2">Premium coaching for C-suite leaders with strategic planning.</p>
+                  <p class="text-sm text-gray-600">Perfect for: Senior leadership transformation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#booking" class="bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg text-center">
+              Book a MOXIEmission Session
+            </a>
+            <a href="/contact" class="bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-lg text-center">
+              Schedule Free Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: The Coaching Experience -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">What to Expect When Coaching with Kristi</h2>
+
+          <div class="relative">
+            <!-- Timeline line -->
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-moxie-pink opacity-20"></div>
+
+            <div class="space-y-12">
+              <!-- Step 1 -->
+              <div class="relative flex items-center">
+                <div class="md:w-1/2 md:pr-12 text-right">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-3 text-moxie-pink">STEP 1: Discovery</h3>
+                    <p class="text-gray-700">
+                      Initial conversation to understand your goals. Assess where you are and where you
+                      want to go. Design your custom coaching plan.
+                    </p>
+                  </div>
+                </div>
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-moxie-pink rounded-full flex items-center justify-center text-white font-bold">
+                  <img src="/images/Graphic Elements_White_01.png" alt="" class="w-8 h-8" />
+                </div>
+                <div class="md:w-1/2"></div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="relative flex items-center">
+                <div class="md:w-1/2"></div>
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-sunny-yellow rounded-full flex items-center justify-center">
+                  <img src="/images/Graphic Elements_Black_02.png" alt="" class="w-8 h-8" />
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-3 text-charcoal">STEP 2: Foundation</h3>
+                    <p class="text-gray-700">
+                      Identify limiting beliefs and patterns. Uncover your unique strengths and MOXIE.
+                      Build your PoWer toolbox.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="relative flex items-center">
+                <div class="md:w-1/2 md:pr-12 text-right">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-3 text-moxie-pink">STEP 3: Transformation</h3>
+                    <p class="text-gray-700">
+                      Challenge old narratives. Practice new ways of showing up. Take bold action toward
+                      your goals.
+                    </p>
+                  </div>
+                </div>
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-moxie-pink rounded-full flex items-center justify-center">
+                  <img src="/images/Graphic Elements_White_03.png" alt="" class="w-8 h-8" />
+                </div>
+                <div class="md:w-1/2"></div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="relative flex items-center">
+                <div class="md:w-1/2"></div>
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-sunny-yellow rounded-full flex items-center justify-center">
+                  <img src="/images/Graphic Elements_Black_04.png" alt="" class="w-8 h-8" />
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                  <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-3 text-charcoal">STEP 4: Integration</h3>
+                    <p class="text-gray-700">
+                      Make your MOXIE sustainable. Build accountability systems. Connect with your ongoing
+                      support community.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Coaching Philosophy -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">How Kristi Coaches</h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center p-6">
+              <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Ask Powerful Questions</h3>
+              <p class="text-gray-700">
+                Not tell you what to do. You have the answers—Kristi helps you find them.
+              </p>
+            </div>
+
+            <div class="text-center p-6">
+              <img src="/images/Graphic Elements_Pink_02.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Challenge You Lovingly</h3>
+              <p class="text-gray-700">
+                Push you outside your comfort zone. Growth happens at the edge of discomfort.
+              </p>
+            </div>
+
+            <div class="text-center p-6">
+              <img src="/images/Graphic Elements_Pink_03.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Hold Space for Discomfort</h3>
+              <p class="text-gray-700">
+                Safe space to be unapologetic. No judgment, no performance—just truth.
+              </p>
+            </div>
+
+            <div class="text-center p-6">
+              <img src="/images/Graphic Elements_Pink_04.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Celebrate Your MOXIE</h3>
+              <p class="text-gray-700">
+                Recognize and amplify your power. You're stronger than you think.
+              </p>
+            </div>
+
+            <div class="text-center p-6">
+              <img src="/images/Graphic Elements_Pink_05.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Create Win-Win-Wins</h3>
+              <p class="text-gray-700">
+                Results that benefit you, your organization, and society. Everyone wins.
+              </p>
+            </div>
+
+            <div class="text-center p-6">
+              <img src="/images/Graphic Elements_Pink_06.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+              <h3 class="text-xl font-bold mb-3 text-moxie-pink">Focus on Action</h3>
+              <p class="text-gray-700">
+                Coaching leads to doing, not just thinking. You'll leave with clear next steps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Testimonials -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Transformation Stories</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+                Kristi introduced me to a new way of thinking and being, and as a result I have experienced
+                monumental changes in my life. I work with women experiencing domestic violence and I can't
+                do that work without doing my own. Kristi is the real deal.
+              </p>
+              <div class="border-t border-gray-300 pt-4">
+                <p class="font-bold text-charcoal">Laura K.</p>
+                <p class="text-gray-600 text-sm">Social Worker & Advocate</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+                Ms. Hemmer truly saved my life. She gave me the courage to be unapologetic and own my story.
+                I went from doubting every decision to leading with confidence. The PoWer Course changed
+                everything for me.
+              </p>
+              <div class="border-t border-gray-300 pt-4">
+                <p class="font-bold text-charcoal">Anonymous</p>
+                <p class="text-gray-600 text-sm">PoWer Course Graduate</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+                I work coaching with Kristi. She challenged me to stop performing and start living. I've
+                stepped into leadership roles I never thought possible. My whole team has noticed the shift
+                in how I show up.
+              </p>
+              <div class="border-t border-gray-300 pt-4">
+                <p class="font-bold text-charcoal">Melissa T.</p>
+                <p class="text-gray-600 text-sm">Director of Operations, Tech Startup</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg relative">
+              <div class="text-moxie-pink text-6xl font-bold absolute top-4 left-4 opacity-20">"</div>
+              <p class="text-gray-700 text-lg mb-6 relative z-10 italic">
+                The PoWer Course gave me permission to be myself—unapologetically. I found my people, my
+                voice, and my power. Three months changed my entire trajectory. I'm forever grateful.
+              </p>
+              <div class="border-t border-gray-300 pt-4">
+                <p class="font-bold text-charcoal">Jennifer R.</p>
+                <p class="text-gray-600 text-sm">Entrepreneur & Changemaker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: What Makes Coaching Different -->
+    <section class="py-20 bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">What Makes Coaching with Kristi Different</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_01.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0 mt-1" />
+              <div>
+                <h3 class="text-2xl font-bold mb-3">20+ Years Education Experience</h3>
+                <p class="text-lg">
+                  Knows how to facilitate learning and transformation. Not just inspiring—teaching.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_02.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0 mt-1" />
+              <div>
+                <h3 class="text-2xl font-bold mb-3">M.Ed. in Counseling</h3>
+                <p class="text-lg">
+                  Trained to create safe space for deep work. Trauma-informed and compassionate.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_03.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0 mt-1" />
+              <div>
+                <h3 class="text-2xl font-bold mb-3">Global Perspective</h3>
+                <p class="text-lg">
+                  65 countries, 7 continents. Diverse viewpoints and cross-cultural insights.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_04.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0 mt-1" />
+              <div>
+                <h3 class="text-2xl font-bold mb-3">Business Acumen</h3>
+                <p class="text-lg">
+                  Practical, results-oriented approach. Coaching that translates to real-world impact.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_05.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0 mt-1" />
+              <div>
+                <h3 class="text-2xl font-bold mb-3">Personal Experience</h3>
+                <p class="text-lg">
+                  Walked the walk of transformation. Quit her six-figure job to follow her mission.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <img src="/images/Graphic Elements_Yellow_06.png" alt="" class="w-12 h-12 mr-4 flex-shrink-0 mt-1" />
+              <div>
+                <h3 class="text-2xl font-bold mb-3">Community Focus</h3>
+                <p class="text-lg">
+                  You're not alone in the journey. Connect with other changemakers doing the work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: Investment & Packages -->
+    <section id="packages" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">Investment in Your MOXIE</h2>
+          <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+            Choose the coaching format that fits your goals and budget. All packages include Kristi's
+            full commitment to your transformation.
+          </p>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Package 1 -->
+            <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-br from-moxie-pink to-fierce-flamingo text-white p-6 text-center">
+                <h3 class="text-2xl font-bold mb-2">MOXIEmission Session</h3>
+                <p class="text-sm">Single Breakthrough</p>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">90-minute focused session for clarity and action on a specific challenge.</p>
+                <p class="font-semibold text-gray-800 mb-4">Perfect For:</p>
+                <p class="text-sm text-gray-700 mb-6">Quick clarity or specific decision point</p>
+                <p class="text-2xl font-bold text-moxie-pink mb-6">Contact for Pricing</p>
+                <a href="#booking" class="block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors text-center">
+                  Book Now
+                </a>
+              </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border-4 border-sunny-yellow">
+              <div class="bg-sunny-yellow text-charcoal p-2 text-center font-bold text-sm">
+                MOST POPULAR
+              </div>
+              <div class="bg-gradient-to-br from-sunny-yellow to-yellow-400 text-charcoal p-6 text-center">
+                <h3 class="text-2xl font-bold mb-2">PoWer Course</h3>
+                <p class="text-sm">3-Month Group Program</p>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">Cohort-based learning with bi-monthly group coaching and lifelong community.</p>
+                <p class="font-semibold text-gray-800 mb-4">Perfect For:</p>
+                <p class="text-sm text-gray-700 mb-6">Sustainable transformation with support</p>
+                <p class="text-2xl font-bold text-charcoal mb-6">Contact for Pricing</p>
+                <a href="#booking" class="block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors text-center">
+                  Join Waitlist
+                </a>
+              </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-br from-fierce-flamingo to-moxie-pink-alt text-white p-6 text-center">
+                <h3 class="text-2xl font-bold mb-2">Individual Coaching</h3>
+                <p class="text-sm">3-Month Package</p>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">Weekly or bi-weekly 1:1 sessions with custom plan and email support.</p>
+                <p class="font-semibold text-gray-800 mb-4">Perfect For:</p>
+                <p class="text-sm text-gray-700 mb-6">Personalized deep work and focus</p>
+                <p class="text-2xl font-bold text-moxie-pink mb-6">Contact for Pricing</p>
+                <a href="/contact" class="block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors text-center">
+                  Schedule Consultation
+                </a>
+              </div>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-br from-charcoal to-gray-700 text-white p-6 text-center">
+                <h3 class="text-2xl font-bold mb-2">Executive Coaching</h3>
+                <p class="text-sm">6-Month Premium</p>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-700 mb-4">Bi-weekly sessions with leadership assessment and strategic planning.</p>
+                <p class="font-semibold text-gray-800 mb-4">Perfect For:</p>
+                <p class="text-sm text-gray-700 mb-6">C-suite transformation and growth</p>
+                <p class="text-2xl font-bold text-charcoal mb-6">Contact for Pricing</p>
+                <a href="/contact" class="block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors text-center">
+                  Schedule Consultation
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <p class="text-gray-600 mb-4">All packages can be customized to fit your needs and budget.</p>
+            <p class="text-gray-600">Payment plans available. Scholarships considered on a case-by-case basis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FAQ -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+
+          <div class="space-y-6">
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">How long are coaching sessions?</summary>
+              <p class="mt-4 text-gray-700">Individual coaching sessions are typically 60 minutes. MOXIEmission breakthrough sessions are 90 minutes. PoWer Course group sessions are 90 minutes.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">How often do we meet?</summary>
+              <p class="mt-4 text-gray-700">For individual coaching, you can choose weekly or bi-weekly sessions. PoWer Course meets twice per month as a group. Executive coaching is typically bi-weekly.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">Is coaching confidential?</summary>
+              <p class="mt-4 text-gray-700">Absolutely. Everything shared in coaching sessions is completely confidential. What happens in coaching stays in coaching.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">What if I can't make a scheduled session?</summary>
+              <p class="mt-4 text-gray-700">Life happens! Please provide 24 hours notice and we'll reschedule your session. Last-minute cancellations may forfeit the session depending on your package.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">Do you offer payment plans?</summary>
+              <p class="mt-4 text-gray-700">Yes! We offer flexible payment plans for all coaching packages. Contact us to discuss options that work for your budget.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">What's the difference between PoWer Course and 1:1 coaching?</summary>
+              <p class="mt-4 text-gray-700">PoWer Course is a cohort-based group program focused on community and belonging. 1:1 coaching is personalized and focused on your specific goals. Both are powerful—it depends on whether you want group support or individualized attention.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">Can I do both group and individual coaching?</summary>
+              <p class="mt-4 text-gray-700">Absolutely! Many clients combine PoWer Course with individual coaching sessions for comprehensive support. We can create a custom package for you.</p>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-lg p-6">
+              <summary class="font-bold text-xl cursor-pointer text-moxie-pink">What happens after my coaching package ends?</summary>
+              <p class="mt-4 text-gray-700">You're part of the MOXIE community forever. PoWer Course graduates stay connected through our alumni network. Individual coaching clients can continue with maintenance sessions or graduate to self-directed MOXIE!</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: Booking Form -->
+    <section id="booking" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">Ready to Grow Your MOXIE?</h2>
+          <p class="text-xl text-center text-gray-600 mb-12">
+            Fill out the form below to start your coaching journey. We'll be in touch within 24 hours.
+          </p>
+
+          <div class="bg-gray-50 p-10 rounded-lg shadow-xl">
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name *</label>
+                  <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                  <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+                </div>
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+              </div>
+
+              <div>
+                <label for="coaching-type" class="block text-sm font-semibold text-gray-700 mb-2">What type of coaching interests you? *</label>
+                <select id="coaching-type" name="coaching-type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink">
+                  <option value="">Select coaching type</option>
+                  <option value="moxiemission">MOXIEmission Session (one-time)</option>
+                  <option value="power-course">PoWer Course (group program)</option>
+                  <option value="3-month">Individual Coaching (3-month)</option>
+                  <option value="6-month">Individual Coaching (6-month)</option>
+                  <option value="executive">Executive Coaching</option>
+                  <option value="not-sure">Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="goals" class="block text-sm font-semibold text-gray-700 mb-2">What are you hoping to achieve through coaching? *</label>
+                <textarea id="goals" name="goals" rows="5" required placeholder="Share your goals, challenges, and what you're looking for..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink"></textarea>
+              </div>
+
+              <div>
+                <label for="referral" class="block text-sm font-semibold text-gray-700 mb-2">How did you hear about Kristi?</label>
+                <input type="text" id="referral" name="referral" placeholder="Website, referral, event, etc." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink" />
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="bg-moxie-pink text-white font-bold px-10 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg">
+                  Start Your MOXIE Journey
+                </button>
+              </div>
+            </form>
+
+            <div class="mt-8 text-center border-t border-gray-200 pt-8">
+              <p class="text-gray-600 mb-4">Prefer to talk first?</p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/moxie-on" class="inline-block bg-sunny-yellow text-charcoal font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors">
+                  Schedule a Free Discovery Call
+                </a>
+                <a href="#" class="inline-block bg-white text-moxie-pink border-2 border-moxie-pink font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink hover:text-white transition-colors">
+                  Download Coaching Info Sheet
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12: Final CTA -->
+    <section class="py-20 bg-gradient-to-r from-moxie-pink via-moxie-pink-alt to-fierce-flamingo text-white relative overflow-hidden">
+      <img src="/images/Graphic Elements_Yellow_05.png" alt="" class="absolute top-0 right-0 w-64 opacity-30" aria-hidden="true" />
+
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6">Your MOXIE Moment is Calling</h2>
+        <p class="text-2xl mb-12 max-w-3xl mx-auto">
+          Stop waiting to be chosen. It's time to choose yourself and step into your power.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="#booking" class="bg-sunny-yellow text-charcoal font-bold px-10 py-5 rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 text-xl">
+            Book a MOXIEmission Session
+          </a>
+          <a href="#booking" class="bg-white text-moxie-pink font-bold px-10 py-5 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 text-xl">
+            Join PoWer Course Waitlist
+          </a>
+        </div>
+
+        <div class="mt-8">
+          <a href="/contact" class="inline-block bg-charcoal text-sunny-yellow font-bold px-10 py-4 rounded-lg hover:bg-gray-800 transition-colors text-lg">
+            Schedule a Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
