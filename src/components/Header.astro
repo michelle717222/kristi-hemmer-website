@@ -10,12 +10,14 @@
     </a>
 
     <!-- Desktop Navigation and CTA - Right Side -->
-    <div class="hidden md:flex items-center space-x-8">
-      <ul class="flex items-center space-x-8 text-base font-semibold">
-        <li><a href="/about" class="hover:text-moxie-pink transition-colors">About</a></li>
+    <div class="hidden md:flex items-center space-x-6">
+      <ul class="flex items-center space-x-6 text-base font-semibold">
+        <li><a href="/about" class="hover:text-moxie-pink transition-colors">About Kristi</a></li>
+
+        <!-- Changemake Dropdown -->
         <li class="relative" id="desktop-changemake-wrapper">
           <button id="desktop-changemake-button" class="hover:text-moxie-pink transition-colors flex items-center cursor-pointer">
-            Changemake
+            Changemake with Kristi
             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
@@ -23,7 +25,6 @@
           <!-- Dropdown Menu -->
           <div id="desktop-changemake-dropdown" class="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-lg hidden transition-all duration-200 z-50">
             <ul class="py-2">
-              <li><a href="/services" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors font-semibold border-b border-gray-200">All Services</a></li>
               <li><a href="/services/speaking" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Keynotes & Workshops</a></li>
               <li><a href="/services/coaching" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Coaching</a></li>
               <li><a href="/services/retreats" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Retreats & Travel</a></li>
@@ -31,12 +32,28 @@
             </ul>
           </div>
         </li>
-        <li><a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="hover:text-moxie-pink transition-colors">Substack</a></li>
+
+        <!-- Build Community Dropdown -->
+        <li class="relative" id="desktop-community-wrapper">
+          <button id="desktop-community-button" class="hover:text-moxie-pink transition-colors flex items-center cursor-pointer">
+            Build Community with Kristi
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- Dropdown Menu -->
+          <div id="desktop-community-dropdown" class="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-lg hidden transition-all duration-200 z-50">
+            <ul class="py-2">
+              <li><a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Substack Newsletter</a></li>
+              <li><a href="/community" class="block px-4 py-2 hover:bg-gray-100 hover:text-moxie-pink transition-colors">Moxie Circle Book Club</a></li>
+            </ul>
+          </div>
+        </li>
       </ul>
 
       <!-- CTA Button (Desktop) -->
       <a href="/moxie-on" class="bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
-        MOXIE ON
+        MOXIE ON with Kristi
       </a>
     </div>
 
@@ -55,26 +72,41 @@
   <!-- Mobile Navigation Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
     <ul class="flex flex-col space-y-4 px-4 py-6 text-base font-semibold">
-      <li><a href="/about" class="block hover:text-moxie-pink transition-colors">About</a></li>
+      <li><a href="/about" class="block hover:text-moxie-pink transition-colors">About Kristi</a></li>
+
+      <!-- Changemake Submenu -->
       <li>
         <button id="mobile-changemake-toggle" class="w-full text-left hover:text-moxie-pink transition-colors flex items-center justify-between">
-          Changemake
+          Changemake with Kristi
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
         <ul id="mobile-changemake-submenu" class="hidden mt-2 ml-4 space-y-2">
-          <li><a href="/services" class="block text-sm hover:text-moxie-pink transition-colors font-semibold">All Services</a></li>
           <li><a href="/services/speaking" class="block text-sm hover:text-moxie-pink transition-colors">Keynotes & Workshops</a></li>
           <li><a href="/services/coaching" class="block text-sm hover:text-moxie-pink transition-colors">Coaching</a></li>
           <li><a href="/services/retreats" class="block text-sm hover:text-moxie-pink transition-colors">Retreats & Travel</a></li>
           <li><a href="/services/emcee" class="block text-sm hover:text-moxie-pink transition-colors">Emcee Services</a></li>
         </ul>
       </li>
-      <li><a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="block hover:text-moxie-pink transition-colors">Substack</a></li>
+
+      <!-- Build Community Submenu -->
+      <li>
+        <button id="mobile-community-toggle" class="w-full text-left hover:text-moxie-pink transition-colors flex items-center justify-between">
+          Build Community with Kristi
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <ul id="mobile-community-submenu" class="hidden mt-2 ml-4 space-y-2">
+          <li><a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="block text-sm hover:text-moxie-pink transition-colors">Substack Newsletter</a></li>
+          <li><a href="/community" class="block text-sm hover:text-moxie-pink transition-colors">Moxie Circle Book Club</a></li>
+        </ul>
+      </li>
+
       <li class="pt-2">
         <a href="/moxie-on" class="block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg text-center hover:bg-moxie-pink-alt transition-colors">
-          MOXIE ON
+          MOXIE ON with Kristi
         </a>
       </li>
     </ul>
@@ -87,6 +119,8 @@
   const mobileMenu = document.getElementById('mobile-menu');
   const changemakeToggle = document.getElementById('mobile-changemake-toggle');
   const changemakeSubmenu = document.getElementById('mobile-changemake-submenu');
+  const communityToggle = document.getElementById('mobile-community-toggle');
+  const communitySubmenu = document.getElementById('mobile-community-submenu');
 
   menuButton?.addEventListener('click', () => {
     mobileMenu?.classList.toggle('hidden');
@@ -97,31 +131,60 @@
     changemakeSubmenu?.classList.toggle('hidden');
   });
 
-  // Desktop dropdown hover
-  const desktopWrapper = document.getElementById('desktop-changemake-wrapper');
-  const desktopDropdown = document.getElementById('desktop-changemake-dropdown');
-  const desktopButton = document.getElementById('desktop-changemake-button');
+  // Toggle Community submenu (mobile)
+  communityToggle?.addEventListener('click', () => {
+    communitySubmenu?.classList.toggle('hidden');
+  });
 
-  let dropdownTimeout: number | null = null;
+  // Desktop dropdown hover - Changemake
+  const desktopChangemakeButton = document.getElementById('desktop-changemake-button');
+  const desktopChangemakeDropdown = document.getElementById('desktop-changemake-dropdown');
 
-  const showDropdown = () => {
-    if (dropdownTimeout) {
-      clearTimeout(dropdownTimeout);
-      dropdownTimeout = null;
+  let changemakeTimeout: number | null = null;
+
+  const showChangemakeDropdown = () => {
+    if (changemakeTimeout) {
+      clearTimeout(changemakeTimeout);
+      changemakeTimeout = null;
     }
-    desktopDropdown?.classList.remove('hidden');
+    desktopChangemakeDropdown?.classList.remove('hidden');
   };
 
-  const hideDropdown = () => {
-    dropdownTimeout = window.setTimeout(() => {
-      desktopDropdown?.classList.add('hidden');
+  const hideChangemakeDropdown = () => {
+    changemakeTimeout = window.setTimeout(() => {
+      desktopChangemakeDropdown?.classList.add('hidden');
     }, 200);
   };
 
-  desktopButton?.addEventListener('mouseenter', showDropdown);
-  desktopButton?.addEventListener('mouseleave', hideDropdown);
-  desktopDropdown?.addEventListener('mouseenter', showDropdown);
-  desktopDropdown?.addEventListener('mouseleave', hideDropdown);
+  desktopChangemakeButton?.addEventListener('mouseenter', showChangemakeDropdown);
+  desktopChangemakeButton?.addEventListener('mouseleave', hideChangemakeDropdown);
+  desktopChangemakeDropdown?.addEventListener('mouseenter', showChangemakeDropdown);
+  desktopChangemakeDropdown?.addEventListener('mouseleave', hideChangemakeDropdown);
+
+  // Desktop dropdown hover - Community
+  const desktopCommunityButton = document.getElementById('desktop-community-button');
+  const desktopCommunityDropdown = document.getElementById('desktop-community-dropdown');
+
+  let communityTimeout: number | null = null;
+
+  const showCommunityDropdown = () => {
+    if (communityTimeout) {
+      clearTimeout(communityTimeout);
+      communityTimeout = null;
+    }
+    desktopCommunityDropdown?.classList.remove('hidden');
+  };
+
+  const hideCommunityDropdown = () => {
+    communityTimeout = window.setTimeout(() => {
+      desktopCommunityDropdown?.classList.add('hidden');
+    }, 200);
+  };
+
+  desktopCommunityButton?.addEventListener('mouseenter', showCommunityDropdown);
+  desktopCommunityButton?.addEventListener('mouseleave', hideCommunityDropdown);
+  desktopCommunityDropdown?.addEventListener('mouseenter', showCommunityDropdown);
+  desktopCommunityDropdown?.addEventListener('mouseleave', hideCommunityDropdown);
 
   // Close mobile menu when clicking outside
   document.addEventListener('click', (event) => {

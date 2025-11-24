@@ -1,0 +1,9 @@
+﻿node_modules/
+dist/
+.git/
+.astro/
+public/videos/
+*.log
+package-lock.json
+.vercel/
+.netlify/

@@ -9,26 +9,26 @@ import Footer from '../components/Footer.astro';
 
   <main>
     <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-moxie-pink to-moxie-pink-alt py-20 md:py-32 overflow-hidden">
+  <section class="relative py-20 md:py-32 overflow-hidden" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFBF0 50%, #FFF3E0 100%);">
     <!-- Starburst graphic -->
-    <div class="absolute top-10 right-10 w-40 h-40 opacity-20">
-      <div class="w-full h-full bg-sunny-yellow transform rotate-12" style="clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"></div>
+    <div class="absolute top-10 right-10 w-40 h-40 opacity-10">
+      <div class="w-full h-full bg-moxie-pink transform rotate-12" style="clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"></div>
     </div>
 
     <div class="container mx-auto px-6 relative z-10">
-      <div class="max-w-4xl mx-auto text-center text-white">
-        <h1 class="font-['Arsilon'] text-6xl md:text-8xl mb-6 text-sunny-yellow">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="font-['Open Sans'] text-6xl md:text-8xl mb-6 text-moxie-pink">
           MOXIE ON!
         </h1>
-        <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+        <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight text-charcoal">
           You've Felt the Spark — Now Do Something With It
         </h2>
-        <p class="text-xl md:text-2xl mb-6 leading-relaxed">
+        <p class="text-xl md:text-2xl mb-6 leading-relaxed text-gray-700">
           Your next step doesn't have to be perfect — it just has to be bold
         </p>
-        <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-gray-700">
           Whether you're leading a team, launching a dream, or just tired of playing small, your next step is here.
-          <span class="font-bold">Don't stay stuck.</span>
+          <span class="font-bold text-charcoal">Don't stay stuck.</span>
         </p>
       </div>
     </div>
@@ -45,457 +45,51 @@ import Footer from '../components/Footer.astro';
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <!-- Card 1: Changemake with Kristi -->
-        <div class="bg-moxie-pink text-white rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
-          <img src="/images/Graphic Elements_Yellow_01.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
-          <h3 class="text-3xl font-bold mb-4">Changemake with Kristi</h3>
+        <!-- Card 1: Hire Kristi As Speaker -->
+        <div class="bg-neutral-200 rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
+          <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
+          <h3 class="text-3xl font-bold mb-4">Hire Kristi As Speaker</h3>
           <p class="text-lg mb-6 leading-relaxed">
-            Explore all the ways we can work together — speaking, coaching, retreats, and more
+            Book Kristi for keynotes and workshops that inspire action and spark transformation for women's leadership.
           </p>
-          <a href="/services" class="inline-block bg-white text-moxie-pink font-bold py-4 px-8 rounded-full hover:bg-sunny-yellow hover:text-black transition-colors duration-300">
-            Explore Services
-          </a>
-        </div>
-
-        <!-- Card 2: Book Kristi -->
-        <div class="bg-sunny-yellow text-black rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
-          <img src="/images/Graphic Elements_Pink_02.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
-          <h3 class="text-3xl font-bold mb-4">Book Kristi Today</h3>
-          <p class="text-lg mb-6 leading-relaxed">
-            Ready to bring Kristi to your event, organization, or stage? Let's make it happen.
-          </p>
-          <a href="/services/speaking" class="inline-block bg-moxie-pink text-white font-bold py-4 px-8 rounded-full hover:bg-black transition-colors duration-300">
+          <a href="/services/speaking" class="inline-block bg-moxie-pink text-black font-bold py-4 px-8 rounded-full hover:bg-white hover:text-charcoal transition-colors duration-300">
             Book Kristi to Speak
           </a>
         </div>
 
-        <!-- Card 3: Take the Quiz -->
+        <!-- Card 2: Join the Moxie Movement -->
         <div class="bg-moxie-pink text-white rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
-          <img src="/images/Graphic Elements_Yellow_03.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
-          <h3 class="text-3xl font-bold mb-4">Take the MOXIE Quiz</h3>
+          <img src="/images/Graphic Elements_Yellow_02.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
+          <h3 class="text-3xl font-bold mb-4">Join the Moxie Movement</h3>
           <p class="text-lg mb-6 leading-relaxed">
-            Not sure where to start? Take our quiz and discover what kind of MOXIE you need right now.
+            Sign up for Kristi's Substack monthly newsletter. Get insights on women's leadership, power dynamics, and authentic change.
           </p>
-          <a href="/quiz" class="inline-block bg-white text-moxie-pink font-bold py-4 px-8 rounded-full hover:bg-sunny-yellow hover:text-black transition-colors duration-300">
-            Discover Your MOXIE
+          <a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-sunny-yellow text-black font-bold py-4 px-8 rounded-full hover:bg-white hover:text-charcoal transition-colors duration-300">
+            Subscribe to Newsletter
           </a>
         </div>
 
-        <!-- Card 4: Join a Retreat -->
+        <!-- Card 3: Buy Kristi's Book -->
         <div class="bg-sunny-yellow text-black rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
-          <img src="/images/Graphic Elements_Pink_04.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
-          <h3 class="text-3xl font-bold mb-4">Join Kristi on an Adventure</h3>
+          <img src="/images/Graphic Elements_Pink_03.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
+          <h3 class="text-3xl font-bold mb-4">Buy Kristi's Book</h3>
           <p class="text-lg mb-6 leading-relaxed">
-            Escape the noise. PoWer Camp retreats in the Badlands, Bali, Aruba, and beyond.
+            "Quit Being So Good" — Stop performing goodness and start claiming your power. Available now on Amazon.
           </p>
-          <a href="/services/retreats" class="inline-block bg-moxie-pink text-white font-bold py-4 px-8 rounded-full hover:bg-black transition-colors duration-300">
-            View Retreats
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Actions -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">More Ways to MOXIE ON</h2>
-
-      <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <!-- Read & Reflect -->
-        <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-transparent hover:border-moxie-pink">
-          <img src="/images/Graphic Elements_Pink_05.png" alt="" class="w-12 h-12 mb-3" aria-hidden="true" />
-          <h3 class="text-xl font-bold mb-2">Read & Reflect</h3>
-          <p class="text-gray-700 mb-4">Weekly MOXIE moments delivered to your inbox</p>
-          <a href="https://kristihemmer.substack.com" target="_blank" class="text-moxie-pink font-bold hover:text-moxie-pink-alt">
-            Subscribe to Substack →
+          <a href="https://www.amazon.com/dp/B09XZGP8P2" target="_blank" rel="noopener noreferrer" class="inline-block bg-moxie-pink text-white font-bold py-4 px-8 rounded-full hover:bg-charcoal transition-colors duration-300">
+            Buy on Amazon
           </a>
         </div>
 
-        <!-- Book Club -->
-        <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-transparent hover:border-moxie-pink">
-          <img src="/images/Graphic Elements_Yellow_06.png" alt="" class="w-12 h-12 mb-3" aria-hidden="true" />
-          <h3 class="text-xl font-bold mb-2">Book Club</h3>
-          <p class="text-gray-700 mb-4">Read 'Quit Being So Good' with a community</p>
-          <a href="#contact" class="text-moxie-pink font-bold hover:text-moxie-pink-alt">
-            Join the Book Club →
-          </a>
-        </div>
-
-        <!-- Stay Connected -->
-        <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-transparent hover:border-moxie-pink">
-          <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-12 h-12 mb-3" aria-hidden="true" />
-          <h3 class="text-xl font-bold mb-2">Stay Connected</h3>
-          <p class="text-gray-700 mb-4">Join the MOXIE community online</p>
-          <a href="https://www.linkedin.com/in/kristihemmer/" target="_blank" class="text-moxie-pink font-bold hover:text-moxie-pink-alt">
-            Follow on LinkedIn →
-          </a>
-        </div>
-
-        <!-- Get the Book -->
-        <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-transparent hover:border-moxie-pink">
-          <img src="/images/Graphic Elements_Yellow_02.png" alt="" class="w-12 h-12 mb-3" aria-hidden="true" />
-          <h3 class="text-xl font-bold mb-2">Get the Book</h3>
-          <p class="text-gray-700 mb-4">Start your MOXIE journey with Kristi's book</p>
-          <a href="#contact" class="text-moxie-pink font-bold hover:text-moxie-pink-alt">
-            Buy 'Quit Being So Good' →
-          </a>
-        </div>
-
-        <!-- Coaching -->
-        <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-transparent hover:border-moxie-pink">
-          <img src="/images/Graphic Elements_Pink_03.png" alt="" class="w-12 h-12 mb-3" aria-hidden="true" />
-          <h3 class="text-xl font-bold mb-2">Individual Coaching</h3>
-          <p class="text-gray-700 mb-4">One-on-one or group coaching for changemakers</p>
-          <a href="/services/coaching" class="text-moxie-pink font-bold hover:text-moxie-pink-alt">
-            Learn About Coaching →
-          </a>
-        </div>
-
-        <!-- PoWer Course -->
-        <div class="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-transparent hover:border-moxie-pink">
-          <img src="/images/Graphic Elements_Yellow_04.png" alt="" class="w-12 h-12 mb-3" aria-hidden="true" />
-          <h3 class="text-xl font-bold mb-2">PoWer Course</h3>
-          <p class="text-gray-700 mb-4">90 days of MOXIE, a lifetime of change</p>
-          <a href="/services/coaching" class="text-moxie-pink font-bold hover:text-moxie-pink-alt">
-            Join PoWer Course →
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Inquiry Form -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="max-w-3xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-bold mb-4">Let's Talk</h2>
-          <p class="text-xl text-gray-700">
-            Not sure which path is right for you? Reach out and let's figure it out together.
+        <!-- Card 4: Book a Moxie Mission Session -->
+        <div class="bg-charcoal text-white rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
+          <img src="/images/Graphic Elements_Pink_04.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
+          <h3 class="text-3xl font-bold mb-4">Book a Moxie Mission Session</h3>
+          <p class="text-lg mb-6 leading-relaxed">
+            90 minutes of focused clarity and action. Perfect for a specific challenge or decision point.
           </p>
-        </div>
-
-        <form class="bg-gray-50 rounded-2xl p-8 md:p-12">
-          <div class="grid md:grid-cols-2 gap-6 mb-6">
-            <div>
-              <label for="name" class="block text-sm font-bold mb-2">Name *</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-moxie-pink focus:ring-2 focus:ring-moxie-pink focus:ring-opacity-50 outline-none transition-all"
-              />
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-bold mb-2">Email *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-moxie-pink focus:ring-2 focus:ring-moxie-pink focus:ring-opacity-50 outline-none transition-all"
-              />
-            </div>
-          </div>
-
-          <div class="mb-6">
-            <label for="phone" class="block text-sm font-bold mb-2">Phone (optional)</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-moxie-pink focus:ring-2 focus:ring-moxie-pink focus:ring-opacity-50 outline-none transition-all"
-            />
-          </div>
-
-          <div class="mb-6">
-            <label for="interest" class="block text-sm font-bold mb-2">I'm interested in: *</label>
-            <select
-              id="interest"
-              name="interest"
-              required
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-moxie-pink focus:ring-2 focus:ring-moxie-pink focus:ring-opacity-50 outline-none transition-all"
-            >
-              <option value="">Select an option...</option>
-              <option value="speaking">Speaking Engagement</option>
-              <option value="coaching">Individual Coaching</option>
-              <option value="power-course">PoWer Course</option>
-              <option value="retreat">Retreat/Travel</option>
-              <option value="emcee">Emcee Services</option>
-              <option value="not-sure">Not Sure - Let's Talk</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="mb-6">
-            <label for="message" class="block text-sm font-bold mb-2">Tell us more about what you're looking for *</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-moxie-pink focus:ring-2 focus:ring-moxie-pink focus:ring-opacity-50 outline-none transition-all resize-none"
-            ></textarea>
-          </div>
-
-          <div class="mb-8">
-            <label for="referral" class="block text-sm font-bold mb-2">How did you hear about Kristi? (optional)</label>
-            <input
-              type="text"
-              id="referral"
-              name="referral"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-moxie-pink focus:ring-2 focus:ring-moxie-pink focus:ring-opacity-50 outline-none transition-all"
-            />
-          </div>
-
-          <button
-            type="submit"
-            class="w-full bg-moxie-pink text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-moxie-pink-alt transition-colors duration-300"
-          >
-            MOXIE ON — Let's Connect
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Join the Community -->
-  <section class="py-20 bg-sunny-yellow">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4">Join the MOXIE Movement</h2>
-        <p class="text-xl">Stay connected and get inspired</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-        <!-- Substack Signup -->
-        <div class="bg-white rounded-2xl p-8">
-          <h3 class="text-2xl font-bold mb-4">Subscribe to MOXIE Moments</h3>
-          <p class="text-gray-700 mb-6">
-            Weekly insights, stories, and inspiration delivered to your inbox.
-            Be notified about new MOXIE drops on your feed and speaking events.
-          </p>
-          <form class="space-y-4">
-            <input
-              type="email"
-              placeholder="Your email address"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-moxie-pink focus:ring-2 focus:ring-moxie-pink focus:ring-opacity-50 outline-none transition-all"
-            />
-            <button
-              type="submit"
-              class="w-full bg-moxie-pink text-white font-bold py-3 px-6 rounded-full hover:bg-moxie-pink-alt transition-colors duration-300"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
-
-        <!-- Social Media -->
-        <div class="bg-white rounded-2xl p-8">
-          <h3 class="text-2xl font-bold mb-4">Connect on Social</h3>
-          <p class="text-gray-700 mb-6">
-            Follow Kristi for daily inspiration, leadership insights, and behind-the-scenes moments.
-          </p>
-          <div class="space-y-4">
-            <a
-              href="https://www.linkedin.com/in/kristihemmer/"
-              target="_blank"
-              class="block w-full bg-moxie-pink text-white font-bold py-3 px-6 rounded-full text-center hover:bg-moxie-pink-alt transition-colors duration-300"
-            >
-              Follow on LinkedIn
-            </a>
-            <a
-              href="https://kristihemmer.substack.com"
-              target="_blank"
-              class="block w-full bg-sunny-yellow text-black font-bold py-3 px-6 rounded-full text-center hover:bg-moxie-pink hover:text-white transition-colors duration-300"
-            >
-              Read on Substack
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Free Resources -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Free MOXIE Resources</h2>
-
-      <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-        <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors duration-300">
-          <div class="flex justify-center mb-4">
-            <img src="/images/Graphic Elements_Pink_06.png" alt="" class="w-16 h-16" aria-hidden="true" />
-          </div>
-          <h3 class="font-bold mb-2">Speaker One-Sheet</h3>
-          <p class="text-sm text-gray-700 mb-4">Share with your event planner</p>
-          <a href="#contact" class="text-moxie-pink font-bold text-sm hover:text-moxie-pink-alt">
-            Download PDF →
-          </a>
-        </div>
-
-        <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors duration-300">
-          <div class="flex justify-center mb-4">
-            <img src="/images/Graphic Elements_Yellow_05.png" alt="" class="w-16 h-16" aria-hidden="true" />
-          </div>
-          <h3 class="font-bold mb-2">Coaching Info</h3>
-          <p class="text-sm text-gray-700 mb-4">Learn more about coaching options</p>
-          <a href="/services/coaching" class="text-moxie-pink font-bold text-sm hover:text-moxie-pink-alt">
-            Download Guide →
-          </a>
-        </div>
-
-        <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors duration-300">
-          <div class="flex justify-center mb-4">
-            <img src="/images/Graphic Elements_Pink_02.png" alt="" class="w-16 h-16" aria-hidden="true" />
-          </div>
-          <h3 class="font-bold mb-2">Retreat Calendar</h3>
-          <p class="text-sm text-gray-700 mb-4">See when and where we're traveling</p>
-          <a href="/services/retreats" class="text-moxie-pink font-bold text-sm hover:text-moxie-pink-alt">
-            View Dates →
-          </a>
-        </div>
-
-        <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors duration-300">
-          <div class="flex justify-center mb-4">
-            <img src="/images/Graphic Elements_Yellow_01.png" alt="" class="w-16 h-16" aria-hidden="true" />
-          </div>
-          <h3 class="font-bold mb-2">Book Preview</h3>
-          <p class="text-sm text-gray-700 mb-4">Preview 'Quit Being So Good'</p>
-          <a href="#contact" class="text-moxie-pink font-bold text-sm hover:text-moxie-pink-alt">
-            Read Sample →
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- For Organizations -->
-  <section class="py-20 bg-charcoal text-white">
-    <div class="container mx-auto px-6">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center">Bring MOXIE to Your Organization</h2>
-        <p class="text-xl text-center mb-12 text-gray-300">
-          Corporate offerings for teams and organizations
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-6 mb-12">
-          <div class="flex items-start">
-            <span class="text-sunny-yellow text-2xl mr-3">✓</span>
-            <span>Keynote speaking for conferences</span>
-          </div>
-          <div class="flex items-start">
-            <span class="text-sunny-yellow text-2xl mr-3">✓</span>
-            <span>Workshop facilitation for teams</span>
-          </div>
-          <div class="flex items-start">
-            <span class="text-sunny-yellow text-2xl mr-3">✓</span>
-            <span>Executive coaching for leaders</span>
-          </div>
-          <div class="flex items-start">
-            <span class="text-sunny-yellow text-2xl mr-3">✓</span>
-            <span>Custom retreats and training</span>
-          </div>
-          <div class="flex items-start">
-            <span class="text-sunny-yellow text-2xl mr-3">✓</span>
-            <span>ERG programming</span>
-          </div>
-          <div class="flex items-start">
-            <span class="text-sunny-yellow text-2xl mr-3">✓</span>
-            <span>International Women's Day events</span>
-          </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <a
-            href="#contact"
-            class="bg-sunny-yellow text-black font-bold py-4 px-8 rounded-full text-center hover:bg-white transition-colors duration-300"
-          >
-            Download Corporate Info
-          </a>
-          <a
-            href="#contact"
-            class="bg-moxie-pink text-white font-bold py-4 px-8 rounded-full text-center hover:bg-moxie-pink-alt transition-colors duration-300"
-          >
-            Schedule a Consultation
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonial Highlight -->
-  <section class="py-20 bg-moxie-pink text-white relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-64 h-64 bg-sunny-yellow opacity-10 rounded-full -mr-32 -mt-32"></div>
-    <div class="container mx-auto px-6 relative z-10">
-      <div class="max-w-4xl mx-auto text-center">
-        <div class="text-6xl mb-6">"</div>
-        <blockquote class="text-2xl md:text-3xl font-light mb-8 leading-relaxed">
-          Kristi's energy is contagious and her message is transformative. She helped our team rediscover their power and leadership potential.
-        </blockquote>
-        <p class="text-xl font-bold">— Sarah Johnson</p>
-        <p class="text-lg text-gray-200">VP of People & Culture, Tech Innovation Co.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- The Bottom Line -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center">Here's the Thing...</h2>
-        <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
-          <p class="text-xl leading-relaxed">
-            You're here because something called to you. Maybe you stumbled across a talk, read a post, or heard about MOXIE from a friend who gets it.
-          </p>
-          <p class="text-xl leading-relaxed">
-            Maybe it's time to stop shrinking. Maybe you're ready to lead unapologetically. Maybe you're done waiting for permission to use your voice, chase your ambition, or demand the seat you've earned.
-          </p>
-          <p class="text-xl leading-relaxed">
-            Whatever brought you here, your MOXIE is ready. The only question is: <span class="font-bold text-moxie-pink">Are you?</span>
-          </p>
-          <p class="text-2xl font-bold text-center text-moxie-pink mt-12">
-            MOXIE ON. The world needs what you've got.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA Section -->
-  <section class="bg-gradient-to-br from-moxie-pink to-moxie-pink-alt text-white relative overflow-hidden" style="padding-top: 8rem; padding-bottom: 8rem;">
-    <!-- Multiple starburst graphics -->
-    <div class="absolute top-10 left-10 w-32 h-32 opacity-20">
-      <div class="w-full h-full bg-sunny-yellow transform -rotate-12" style="clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"></div>
-    </div>
-    <div class="absolute bottom-10 right-10 w-40 h-40 opacity-20">
-      <div class="w-full h-full bg-sunny-yellow transform rotate-45" style="clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"></div>
-    </div>
-
-    <div class="container mx-auto px-6 relative z-10">
-      <div class="text-center">
-        <h2 class="text-4xl md:text-5xl font-bold mb-12">Ready? Let's Go.</h2>
-
-        <div class="flex flex-col md:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
-          <a
-            href="#contact"
-            class="w-full md:w-auto bg-sunny-yellow text-black font-bold py-6 px-12 rounded-full text-xl hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-2xl"
-          >
-            Book Kristi
-          </a>
-          <a
-            href="/quiz"
-            class="w-full md:w-auto bg-white text-moxie-pink font-bold py-6 px-12 rounded-full text-xl hover:bg-sunny-yellow hover:text-black transition-all duration-300 transform hover:scale-105 shadow-2xl"
-          >
-            Take the Quiz
-          </a>
-          <a
-            href="/services"
-            class="w-full md:w-auto bg-transparent text-white font-bold py-6 px-12 rounded-full text-xl border-4 border-white hover:bg-white hover:text-moxie-pink transition-all duration-300 transform hover:scale-105"
-          >
-            Explore Services
+          <a href="/services/coaching#booking" class="inline-block bg-sunny-yellow text-black font-bold py-4 px-8 rounded-full hover:bg-white hover:text-charcoal transition-colors duration-300">
+            Book a Session
           </a>
         </div>
       </div>

@@ -1,0 +1,328 @@
+---
+// BookQuiz.astro - Interactive quiz to recommend book chapters
+---
+
+<!-- Quiz CTA Bar -->
+<section class="py-8 border-b-4 border-moxie-pink" style="background-color: #FCEC60;">
+  <div class="container mx-auto px-4 text-center">
+    <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">From the book "Quit Being So Good"</p>
+    <h3 class="text-2xl md:text-3xl font-bold text-charcoal mb-4">
+      I Only Have 10 Minutes! Which Chapter Should I Read First?
+    </h3>
+    <button
+      id="open-book-quiz"
+      class="bg-moxie-pink text-white font-bold px-8 py-3 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105"
+    >
+      Take the Quiz
+    </button>
+  </div>
+</section>
+
+<!-- Quiz Modal -->
+<div id="book-quiz-modal" class="fixed inset-0 z-50 hidden">
+  <!-- Backdrop -->
+  <div id="quiz-backdrop" class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Modal Content -->
+  <div class="absolute inset-4 md:inset-10 lg:inset-20 bg-white rounded-lg shadow-2xl overflow-y-auto flex flex-col">
+    <!-- Close Button -->
+    <button id="close-quiz" class="absolute top-4 right-4 text-gray-500 hover:text-charcoal z-10">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <!-- Quiz Content -->
+    <div class="flex-1 p-8 md:p-12">
+      <!-- Questions Container -->
+      <div id="quiz-questions" class="max-w-2xl mx-auto">
+        <!-- Progress -->
+        <div class="mb-8">
+          <p class="text-sm text-gray-500 mb-2">Question <span id="current-q">1</span> of 4</p>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div id="progress-bar" class="h-2 bg-moxie-pink rounded-full transition-all duration-300" style="width: 25%"></div>
+          </div>
+        </div>
+
+        <!-- Question -->
+        <h2 id="quiz-question" class="text-2xl md:text-3xl font-bold text-charcoal mb-8"></h2>
+
+        <!-- Answers -->
+        <div id="quiz-answers" class="space-y-4">
+          <!-- Answers will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Results Container (hidden initially) -->
+      <div id="quiz-results" class="max-w-2xl mx-auto hidden">
+        <div class="text-center mb-8">
+          <p class="text-lg text-gray-600 mb-2">You should read...</p>
+          <h2 id="result-chapter" class="text-3xl md:text-4xl font-bold text-moxie-pink mb-2"></h2>
+          <h3 id="result-title" class="text-xl md:text-2xl font-bold text-charcoal mb-6"></h3>
+          <p id="result-description" class="text-gray-600 leading-relaxed mb-8"></p>
+        </div>
+
+        <!-- Email Capture -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h4 class="text-xl font-bold text-charcoal mb-4 text-center">Get your FREE chapter</h4>
+          <form id="email-form" class="space-y-4">
+            <div>
+              <label for="quiz-email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+              <input
+                type="email"
+                id="quiz-email"
+                name="email"
+                required
+                placeholder="your@email.com"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink"
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-moxie-pink text-white font-bold px-6 py-4 rounded-lg hover:bg-moxie-pink-alt transition-colors"
+            >
+              Send Me The Chapter
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Success Container (hidden initially) -->
+      <div id="quiz-success" class="max-w-2xl mx-auto hidden text-center">
+        <div class="mb-8">
+          <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h2 class="text-3xl font-bold text-charcoal mb-4">Check your downloads!</h2>
+          <p class="text-lg text-gray-600 mb-8">Your free chapter is downloading now.</p>
+        </div>
+
+        <div class="space-y-4">
+          <a
+            href="https://www.amazon.com/dp/B09XZGP8P2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-colors"
+          >
+            Buy the Full Book
+          </a>
+          <br>
+          <button id="close-success" class="text-moxie-pink font-semibold hover:underline">
+            Back to Homepage
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Quiz data
+  const bookQuizData = {
+    questions: [
+      {
+        id: 1,
+        question: "What are you most curious about right now?",
+        answers: [
+          { text: "Gender roles in the workplace.", chapter: "chapter8" },
+          { text: "The impact of depression.", chapter: "chapter3" },
+          { text: "Societal pressure to get married.", chapter: "chapter9" }
+        ]
+      },
+      {
+        id: 2,
+        question: "What level of MOXIE (guts) are you ready for right now?",
+        answers: [
+          { text: "MOXIE", chapter: "chapter8" },
+          { text: "MOXIER", chapter: "chapter3" },
+          { text: "MOXIEST", chapter: "chapter9" }
+        ]
+      },
+      {
+        id: 3,
+        question: "Right now, what would you like to learn more about?",
+        answers: [
+          { text: "How to not give into pressure of friends and family.", chapter: "chapter9" },
+          { text: "How to be afraid and do it anyway.", chapter: "chapter8" },
+          { text: "How to not do it all.", chapter: "chapter3" }
+        ]
+      },
+      {
+        id: 4,
+        question: "What word describes you most right now?",
+        answers: [
+          { text: "Caretaker", chapter: "chapter3" },
+          { text: "Single lady.", chapter: "chapter9" },
+          { text: "Risktaker.", chapter: "chapter8" }
+        ]
+      }
+    ],
+    results: {
+      chapter3: {
+        chapter: "Chapter 3",
+        title: "Wonder Woman Is Not Real",
+        description: "You're ready to let go of the myth that you have to do it all. This chapter will help you recognize the impossible standards you've been holding yourself to and give you permission to be human.",
+        pdf: "/pdfs/QBSG-Chapter-3.pdf"
+      },
+      chapter8: {
+        chapter: "Chapter 8",
+        title: "Get On The Roof; Others Will Follow",
+        description: "You're ready to take the leap and lead the way. This chapter is about having the courage to go first, even when you're afraid, and trusting that others will follow.",
+        pdf: "/pdfs/QBSG-Chapter-8.pdf"
+      },
+      chapter9: {
+        chapter: "Chapter 9",
+        title: "It's OK. You Don't Have To Get Married",
+        description: "You're ready to challenge the expectations others have placed on your life. This chapter will help you embrace your own path, whether that includes marriage or not.",
+        pdf: "/pdfs/QBSG-Chapter-9.pdf"
+      }
+    }
+  };
+
+  // State
+  let currentQuestion = 0;
+  let scores = { chapter3: 0, chapter8: 0, chapter9: 0 };
+  let result = null;
+
+  // DOM elements
+  const modal = document.getElementById('book-quiz-modal');
+  const openBtn = document.getElementById('open-book-quiz');
+  const closeBtn = document.getElementById('close-quiz');
+  const backdrop = document.getElementById('quiz-backdrop');
+  const questionsContainer = document.getElementById('quiz-questions');
+  const resultsContainer = document.getElementById('quiz-results');
+  const successContainer = document.getElementById('quiz-success');
+  const questionEl = document.getElementById('quiz-question');
+  const answersEl = document.getElementById('quiz-answers');
+  const currentQEl = document.getElementById('current-q');
+  const progressBar = document.getElementById('progress-bar');
+  const emailForm = document.getElementById('email-form');
+  const closeSuccessBtn = document.getElementById('close-success');
+
+  // Open modal
+  openBtn?.addEventListener('click', () => {
+    modal?.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    resetQuiz();
+    showQuestion();
+  });
+
+  // Close modal
+  function closeModal() {
+    modal?.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  closeBtn?.addEventListener('click', closeModal);
+  backdrop?.addEventListener('click', closeModal);
+  closeSuccessBtn?.addEventListener('click', closeModal);
+
+  // Escape key to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+
+  // Reset quiz
+  function resetQuiz() {
+    currentQuestion = 0;
+    scores = { chapter3: 0, chapter8: 0, chapter9: 0 };
+    result = null;
+    questionsContainer?.classList.remove('hidden');
+    resultsContainer?.classList.add('hidden');
+    successContainer?.classList.add('hidden');
+  }
+
+  // Show current question
+  function showQuestion() {
+    const q = bookQuizData.questions[currentQuestion];
+    if (!q) return;
+
+    if (questionEl) questionEl.textContent = q.question;
+    if (currentQEl) currentQEl.textContent = String(currentQuestion + 1);
+    if (progressBar) progressBar.style.width = `${((currentQuestion + 1) / 4) * 100}%`;
+
+    if (answersEl) {
+      answersEl.innerHTML = q.answers.map((answer, index) => `
+        <button
+          class="answer-btn w-full text-left p-4 border-2 border-gray-200 rounded-lg hover:border-moxie-pink hover:bg-pink-50 transition-all"
+          data-chapter="${answer.chapter}"
+        >
+          ${answer.text}
+        </button>
+      `).join('');
+
+      // Add click handlers
+      answersEl.querySelectorAll('.answer-btn').forEach(btn => {
+        btn.addEventListener('click', () => selectAnswer(btn.dataset.chapter));
+      });
+    }
+  }
+
+  // Handle answer selection
+  function selectAnswer(chapter) {
+    scores[chapter]++;
+    currentQuestion++;
+
+    if (currentQuestion < 4) {
+      showQuestion();
+    } else {
+      showResults();
+    }
+  }
+
+  // Calculate and show results
+  function showResults() {
+    // Find winner
+    const maxScore = Math.max(scores.chapter3, scores.chapter8, scores.chapter9);
+
+    if (scores.chapter3 === maxScore) {
+      result = 'chapter3';
+    } else if (scores.chapter8 === maxScore) {
+      result = 'chapter8';
+    } else {
+      result = 'chapter9';
+    }
+
+    const resultData = bookQuizData.results[result];
+
+    // Update UI
+    const chapterEl = document.getElementById('result-chapter');
+    const titleEl = document.getElementById('result-title');
+    const descEl = document.getElementById('result-description');
+
+    if (chapterEl) chapterEl.textContent = resultData.chapter;
+    if (titleEl) titleEl.textContent = resultData.title;
+    if (descEl) descEl.textContent = resultData.description;
+
+    questionsContainer?.classList.add('hidden');
+    resultsContainer?.classList.remove('hidden');
+  }
+
+  // Handle email form submission
+  emailForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const email = (document.getElementById('quiz-email') as HTMLInputElement)?.value;
+    if (!email || !result) return;
+
+    // Log email (integrate with email service later)
+    console.log('Email captured:', email);
+
+    // Trigger PDF download
+    const pdfUrl = bookQuizData.results[result].pdf;
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = `quit-being-so-good-${result}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Show success
+    resultsContainer?.classList.add('hidden');
+    successContainer?.classList.remove('hidden');
+  });
+</script>

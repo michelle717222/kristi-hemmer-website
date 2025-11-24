@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npx astro add tailwind:*)",
-      "Bash(npm run dev)"
+      "Bash(npm run dev)",
+      "Bash(curl:*)",
+      "Bash(ls -la \"C:\\Users\\miche\\kristi-hemmer-website\\public\\pdfs\"\" 2>/dev/null || echo \"Directory does not exist \")"
     ],
     "deny": [],
     "ask": []
