@@ -71,6 +71,12 @@ import BookQuiz from '../components/BookQuiz.astro';
         "power."
       ];
 
+      // Timing constants for consistent animation
+      const typeSpeed = 60;          // 60ms per character when typing
+      const deleteSpeed = 35;        // 35ms per character when deleting (faster)
+      const pauseAfterType = 2500;   // 2.5 seconds pause after typing completes
+      const pauseAfterDelete = 500;  // 0.5 seconds pause after deleting completes
+
       let phraseIndex = 0;
       let charIndex = 0;
       let isDeleting = false;
@@ -85,30 +91,31 @@ import BookQuiz from '../components/BookQuiz.astro';
         typewriterElement.textContent = displayText;
 
         if (!isDeleting && charIndex < currentPhrase.length) {
-          // Still typing
+          // Still typing - add next character
           charIndex++;
-          setTimeout(typeWriter, 60);
+          setTimeout(typeWriter, typeSpeed);
         } else if (!isDeleting && charIndex === currentPhrase.length) {
-          // Finished typing, pause 7 seconds then start deleting
+          // Finished typing the current phrase - PAUSE before deleting
           isDeleting = true;
-          setTimeout(typeWriter, 7000);
+          setTimeout(typeWriter, pauseAfterType);
         } else if (isDeleting && charIndex > 0) {
-          // Deleting
+          // Deleting - remove character
           charIndex--;
-          setTimeout(typeWriter, 35);
+          setTimeout(typeWriter, deleteSpeed);
         } else {
-          // Finished deleting, move to next phrase
+          // Finished deleting - move to next phrase
           isDeleting = false;
+          charIndex = 0;  // Explicitly reset to start of next phrase
           phraseIndex = (phraseIndex + 1) % phrases.length;
-          setTimeout(typeWriter, 500);
+          setTimeout(typeWriter, pauseAfterDelete);
         }
       }
 
-      // Start typewriter on page load
-      document.addEventListener('DOMContentLoaded', typeWriter);
-
-      // Also start immediately in case DOMContentLoaded already fired
-      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      // Start typewriter once when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', typeWriter);
+      } else {
+        // DOM already loaded, start immediately
         typeWriter();
       }
     </script>
