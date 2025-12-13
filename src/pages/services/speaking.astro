@@ -34,13 +34,12 @@ import Footer from '../../components/Footer.astro';
             </div>
           </div>
 
-          <div class="bg-gray-200 aspect-square rounded-lg flex items-center justify-center">
-            <div class="text-center text-gray-500">
-              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-              </svg>
-              <p class="text-sm">Kristi speaking photo</p>
-            </div>
+          <div class="relative">
+            <img
+              src="/images/speaking.jpg"
+              alt="Kristi Hemmer speaking at an event"
+              class="rounded-lg shadow-2xl w-full"
+            />
           </div>
         </div>
       </div>
@@ -61,14 +60,12 @@ import Footer from '../../components/Footer.astro';
             <!-- Keynote 1: #BeWhatSheCanSee -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
               <div class="md:flex">
-                <div class="md:w-1/3 bg-gray-200 p-8 flex items-center justify-center min-h-[200px]">
-                  <div class="text-center text-gray-500">
-                    <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                    </svg>
-                    <p class="text-sm">Keynote photo</p>
-                  </div>
+                <div class="md:w-1/3 overflow-hidden min-h-[200px]">
+                  <img
+                    src="/images/keynote.jpg"
+                    alt="#BeWhatSheCanSee Keynote"
+                    class="w-full h-full object-cover"
+                  />
                 </div>
                 <div class="md:w-2/3 p-8">
                   <h3 class="text-3xl font-bold mb-3 text-moxie-pink">#BeWhatSheCanSee</h3>
@@ -101,13 +98,12 @@ import Footer from '../../components/Footer.astro';
             <!-- Keynote 2: PoWer of Travel -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
               <div class="md:flex">
-                <div class="md:w-1/3 bg-gray-200 p-8 flex items-center justify-center min-h-[200px]">
-                  <div class="text-center text-gray-500">
-                    <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <p class="text-sm">Travel photo</p>
-                  </div>
+                <div class="md:w-1/3 overflow-hidden min-h-[200px]">
+                  <img
+                    src="/images/travel.jpg"
+                    alt="PoWer of Travel Keynote"
+                    class="w-full h-full object-cover"
+                  />
                 </div>
                 <div class="md:w-2/3 p-8">
                   <h3 class="text-3xl font-bold mb-3 text-moxie-pink">PoWer of Travel</h3>

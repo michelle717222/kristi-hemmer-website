@@ -14,26 +14,38 @@ import BookQuiz from '../components/BookQuiz.astro';
     <!-- SECTION 1: Hero Section -->
     <section class="relative min-h-[70vh] flex items-center overflow-hidden" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFBF0 50%, #FFF3E0 100%);">
       <div class="container mx-auto px-4 py-20 relative z-10">
-        <div class="max-w-4xl mx-auto">
-          <!-- Hero Headline with Typewriter -->
-          <div class="mb-8">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              <span class="text-moxie-pink">MOXIE</span> is <span id="typewriter-text" class="text-charcoal" aria-live="polite"></span><span class="cursor text-moxie-pink">|</span>
-            </h1>
+        <div class="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          <!-- Left Column: Text Content -->
+          <div>
+            <!-- Hero Headline with Typewriter -->
+            <div class="mb-8">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <span class="text-moxie-pink">MOXIE</span> is <span id="typewriter-text" class="text-charcoal" aria-live="polite"></span><span class="cursor text-moxie-pink">|</span>
+              </h1>
+            </div>
+
+            <p class="text-xl md:text-2xl mb-10 leading-relaxed text-gray-700">
+              When women lead, the world is a safer and more equitable place for everyone.
+              I help leaders transform courage, grit, and authenticity into lasting impact.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/services/speaking" class="bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg text-center">
+                Book Kristi to Speak
+              </a>
+              <a href="/quiz" class="border-2 border-moxie-pink text-moxie-pink font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink hover:text-white transition-all transform hover:scale-105 text-lg text-center">
+                Take the MOXIE Quiz
+              </a>
+            </div>
           </div>
 
-          <p class="text-xl md:text-2xl mb-10 leading-relaxed text-gray-700 max-w-3xl">
-            When women lead, the world is a safer and more equitable place for everyone.
-            I help leaders transform courage, grit, and authenticity into lasting impact.
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="/services/speaking" class="bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-lg text-center">
-              Book Kristi to Speak
-            </a>
-            <a href="/quiz" class="border-2 border-moxie-pink text-moxie-pink font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink hover:text-white transition-all transform hover:scale-105 text-lg text-center">
-              Take the MOXIE Quiz
-            </a>
+          <!-- Right Column: Hero Image -->
+          <div class="relative">
+            <img
+              src="/images/TopofWorld-1000.jpg"
+              alt="Kristi Hemmer at the top of the world"
+              class="w-full h-auto rounded-lg shadow-2xl"
+            />
           </div>
         </div>
       </div>
@@ -133,13 +145,12 @@ import BookQuiz from '../components/BookQuiz.astro';
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <!-- Card 1: Speaking -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
-            <div class="aspect-[4/3] bg-gray-200 flex items-center justify-center">
-              <div class="text-center text-gray-500">
-                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-                </svg>
-                <p class="text-sm">Kristi speaking photo</p>
-              </div>
+            <div class="aspect-[4/3] overflow-hidden">
+              <img
+                src="/images/speaking.jpg"
+                alt="Kristi Hemmer speaking at an event"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3">Speaking</h3>
@@ -154,13 +165,12 @@ import BookQuiz from '../components/BookQuiz.astro';
 
           <!-- Card 2: Coaching -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
-            <div class="aspect-[4/3] bg-gray-200 flex items-center justify-center">
-              <div class="text-center text-gray-500">
-                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                </svg>
-                <p class="text-sm">Coaching session photo</p>
-              </div>
+            <div class="aspect-[4/3] overflow-hidden">
+              <img
+                src="/images/coaching.jpg"
+                alt="Kristi Hemmer coaching session"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3">Coaching</h3>
@@ -175,13 +185,12 @@ import BookQuiz from '../components/BookQuiz.astro';
 
           <!-- Card 3: Traveling -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
-            <div class="aspect-[4/3] bg-gray-200 flex items-center justify-center">
-              <div class="text-center text-gray-500">
-                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p class="text-sm">Kristi travel photo</p>
-              </div>
+            <div class="aspect-[4/3] overflow-hidden">
+              <img
+                src="/images/travel.jpg"
+                alt="Kristi Hemmer travel experience"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3">Traveling</h3>
@@ -226,13 +235,12 @@ import BookQuiz from '../components/BookQuiz.astro';
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           <!-- Service 1: Speaking -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group border border-gray-200">
-            <div class="h-48 bg-gray-200 flex items-center justify-center">
-              <div class="text-center text-gray-500">
-                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-                </svg>
-                <p class="text-sm">Speaking photo</p>
-              </div>
+            <div class="h-48 overflow-hidden">
+              <img
+                src="/images/speaker-trainer.jpg"
+                alt="Kristi Hemmer speaking and training"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Speaking & Training</h3>
@@ -245,13 +253,12 @@ import BookQuiz from '../components/BookQuiz.astro';
 
           <!-- Service 2: Coaching -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group border border-gray-200">
-            <div class="h-48 bg-gray-200 flex items-center justify-center">
-              <div class="text-center text-gray-500">
-                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                </svg>
-                <p class="text-sm">Coaching photo</p>
-              </div>
+            <div class="h-48 overflow-hidden">
+              <img
+                src="/images/coaching-changemakers.jpg"
+                alt="Coaching for changemakers"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Coaching for Changemakers</h3>
@@ -264,13 +271,12 @@ import BookQuiz from '../components/BookQuiz.astro';
 
           <!-- Service 3: PoWer Camp & Travel -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group border border-gray-200">
-            <div class="h-48 bg-gray-200 flex items-center justify-center">
-              <div class="text-center text-gray-500">
-                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p class="text-sm">Travel photo</p>
-              </div>
+            <div class="h-48 overflow-hidden">
+              <img
+                src="/images/power-trip.jpg"
+                alt="PoWer Camp and travel experiences"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3 text-moxie-pink">PoWer Camp & Travel</h3>
@@ -283,13 +289,12 @@ import BookQuiz from '../components/BookQuiz.astro';
 
           <!-- Service 4: Writing & Storytelling -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group border border-gray-200">
-            <div class="h-48 bg-gray-200 flex items-center justify-center">
-              <div class="text-center text-gray-500">
-                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                </svg>
-                <p class="text-sm">Writing photo</p>
-              </div>
+            <div class="h-48 overflow-hidden">
+              <img
+                src="/images/KristiWriting.jpg"
+                alt="Writing and storytelling"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Writing & Storytelling</h3>
