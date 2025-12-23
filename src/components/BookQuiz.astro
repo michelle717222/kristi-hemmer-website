@@ -4,17 +4,33 @@
 
 <!-- Quiz CTA Bar -->
 <section class="py-8 border-b-4 border-moxie-pink" style="background-color: #FCEC60;">
-  <div class="container mx-auto px-4 text-center">
-    <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">From the book "Quit Being So Good"</p>
-    <h3 class="text-2xl md:text-3xl font-bold text-charcoal mb-4">
-      I Only Have 10 Minutes! Which Chapter Should I Read First?
-    </h3>
-    <button
-      id="open-book-quiz"
-      class="bg-moxie-pink text-white font-bold px-8 py-3 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105"
-    >
-      Take the Quiz
-    </button>
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- Left Column: Book Image -->
+        <div class="flex justify-center md:justify-end">
+          <img
+            src="/images/QBSGcoverHemmer-400.png"
+            alt="Quit Being So Good book cover"
+            class="w-full max-w-[250px] shadow-2xl rounded-lg hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        <!-- Right Column: Text & CTA -->
+        <div class="text-center md:text-left">
+          <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">From the book "Quit Being So Good"</p>
+          <h3 class="text-2xl md:text-3xl font-bold text-charcoal mb-4">
+            I Only Have 10 Minutes! Which Chapter Should I Read First?
+          </h3>
+          <button
+            id="open-book-quiz"
+            class="bg-moxie-pink text-white font-bold px-8 py-3 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105"
+          >
+            Take the Quiz
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Events - Kristi Hemmer">
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 overflow-hidden" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFBF0 50%, #FFF3E0 100%);">
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-charcoal">
+            Upcoming <span class="text-moxie-pink">Events</span>
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 leading-relaxed text-gray-700">
+            Join Kristi for workshops, speaking engagements, and transformational experiences. Connect with other changemakers and step into your power.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events List Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Join Us</h2>
+
+          <!-- Event Card Example -->
+          <div class="space-y-8">
+            <!-- Sample Event 1 -->
+            <div class="bg-gray-50 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/4">
+                  <div class="bg-moxie-pink text-white rounded-lg p-6 text-center">
+                    <div class="text-4xl font-bold">TBD</div>
+                    <div class="text-lg">2025</div>
+                  </div>
+                </div>
+                <div class="md:w-3/4">
+                  <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Leadership Workshop</h3>
+                  <p class="text-lg text-gray-700 mb-4">
+                    Join Kristi for an interactive workshop focused on building confidence, acumen, and belonging. Perfect for women leaders ready to take up space unapologetically.
+                  </p>
+                  <div class="flex flex-wrap gap-4 items-center">
+                    <span class="text-gray-600"><strong>Location:</strong> TBD</span>
+                    <a href="/moxie-on" class="inline-block bg-moxie-pink text-white font-bold px-6 py-3 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-sunny-yellow rounded-lg p-8 text-center">
+              <h3 class="text-3xl font-bold mb-4">Want to Bring Kristi to Your Organization?</h3>
+              <p class="text-lg mb-6">
+                Book Kristi for keynotes, workshops, and transformational experiences for your team.
+              </p>
+              <a href="/services/speaking" class="inline-block bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+                Book Kristi to Speak
+              </a>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="bg-gray-50 rounded-lg p-8 text-center border-2 border-moxie-pink">
+              <h3 class="text-3xl font-bold mb-4">Stay Updated on Upcoming Events</h3>
+              <p class="text-lg mb-6">
+                Subscribe to Kristi's Substack newsletter to be the first to know about upcoming workshops, speaking engagements, and PoWer Camps.
+              </p>
+              <a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-moxie-pink text-white font-bold px-8 py-4 rounded-lg hover:bg-moxie-pink-alt transition-colors">
+                Subscribe to Newsletter
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

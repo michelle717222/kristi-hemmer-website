@@ -48,7 +48,7 @@ import Footer from '../components/Footer.astro';
         <!-- Card 1: Hire Kristi As Speaker -->
         <div class="bg-neutral-200 rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
           <img src="/images/Graphic Elements_Pink_01.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
-          <h3 class="text-3xl font-bold mb-4">Hire Kristi As Speaker</h3>
+          <h3 class="text-3xl font-bold mb-4">Change a community</h3>
           <p class="text-lg mb-6 leading-relaxed">
             Book Kristi for keynotes and workshops that inspire action and spark transformation for women's leadership.
           </p>
@@ -72,7 +72,7 @@ import Footer from '../components/Footer.astro';
         <!-- Card 3: Buy Kristi's Book -->
         <div class="bg-sunny-yellow text-black rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
           <img src="/images/Graphic Elements_Pink_03.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
-          <h3 class="text-3xl font-bold mb-4">Buy Kristi's Book</h3>
+          <h3 class="text-3xl font-bold mb-4">Have Kristi in your back pocket</h3>
           <p class="text-lg mb-6 leading-relaxed">
             "Quit Being So Good" — Stop performing goodness and start claiming your power. Available now on Amazon.
           </p>
@@ -84,12 +84,12 @@ import Footer from '../components/Footer.astro';
         <!-- Card 4: Book a Moxie Mission Session -->
         <div class="bg-charcoal text-white rounded-2xl p-8 hover:shadow-2xl transition-shadow duration-300">
           <img src="/images/Graphic Elements_Pink_04.png" alt="" class="w-16 h-16 mb-4" aria-hidden="true" />
-          <h3 class="text-3xl font-bold mb-4">Book a Moxie Mission Session</h3>
+          <h3 class="text-3xl font-bold mb-4">Take up space—unapologetically</h3>
           <p class="text-lg mb-6 leading-relaxed">
             90 minutes of focused clarity and action. Perfect for a specific challenge or decision point.
           </p>
           <a href="/services/coaching#booking" class="inline-block bg-sunny-yellow text-black font-bold py-4 px-8 rounded-full hover:bg-white hover:text-charcoal transition-colors duration-300">
-            Book a Session
+            Book a Coaching Session
           </a>
         </div>
       </div>
@@ -98,4 +98,109 @@ import Footer from '../components/Footer.astro';
   </main>
 
   <Footer />
+
+  <style>
+    @keyframes shake {
+      0%, 100% { transform: translateX(0) rotate(0deg); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px) rotate(-2deg); }
+      20%, 40%, 60%, 80% { transform: translateX(5px) rotate(2deg); }
+    }
+
+    .shake-it {
+      animation: shake 0.5s ease-in-out;
+    }
+
+    @keyframes particle-burst {
+      0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--tx), var(--ty)) scale(0);
+        opacity: 0;
+      }
+    }
+
+    .particle {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      animation: particle-burst 0.8s ease-out forwards;
+    }
+
+    .star-particle {
+      width: 20px;
+      height: 20px;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    .circle-particle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  </style>
+
+  <script>
+    // Add hover animation to all CTA buttons
+    const ctaButtons = document.querySelectorAll('a[href*="/services"], a[href*="amazon"], a[href*="substack"]');
+
+    ctaButtons.forEach(button => {
+      button.addEventListener('mouseenter', function(e) {
+        // Shake the button
+        this.classList.add('shake-it');
+        setTimeout(() => {
+          this.classList.remove('shake-it');
+        }, 500);
+
+        // Get button position and size
+        const rect = this.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        // Create particle burst from button center
+        createParticleBurst(centerX, centerY);
+      });
+    });
+
+    function createParticleBurst(x, y) {
+      const particleCount = 15;
+      const colors = ['#E91C7E', '#FCEC60', '#F096C1', '#D94780'];
+
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+
+        // Mix of stars and circles
+        if (Math.random() > 0.5) {
+          particle.classList.add('star-particle');
+        } else {
+          particle.classList.add('circle-particle');
+        }
+
+        // Random color from brand palette
+        particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+        // Position at button center
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+
+        // Random direction
+        const angle = (Math.PI * 2 * i) / particleCount;
+        const velocity = 100 + Math.random() * 100;
+        const tx = Math.cos(angle) * velocity;
+        const ty = Math.sin(angle) * velocity;
+
+        particle.style.setProperty('--tx', tx + 'px');
+        particle.style.setProperty('--ty', ty + 'px');
+
+        document.body.appendChild(particle);
+
+        // Remove particle after animation
+        setTimeout(() => {
+          particle.remove();
+        }, 800);
+      }
+    }
+  </script>
 </BaseLayout>

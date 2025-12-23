@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Moxie Moments - Kristi Hemmer">
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 overflow-hidden" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFBF0 50%, #FFF3E0 100%);">
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 text-charcoal">
+            <span class="text-moxie-pink">Moxie</span> Moments
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 leading-relaxed text-gray-700">
+            Quick doses of inspiration, insights, and action to help you lead with courage, authenticity, and unapologetic ambition.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Are Moxie Moments Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">
+            What Are <span class="text-moxie-pink">Moxie Moments</span>?
+          </h2>
+          <div class="prose prose-lg max-w-none">
+            <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+              Moxie Moments are bite-sized bursts of wisdom, stories, and practical strategies to help you step into your power. Whether you have 2 minutes or 20, these moments are designed to inspire action and spark transformation.
+            </p>
+          </div>
+
+          <!-- Content Grid -->
+          <div class="grid md:grid-cols-2 gap-8 mt-12">
+            <!-- Card 1 -->
+            <div class="bg-moxie-pink text-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 class="text-2xl font-bold mb-4">Daily Inspiration</h3>
+              <p class="text-lg leading-relaxed">
+                Short reflections and prompts to start your day with intention and courage. Perfect for your morning coffee or commute.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-sunny-yellow text-charcoal rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 class="text-2xl font-bold mb-4">Leadership Tips</h3>
+              <p class="text-lg leading-relaxed">
+                Practical strategies for navigating workplace challenges, building influence, and leading with authenticity.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-50 text-charcoal rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-moxie-pink">
+              <h3 class="text-2xl font-bold mb-4 text-moxie-pink">Real Stories</h3>
+              <p class="text-lg leading-relaxed">
+                Behind-the-scenes glimpses, client transformations, and honest conversations about the messy, beautiful work of change.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-charcoal text-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 class="text-2xl font-bold mb-4">Take Action</h3>
+              <p class="text-lg leading-relaxed">
+                Simple exercises and challenges to help you put MOXIE into practice. Small steps that lead to big change.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">Get Your Weekly Moxie Moment</h2>
+          <p class="text-xl text-gray-700 mb-8">
+            Subscribe to Kristi's Substack newsletter for weekly inspiration, insights, and action steps delivered straight to your inbox.
+          </p>
+          <a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-moxie-pink text-white font-bold px-10 py-5 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-xl shadow-lg">
+            Subscribe to Newsletter
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Recent Moxie Moments</h2>
+
+          <!-- Example Content Cards -->
+          <div class="space-y-8">
+            <!-- Example 1 -->
+            <div class="bg-gray-50 rounded-lg p-8 shadow-lg">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="flex-shrink-0">
+                  <div class="w-16 h-16 bg-moxie-pink rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    M
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Taking Up Space at Work</h3>
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    What does it really mean to "take up space" in a professional setting? This week's Moxie Moment explores the difference between being present and being powerful.
+                  </p>
+                  <a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="text-moxie-pink font-semibold hover:underline">
+                    Read More →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-moxie-pink text-white rounded-lg p-8 text-center">
+              <h3 class="text-3xl font-bold mb-4">Want More MOXIE?</h3>
+              <p class="text-lg mb-6">
+                Explore Kristi's full suite of programs, from speaking engagements to coaching and retreats.
+              </p>
+              <a href="/moxie-on" class="inline-block bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-white transition-colors">
+                Explore Your Options
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
