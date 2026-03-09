@@ -4,7 +4,10 @@
       "Bash(npx astro add tailwind:*)",
       "Bash(npm run dev)",
       "Bash(curl:*)",
-      "Bash(ls -la \"C:\\Users\\miche\\kristi-hemmer-website\\public\\pdfs\"\" 2>/dev/null || echo \"Directory does not exist \")"
+      "Bash(ls -la \"C:\\Users\\miche\\kristi-hemmer-website\\public\\pdfs\"\" 2>/dev/null || echo \"Directory does not exist \")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where npm)",
+      "Bash(command -v npm)"
     ],
     "deny": [],
     "ask": []

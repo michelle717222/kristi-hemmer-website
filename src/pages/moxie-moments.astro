@@ -22,51 +22,117 @@ import Footer from '../components/Footer.astro';
       </div>
     </section>
 
-    <!-- What Are Moxie Moments Section -->
+    <!-- Testimonials Section -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">
-            What Are <span class="text-moxie-pink">Moxie Moments</span>?
-          </h2>
-          <div class="prose prose-lg max-w-none">
-            <p class="text-xl text-gray-700 mb-6 leading-relaxed">
-              Moxie Moments are bite-sized bursts of wisdom, stories, and practical strategies to help you step into your power. Whether you have 2 minutes or 20, these moments are designed to inspire action and spark transformation.
-            </p>
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Kristi's impact.</h2>
+        <p class="text-xl text-center text-gray-600 mb-12">Voices from changemakers around the world who have experienced the MOXIE.</p>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <!-- Column 1 -->
+          <div class="space-y-6">
+            <!-- Video 1 -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <video
+                playsinline
+                autoplay
+                muted
+                loop
+                preload="auto"
+                class="w-full object-cover"
+              >
+                <source src="/videos/testimonial-1.mov" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Quote 1 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+              <p class="text-lg font-semibold text-charcoal italic mb-3">
+                "Ms. Hemmer truly saved my life"
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                with her support during some of toughest mental health battles in middle school. More recently, she's helped me feel confident in my decision to be a stay-at-home-mom and helps me remember that my value isn't determined by what others perceive.
+              </p>
+              <div class="border-t border-gray-200 pt-4">
+                <p class="font-bold text-charcoal">Kourtney, 24, KY</p>
+                <p class="text-gray-500 text-sm">Stay at home mom / Master's in Public Health / Future Teacher</p>
+              </div>
+            </div>
+
+            <!-- Quote 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+              <p class="text-lg font-semibold text-charcoal italic mb-3">
+                "Kristi's energy and enthusiasm"
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                are infectious and her deep subject matter expertise and personal experiences combine to provide an impactful learning experience. For a group of relatively privileged, middle aged men seeking to understand how to do better, Kristi created an environment in which we could be authentic, vulnerable and truly understand how we might actually be getting in the way of the women we had intended to accelerate into leadership roles within our firm.
+              </p>
+              <div class="border-t border-gray-200 pt-4">
+                <p class="font-bold text-charcoal">Cam, 50, From Hong Kong</p>
+                <p class="text-gray-500 text-sm">Grew up in Australia, Managing Director, Head of Human Resources, APAC</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Content Grid -->
-          <div class="grid md:grid-cols-2 gap-8 mt-12">
-            <!-- Card 1 -->
-            <div class="bg-moxie-pink text-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 class="text-2xl font-bold mb-4">Daily Inspiration</h3>
-              <p class="text-lg leading-relaxed">
-                Short reflections and prompts to start your day with intention and courage. Perfect for your morning coffee or commute.
-              </p>
+          <!-- Column 2 -->
+          <div class="space-y-6">
+            <!-- Video 2 -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <video
+                playsinline
+                autoplay
+                muted
+                loop
+                preload="auto"
+                class="w-full object-cover"
+              >
+                <source src="/videos/testimonial-2.mov" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
 
-            <!-- Card 2 -->
-            <div class="bg-sunny-yellow text-charcoal rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 class="text-2xl font-bold mb-4">Leadership Tips</h3>
-              <p class="text-lg leading-relaxed">
-                Practical strategies for navigating workplace challenges, building influence, and leading with authenticity.
+            <!-- Quote 3 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+              <p class="text-lg font-semibold text-charcoal italic mb-3">
+                "Kristi introduced me to a new way of thinking."
               </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                She challenged me to think about purpose and intention. When I was selected for a special assignment at work she would ask 'why do think they chose you?' which forced me to really see and articulate my value.
+              </p>
+              <div class="border-t border-gray-200 pt-4">
+                <p class="font-bold text-charcoal">Robin, 51, MN</p>
+                <p class="text-gray-500 text-sm">SVP | Sr. Risk Director | Consumer and Business Banking Risk Mgmt</p>
+              </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="bg-gray-50 text-charcoal rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-moxie-pink">
-              <h3 class="text-2xl font-bold mb-4 text-moxie-pink">Real Stories</h3>
-              <p class="text-lg leading-relaxed">
-                Behind-the-scenes glimpses, client transformations, and honest conversations about the messy, beautiful work of change.
-              </p>
+            <!-- Video 3 -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <video
+                playsinline
+                autoplay
+                muted
+                loop
+                preload="auto"
+                class="w-full object-cover"
+              >
+                <source src="/videos/testimonial-3.mov" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
 
-            <!-- Card 4 -->
-            <div class="bg-charcoal text-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 class="text-2xl font-bold mb-4">Take Action</h3>
-              <p class="text-lg leading-relaxed">
-                Simple exercises and challenges to help you put MOXIE into practice. Small steps that lead to big change.
+            <!-- Quote 4 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+              <p class="text-lg font-semibold text-charcoal italic mb-3">
+                "AWE Inspired me to start my own business."
               </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                So far, I am working on 2 projects one in Uganda and one in the US. Seeing and working with Kristi gave me the belief and self-confidence that I too could put a dent in the universe and make my mark.
+              </p>
+              <div class="border-t border-gray-200 pt-4">
+                <p class="font-bold text-charcoal">Leah, 31, From MN</p>
+                <p class="text-gray-500 text-sm">Grew up in Uganda. Customer Success Manager</p>
+              </div>
             </div>
           </div>
         </div>
@@ -88,44 +154,102 @@ import Footer from '../components/Footer.astro';
       </div>
     </section>
 
-    <!-- Featured Content Section -->
+    <!-- Recent Moxie Moments (LinkedIn Posts) -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Recent Moxie Moments</h2>
+          <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Recent Moxie Moments</h2>
+          <p class="text-xl text-center text-gray-600 mb-12">From Kristi's LinkedIn — bite-sized bursts of MOXIE.</p>
 
-          <!-- Example Content Cards -->
-          <div class="space-y-8">
-            <!-- Example 1 -->
-            <div class="bg-gray-50 rounded-lg p-8 shadow-lg">
-              <div class="flex items-start gap-4 mb-4">
-                <div class="flex-shrink-0">
-                  <div class="w-16 h-16 bg-moxie-pink rounded-full flex items-center justify-center text-white font-bold text-2xl">
-                    M
-                  </div>
+          <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Post 1: Book Birthday -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+              <img src="/images/mm-1.jpg" alt="Moxie Moment - Book Birthday" class="w-full h-56 object-cover" />
+              <div class="p-6 flex flex-col flex-1">
+                <span class="text-xs font-bold text-moxie-pink uppercase tracking-widest mb-2">#MoxieMomentMonday</span>
+                <p class="text-gray-800 leading-relaxed mb-4 flex-1">
+                  Happy Birthday to my baby! She turned FIVE yesterday. I'm SO proud of my book "Quit Being So Good." She's saved lives, changed lives, and has 5,000 copies out in the world (and counting). "Quit Being So Good" is an intentional gift for International Women's Day, Women's History Month, birthday pressie, Mother's Day pressie, graduation pressie, and even Father's Day pressie.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-xs text-gray-400">#author</span>
+                  <span class="text-xs text-gray-400">#BookClub</span>
+                  <span class="text-xs text-gray-400">#empowerment</span>
+                  <span class="text-xs text-gray-400">#iwd2026</span>
+                  <span class="text-xs text-gray-400">#moxie</span>
                 </div>
-                <div class="flex-1">
-                  <h3 class="text-2xl font-bold mb-3 text-moxie-pink">Taking Up Space at Work</h3>
-                  <p class="text-gray-700 mb-4 leading-relaxed">
-                    What does it really mean to "take up space" in a professional setting? This week's Moxie Moment explores the difference between being present and being powerful.
-                  </p>
-                  <a href="https://kristihemmer.substack.com" target="_blank" rel="noopener noreferrer" class="text-moxie-pink font-semibold hover:underline">
-                    Read More →
-                  </a>
-                </div>
+                <a href="https://www.linkedin.com/in/kristi-hemmer/" target="_blank" rel="noopener noreferrer" class="text-moxie-pink font-semibold hover:underline text-sm">View on LinkedIn →</a>
               </div>
             </div>
 
-            <!-- CTA -->
-            <div class="bg-moxie-pink text-white rounded-lg p-8 text-center">
-              <h3 class="text-3xl font-bold mb-4">Want More MOXIE?</h3>
-              <p class="text-lg mb-6">
-                Explore Kristi's full suite of programs, from speaking engagements to coaching and retreats.
-              </p>
-              <a href="/moxie-on" class="inline-block bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-white transition-colors">
-                Explore Your Options
-              </a>
+            <!-- Post 2: International Women's Day -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+              <img src="/images/mm-2.jpg" alt="Moxie Moment - International Women's Day" class="w-full h-56 object-cover" />
+              <div class="p-6 flex flex-col flex-1">
+                <span class="text-xs font-bold text-moxie-pink uppercase tracking-widest mb-2">#InternationalWomensDay</span>
+                <p class="text-gray-800 leading-relaxed mb-4 flex-1">
+                  This #InternationalWomensDay, I want to thank all the women who helped this little girl become an unapologetic woman. And for all the women who help her now. #MoxieOn.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-xs text-gray-400">#iwd2026</span>
+                  <span class="text-xs text-gray-400">#GiveToGain</span>
+                  <span class="text-xs text-gray-400">#gratitude</span>
+                  <span class="text-xs text-gray-400">#BeWhatSheCanSee</span>
+                  <span class="text-xs text-gray-400">#WomenEmpoweringWomen</span>
+                </div>
+                <a href="https://www.linkedin.com/in/kristi-hemmer/" target="_blank" rel="noopener noreferrer" class="text-moxie-pink font-semibold hover:underline text-sm">View on LinkedIn →</a>
+              </div>
             </div>
+
+            <!-- Post 3: Children's Book / Soccer -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+              <img src="/images/mm-3.jpg" alt="Moxie Moment - Children's Book" class="w-full h-56 object-cover" />
+              <div class="p-6 flex flex-col flex-1">
+                <span class="text-xs font-bold text-moxie-pink uppercase tracking-widest mb-2">#DontLetGirlsQuit</span>
+                <p class="text-gray-800 leading-relaxed mb-4 flex-1">
+                  I was working on my children's book about MOXIE — a girl who is 8 or so, competitive, fierce, and doesn't like to lose on the soccer field — and I got stuck. So I interviewed K (pictured). She's 8, LOVES chickens (has 14!), and plays travel soccer. She gave me ideas on challenges she faces, her self-talk ("We're gonna win!"), and how her dad is her best fan. Not only am I unstuck, I believe in the world again.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-xs text-gray-400">#soccer</span>
+                  <span class="text-xs text-gray-400">#femaleathletes</span>
+                  <span class="text-xs text-gray-400">#MoxieOn</span>
+                  <span class="text-xs text-gray-400">#leadership</span>
+                  <span class="text-xs text-gray-400">#EveryoneWatchesWomensSports</span>
+                </div>
+                <a href="https://www.linkedin.com/in/kristi-hemmer/" target="_blank" rel="noopener noreferrer" class="text-moxie-pink font-semibold hover:underline text-sm">View on LinkedIn →</a>
+              </div>
+            </div>
+
+            <!-- Post 4: Women's History Month -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+              <img src="/images/mm-4.jpg" alt="Moxie Moment - Women's History Month" class="w-full h-56 object-cover" />
+              <div class="p-6 flex flex-col flex-1">
+                <span class="text-xs font-bold text-moxie-pink uppercase tracking-widest mb-2">#WomensHistoryMonth</span>
+                <p class="text-gray-800 leading-relaxed mb-4 flex-1">
+                  Happy Women's History Month and almost International Women's Day! Although some calendar apps no longer include them, women are not going anywhere. How are you celebrating? I'll be tabling One Good Deed Women's Day Market on Saturday from 12pm–3pm at Hopkins Activity Center. It's a free event to celebrate women doing good in the world. Join me and other changemakers — who are not going anywhere.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="text-xs text-gray-400">#OneGoodDeed</span>
+                  <span class="text-xs text-gray-400">#MoxieOn</span>
+                  <span class="text-xs text-gray-400">#iwd2026</span>
+                  <span class="text-xs text-gray-400">#WomenInBusiness</span>
+                  <span class="text-xs text-gray-400">#WomenSupportingWomen</span>
+                </div>
+                <a href="https://www.linkedin.com/in/kristi-hemmer/" target="_blank" rel="noopener noreferrer" class="text-moxie-pink font-semibold hover:underline text-sm">View on LinkedIn →</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-moxie-pink text-white rounded-2xl p-8 text-center mt-12">
+            <h3 class="text-3xl font-bold mb-4">Want More MOXIE?</h3>
+            <p class="text-lg mb-6">
+              Explore Kristi's full suite of programs, from speaking engagements to coaching and retreats.
+            </p>
+            <a href="/moxie-on" class="inline-block bg-sunny-yellow text-charcoal font-bold px-8 py-4 rounded-lg hover:bg-white transition-colors">
+              Explore Your Options
+            </a>
           </div>
         </div>
       </div>

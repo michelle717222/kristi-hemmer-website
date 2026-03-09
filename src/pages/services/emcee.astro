@@ -28,23 +28,36 @@ import Footer from '../../components/Footer.astro';
     <!-- SECTION 2: The Story -->
     <section class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
             The <span class="text-moxie-pink">Origin Story</span>
           </h2>
-          <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              It started at my dad's 55th birthday party. Someone handed me a microphone, and
-              "MC Hemmer" was born.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              Since then, I've brought energy, humor, and professionalism to events of all sizes—
-              from intimate celebrations to large-scale conferences.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed">
-              Your event deserves more than someone reading a script. It deserves someone who
-              keeps the energy high, the transitions smooth, and your audience engaged.
-            </p>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="md:flex items-stretch">
+              <!-- Text -->
+              <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                  It started at my dad's 55th birthday party. Someone handed me a microphone, and
+                  "MC Hemmer" was born.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                  Since then, I've brought energy, humor, and professionalism to events of all sizes—
+                  from intimate celebrations to large-scale conferences.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  Your event deserves more than someone reading a script. It deserves someone who
+                  keeps the energy high, the transitions smooth, and your audience engaged.
+                </p>
+              </div>
+              <!-- Image -->
+              <div class="md:w-1/2">
+                <img
+                  src="/images/speaker-trainer.jpg"
+                  alt="Kristi Hemmer speaking and training"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

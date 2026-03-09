@@ -52,13 +52,12 @@ import Footer from '../../components/Footer.astro';
             The <span class="text-moxie-pink">PoWer</span> Course
           </h2>
           <p class="text-xl text-center text-gray-600 mb-12">
-            Signature online course. Accessible, inclusive, and pure MOXIE.
+            Be unapologetic, take up space, and change your/the world with a customized 6-12 month program.
           </p>
 
           <div class="bg-white rounded-lg shadow-xl p-8 md:p-12">
             <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-              Three months of MOXIE, a life forever changed, and a group of women who support you
-              beyond graduation. Cohort-based learning with group coaching and lifelong community.
+              Six to Twelve months of MOXIE, poWer skills that last a lifetime, and the confidence to create the life YOU imagined.
             </p>
 
             <!-- Target Audiences -->
@@ -78,23 +77,6 @@ import Footer from '../../components/Footer.astro';
               </div>
               <div class="bg-gray-50 p-4 rounded-lg text-center">
                 <p class="font-semibold text-charcoal">Men with Moxie</p>
-              </div>
-            </div>
-
-            <!-- Duration Options -->
-            <h3 class="text-2xl font-bold mb-6 text-moxie-pink">Duration Options</h3>
-            <div class="grid md:grid-cols-3 gap-6 mb-8">
-              <div class="border-2 border-gray-200 p-6 rounded-lg text-center hover:border-moxie-pink transition-colors">
-                <p class="text-3xl font-bold text-moxie-pink mb-2">3</p>
-                <p class="text-gray-700">Months</p>
-              </div>
-              <div class="border-2 border-gray-200 p-6 rounded-lg text-center hover:border-moxie-pink transition-colors">
-                <p class="text-3xl font-bold text-moxie-pink mb-2">6</p>
-                <p class="text-gray-700">Months</p>
-              </div>
-              <div class="border-2 border-gray-200 p-6 rounded-lg text-center hover:border-moxie-pink transition-colors">
-                <p class="text-3xl font-bold text-moxie-pink mb-2">12</p>
-                <p class="text-gray-700">Months</p>
               </div>
             </div>
 
@@ -206,8 +188,14 @@ import Footer from '../../components/Footer.astro';
             Fill out the form below to start your coaching journey.
           </p>
 
+          <!-- NOTE: Sign up free at formspree.io, create a form pointed to kristihemmer@gmail.com, -->
+          <!-- and replace "YOUR_FORM_ID" below with your form's ID.                              -->
           <div class="bg-gray-50 p-10 rounded-lg shadow-xl">
-            <form class="space-y-6">
+            <form
+              action="https://formspree.io/f/xbdzdbpq"
+              method="POST"
+              class="space-y-6"
+            >
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
                   <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name *</label>
@@ -247,7 +235,75 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
-    <!-- SECTION 6: Final CTA -->
+    <!-- SECTION 6: PayPal Payment -->
+    <section id="pay" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Book & <span class="text-moxie-pink">Pay</span> for Your Session
+          </h2>
+          <p class="text-xl text-gray-600 mb-10">
+            Ready to invest in yourself? Secure your Moxie Mission Session below.
+          </p>
+
+          <div class="bg-white rounded-2xl shadow-xl p-10">
+            <!-- Session Details -->
+            <div class="mb-8 text-left space-y-3 border-b border-gray-200 pb-8">
+              <h3 class="text-2xl font-bold text-moxie-pink mb-4">Moxie Mission Session</h3>
+              <div class="flex items-start gap-3">
+                <span class="text-moxie-pink font-bold text-lg">✓</span>
+                <p class="text-gray-700">90 minutes of focused clarity and action with Kristi</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-moxie-pink font-bold text-lg">✓</span>
+                <p class="text-gray-700">Tackle a specific challenge or decision point</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-moxie-pink font-bold text-lg">✓</span>
+                <p class="text-gray-700">Walk away with a clear, actionable plan</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-moxie-pink font-bold text-lg">✓</span>
+                <p class="text-gray-700">Virtual session — meet from anywhere</p>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="mb-8">
+              <span class="text-xl font-bold text-charcoal">$298</span>
+              <span class="text-xl text-gray-500 ml-2">USD</span>
+            </div>
+
+            <!-- PayPal Button -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_xclick" />
+              <input type="hidden" name="business" value="kristihemmer@gmail.com" />
+              <input type="hidden" name="item_name" value="Moxie Mission Coaching Session" />
+              <input type="hidden" name="amount" value="298.00" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="hidden" name="no_shipping" value="1" />
+              <input type="hidden" name="return" value="https://kristihemmer.com/thank-you" />
+              <button
+                type="submit"
+                class="w-full bg-[#0070BA] hover:bg-[#005ea6] text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg flex items-center justify-center gap-3"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 121.7" class="h-6 w-auto fill-white">
+                  <path d="M83.5 17.3C80.4 6.7 71.7 2.8 60.4 2.8H26.6c-2.3 0-4.3 1.7-4.6 4L8.3 97.5c-.3 1.7 1 3.3 2.7 3.3h19.7l5-31.5-.2 1c.4-2.3 2.3-4 4.6-4h9.6c18.7 0 33.3-7.6 37.6-29.6.1-.6.2-1.3.3-1.9 0 0 0 0 0 0 1.3-8-.1-13.5-4.1-17.5z"/>
+                  <path d="M87.6 35.3c-.1.6-.2 1.3-.3 1.9-4.3 22-18.9 29.6-37.6 29.6h-9.6c-2.3 0-4.3 1.7-4.6 4l-7 44.5c-.3 1.5.9 2.9 2.4 2.9h16.7c2 0 3.7-1.5 4-3.5l.2-.8 3.2-20.1.2-1.1c.3-2 2-3.5 4-3.5h2.5c16.4 0 29.2-6.7 33-26 1.6-8.1.8-14.9-3.4-19.7-.9-1-2-1.8-3.7-2.2z"/>
+                </svg>
+                Pay with PayPal — $298
+              </button>
+            </form>
+
+            <p class="text-sm text-gray-400 mt-4">
+              Secure payment via PayPal. No PayPal account required — credit cards accepted.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Final CTA -->
     <section class="py-20" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFFBF0 50%, #FFF3E0 100%);">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-5xl md:text-6xl font-bold mb-6 text-charcoal">
@@ -261,7 +317,7 @@ import Footer from '../../components/Footer.astro';
           <a href="#booking" class="bg-moxie-pink text-white font-bold px-10 py-5 rounded-lg hover:bg-moxie-pink-alt transition-all transform hover:scale-105 text-xl">
             Get Started
           </a>
-          <a href="/moxie-on" class="border-2 border-moxie-pink text-moxie-pink font-bold px-10 py-5 rounded-lg hover:bg-moxie-pink hover:text-white transition-all text-xl">
+          <a href="https://calendly.com/kristihemmer/30min" target="_blank" rel="noopener noreferrer" class="border-2 border-moxie-pink text-moxie-pink font-bold px-10 py-5 rounded-lg hover:bg-moxie-pink hover:text-white transition-all text-xl">
             Schedule a Call
           </a>
         </div>
