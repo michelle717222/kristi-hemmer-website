@@ -93,11 +93,14 @@
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-moxie-pink"
               />
             </div>
+            <p id="email-error" class="text-red-600 text-sm hidden"></p>
             <button
               type="submit"
-              class="w-full bg-moxie-pink text-white font-bold px-6 py-4 rounded-lg hover:bg-moxie-pink-alt transition-colors"
+              id="email-submit"
+              class="w-full bg-moxie-pink text-white font-bold px-6 py-4 rounded-lg hover:bg-moxie-pink-alt transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              Send Me The Chapter
+              <span id="submit-label">Send Me The Chapter</span>
+              <span id="submit-loading" class="hidden">Sending...</span>
             </button>
           </form>
         </div>
@@ -105,14 +108,46 @@
 
       <!-- Success Container (hidden initially) -->
       <div id="quiz-success" class="max-w-2xl mx-auto hidden text-center">
-        <div class="mb-8">
+        <!-- Checkmark + inbox message -->
+        <div class="mb-6">
           <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
           </div>
-          <h2 class="text-3xl font-bold text-charcoal mb-4">Check your downloads!</h2>
-          <p class="text-lg text-gray-600 mb-8">Your free chapter is downloading now.</p>
+          <h2 class="text-3xl font-bold text-charcoal mb-2">Check your inbox!</h2>
+          <p class="text-lg text-gray-600">Your free chapter is on its way. Check your email in the next few minutes.</p>
+        </div>
+
+        <!-- Chapter result recap -->
+        <div class="bg-[#FCEC60] rounded-lg p-6 mb-6 text-left">
+          <p class="text-xs uppercase tracking-widest text-gray-600 mb-1">Your recommended read</p>
+          <p id="success-chapter" class="text-sm font-bold text-gray-600 mb-1"></p>
+          <h3 id="success-title" class="text-xl font-bold text-charcoal mb-3"></h3>
+          <p id="success-description" class="text-gray-700 leading-relaxed mb-4"></p>
+          <a
+            id="success-download"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-black text-white font-bold px-6 py-3 rounded-lg hover:opacity-80 transition-opacity"
+          >
+            Download Chapter Now
+          </a>
+        </div>
+
+        <!-- Moxie Movement / Substack -->
+        <div class="bg-moxie-pink rounded-lg p-6 mb-6 text-white">
+          <h3 class="text-2xl font-bold mb-2">Join the Moxie Movement</h3>
+          <p class="mb-4 leading-relaxed">Get weekly inspiration, leadership insights, and real talk on gender equity — straight to your inbox.</p>
+          <a
+            href="https://kristihemmer.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-[#FCEC60] text-black font-bold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Subscribe on Substack
+          </a>
         </div>
 
         <div class="space-y-4">
@@ -177,20 +212,20 @@
       chapter3: {
         chapter: "Chapter 3",
         title: "Wonder Woman Is Not Real",
-        description: "You're ready to let go of the myth that you have to do it all. This chapter will help you recognize the impossible standards you've been holding yourself to and give you permission to be human.",
-        pdf: "/pdfs/QBSG-Chapter-3.pdf"
+        description: "Learn how to find your inner super hero and get what you want out of life without feeling guilty. It's about time we stop pretending to have it all together and start being honest with ourselves. Own your power and get the most out of life.",
+        pdf: "https://kristihemmer.com/wp-content/uploads/2022/07/QBSG-Chapter-3.pdf"
       },
       chapter8: {
         chapter: "Chapter 8",
         title: "Get On The Roof; Others Will Follow",
-        description: "You're ready to take the leap and lead the way. This chapter is about having the courage to go first, even when you're afraid, and trusting that others will follow.",
-        pdf: "/pdfs/QBSG-Chapter-8.pdf"
+        description: "Are you tired of playing by the rules? This chapter will teach you how to take risks, be brave, and lead the way. You can make a difference in your life and the lives of others.",
+        pdf: "https://kristihemmer.com/wp-content/uploads/2022/07/QBSG-Chapter-8.pdf"
       },
       chapter9: {
         chapter: "Chapter 9",
         title: "It's OK. You Don't Have To Get Married",
-        description: "You're ready to challenge the expectations others have placed on your life. This chapter will help you embrace your own path, whether that includes marriage or not.",
-        pdf: "/pdfs/QBSG-Chapter-9.pdf"
+        description: "Society tells us we have to follow a certain path to be happy — but that's not true for everyone. This chapter will help you realize it's OK to want something different than what everyone else expects of you.",
+        pdf: "https://kristihemmer.com/wp-content/uploads/2022/07/QBSG-Chapter-9.pdf"
       }
     }
   };
@@ -317,26 +352,60 @@
   }
 
   // Handle email form submission
-  emailForm?.addEventListener('submit', (e) => {
+  emailForm?.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const email = (document.getElementById('quiz-email') as HTMLInputElement)?.value;
     if (!email || !result) return;
 
-    // Log email (integrate with email service later)
-    console.log('Email captured:', email);
+    const submitBtn = document.getElementById('email-submit') as HTMLButtonElement;
+    const submitLabel = document.getElementById('submit-label');
+    const submitLoading = document.getElementById('submit-loading');
+    const errorEl = document.getElementById('email-error');
 
-    // Trigger PDF download
-    const pdfUrl = bookQuizData.results[result].pdf;
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = `quit-being-so-good-${result}.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Show loading state
+    if (submitBtn) submitBtn.disabled = true;
+    submitLabel?.classList.add('hidden');
+    submitLoading?.classList.remove('hidden');
+    if (errorEl) errorEl.classList.add('hidden');
 
-    // Show success
-    resultsContainer?.classList.add('hidden');
-    successContainer?.classList.remove('hidden');
+    try {
+      const response = await fetch('/api/subscribe.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, quizResult: result }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong. Please try again.');
+      }
+
+      // Populate success screen with result data
+      const resultData = bookQuizData.results[result];
+      const successChapterEl = document.getElementById('success-chapter');
+      const successTitleEl = document.getElementById('success-title');
+      const successDescEl = document.getElementById('success-description');
+      const successDownloadEl = document.getElementById('success-download') as HTMLAnchorElement | null;
+      if (successChapterEl) successChapterEl.textContent = resultData.chapter;
+      if (successTitleEl) successTitleEl.textContent = resultData.title;
+      if (successDescEl) successDescEl.textContent = resultData.description;
+      if (successDownloadEl) successDownloadEl.href = resultData.pdf;
+
+      // Show success screen
+      resultsContainer?.classList.add('hidden');
+      successContainer?.classList.remove('hidden');
+    } catch (err) {
+      // Show error inline
+      if (errorEl) {
+        errorEl.textContent = err instanceof Error ? err.message : 'Something went wrong. Please try again.';
+        errorEl.classList.remove('hidden');
+      }
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
+      submitLabel?.classList.remove('hidden');
+      submitLoading?.classList.add('hidden');
+    }
   });
 </script>

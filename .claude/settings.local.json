@@ -7,7 +7,12 @@
       "Bash(ls -la \"C:\\Users\\miche\\kristi-hemmer-website\\public\\pdfs\"\" 2>/dev/null || echo \"Directory does not exist \")",
       "mcp__Claude_Preview__preview_start",
       "Bash(where npm)",
-      "Bash(command -v npm)"
+      "Bash(command -v npm)",
+      "Bash(npm install @astrojs/node)",
+      "Bash(npm view @astrojs/node versions --json)",
+      "Bash(node -e \"const v=JSON.parse\\(require\\(''fs''\\).readFileSync\\(''/dev/stdin'',''utf8''\\)\\); console.log\\(v.filter\\(x=>x.startsWith\\(''9''\\)\\).slice\\(-5\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(npm install @astrojs/node@9)",
+      "Bash(npm run build)"
     ],
     "deny": [],
     "ask": []
