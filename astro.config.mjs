@@ -7,7 +7,7 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
   output: 'static',
   adapter: netlify(),
-  site: 'https://kristihemmer.netlify.app',
+  site: 'https://kristihemmer.com',
   vite: {
     plugins: [tailwindcss()]
   }
